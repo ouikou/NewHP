@@ -1,0 +1,35 @@
+{
+  "name": "e-business",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production node ./bin/e-business"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "compression": "^1.6.2",
+    "errorhandler": "^1.4.3",
+    "express": "^5.0.0-alpha.2",
+    "express-logger": "*",
+    "jade": "^1.11.0",
+    "less-middleware": "^2.2.0",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "del": "^1.2.0",
+    "errorhandler": "*",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-cache": "^0.2.9",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^1.11.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify-css": "^1.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-uglify": "^1.2.0"
+  }
+}
