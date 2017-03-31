@@ -4,104 +4,201 @@ block css
   link(rel="stylesheet", href="/css/services.css")
 
 block js
-  script(src="components/jquery/dist/jquery.js")
-  script(src="components/bootstrap/dist/js/bootstrap.js")
-  script(src="components/fastclick/lib/fastclick.js")
-  script(src="components/back-to-top/dist/back-to-top.js")
-  script(src="components/gsap/src/minified/TweenMax.min.js")
-  script(src="components/jpreloader/js/jpreloader.min.js")
-  script(src="js/common.js")
+  // JS Global Compulsory
+  script(type='text/javascript', src='assets/plugins/jquery/jquery.min.js')
+  script(type='text/javascript', src='assets/plugins/jquery/jquery-migrate.min.js')
+  script(type='text/javascript', src='assets/plugins/bootstrap/js/bootstrap.min.js')
+  // JS Implementing Plugins
+  script(type='text/javascript', src='assets/plugins/back-to-top.js')
+  script(type='text/javascript', src='assets/plugins/smoothScroll.js')
+  script(type='text/javascript', src='assets/plugins/jquery.parallax.js')
+  script(type='text/javascript', src='assets/plugins/counter/waypoints.min.js')
+  script(type='text/javascript', src='assets/plugins/counter/jquery.counterup.min.js')
+  script(type='text/javascript', src='assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js')
+  // JS Page Level
+  script(type='text/javascript', src='assets/js/app.js')
+  script(type='text/javascript', src='assets/js/plugins/style-switcher.js')
+  script(type='text/javascript', src='assets/js/plugins/cube-portfolio/cube-portfolio-lightbox.js')
+  // JS Customization
+  script(src="/js/common.js")
+  script(src="/js/services.js")
+  != '\n<!--[if lt IE 9]>'
+  script(src='assets/plugins/respond.js')
+  script(src='assets/plugins/html5shiv.js')
+  script(src='ssets/plugins/placeholder-IE-fixes.js')
+  != '\n<![endif]-->\n'
 
 block breadcrumbs
+  // === Breadcrumbs ===
   .breadcrumbs
     .container
-      h1.pull-left 事業内容
+      h1.pull-left Services
+      ul.pull-right.breadcrumb
+        li
+          a(href='index.html') Home
+        li
+          a(href='') Pages
+        li.active Services
+  // /breadcrumbs
+  // === End Breadcrumbs ===
 
 block content
+  // === Service Blocks ===
   .container.content-sm
-    .row.margin-bottom-30
+    .text-center.margin-bottom-50
+      h2.title-v2.title-center OUR SERVICES
+      p.space-lg-hor
+        | If you are going to use a
+        span.color-green passage of Lorem Ipsum
+        | , you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making
+        span.color-green this the first
+        |  true generator on the Internet.
+    .row.content-boxes-v4.content-boxes-v4-sm.margin-bottom-30
+      .col-md-4.md-margin-bottom-40
+        i.pull-left.icon-directions
+        .content-boxes-in-v4
+          h2 Creative Ideas
+          p
+            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          a(href='#') Learn More
+      .col-md-4.md-margin-bottom-40
+        i.pull-left.icon-handbag
+        .content-boxes-in-v4
+          h2 E-Commerce Pages
+          p
+            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          a(href='#') Learn More
       .col-md-4
-        .service-block-v1.md-margin-bottom-50
-          i.rounded-x.icon-wrench
-          h3.title-v3-bg.text-uppercase システム開発
-          a.text-uppercase(href='#development') Read More
+        i.pull-left.icon-chemistry
+        .content-boxes-in-v4
+          h2 Clean Code
+          p
+            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          a(href='#') Learn More
+    hr
+    .row.content-boxes-v4.content-boxes-v4-sm.margin-bottom-30
+      .col-md-4.md-margin-bottom-40
+        i.pull-left.icon-info.margin-right-10
+        .content-boxes-in-v4
+          h2 Extensive Documentation
+          p
+            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          a(href='#') Learn More
+      .col-md-4.md-margin-bottom-40
+        i.pull-left.icon-social-youtube.margin-right-10
+        .content-boxes-in-v4
+          h2 Vimeo / Youtube
+          p
+            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          a(href='#') Learn More
       .col-md-4
-        .service-block-v1.md-margin-bottom-50
-          i.rounded-x.icon-book-open
-          h3.title-v3-bg.text-uppercase ソリューション
-          a.text-uppercase(href='#solution') Read More
+        i.pull-left.icon-fire.margin-right-10
+        .content-boxes-in-v4
+          h2 Excellent Features
+          p
+            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          a(href='#') Learn More
+    hr
+    .row.content-boxes-v4.content-boxes-v4-sm
+      .col-md-4.md-margin-bottom-40
+        i.pull-left.icon-layers
+        .content-boxes-in-v4
+          h2 Multiple Layouts
+          p
+            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          a(href='#') Learn More
+      .col-md-4.md-margin-bottom-40
+        i.pull-left.icon-rocket
+        .content-boxes-in-v4
+          h2 Ready To Use
+          p
+            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          a(href='#') Learn More
       .col-md-4
-        .service-block-v1.md-margin-bottom-50
-          i.rounded-x.icon-screen-tablet
-          h3.title-v3-bg.text-uppercase 製品及びサービス
-          a.text-uppercase(href='#product') Read More
-      .col-md-6
-        .service-block-v1.md-margin-bottom-50
-          i.rounded-x.icon-present
-          h3.title-v3-bg.text-uppercase グローバル　イー・コーマス（GEC）事業
-          a.text-uppercase(href='#e-comerce') Read More
-      .col-md-6
-        .service-block-v1.md-margin-bottom-50
-          i.rounded-x.icon-camcorder
-          h3.title-v3-bg.text-uppercase ウェブメディア（WME）事業
-          a.text-uppercase(href='#media') Read More
-
-  .one-page
-    #development.one-page-inner.one-blue
-      .container.content
-        .row.margin-bottom-30
-          .col-md-7.content-boxes-v6
-            i.rounded-x.icon-wrench
-            h1.title-v3-md.text-uppercase.margin-bottom-10 システム開発
-            p
-              | 創業以来培った「業務ノウハウ」「豊富なプロジェクトマネージメント経験」「業種毎のナレッジ」と 「最新の情報技術」をベースに、受託開発、業務支援（ＳＥＳ）、オフショアなどの様々なメソッドを活用し、 システム提案から設計、製造、テスト、納品までの総合的なシステム開発サービスをご提供いたします。
-          .col-md-5
-            img.img-responsive.margin-bottom-10(src='/img/main/24.jpg', alt='')
-        .row.margin-bottom-30
-          .col-md-5
-            img.img-responsive.margin-bottom-10(src='/img/main/15.jpg', alt='')
-          .col-md-7
-            h2 SES事業
-            p
-              | 2007年の創業から一貫して、お客様のご支持を頂けるSES事業者として、 常に真摯にお客様のニーズに向き合って参りました。お客様に「ニーズにベストマッチした人材を、 ベストのタイミングで、確実にお届けする」を合言葉に日々の業務に取り組ませて頂いております。
-            h2 受託開発
-            p
-              | 弊社には150名を超えるシステム開発のスタッフが在籍しており、 お客様の要望にお応えできる体制が整っております。 また各業界に特化した知識を持ったエキスパートがプロジェクトをリードし、 非常に投資効率の高い成果をあげております。
-    #solution.one-page-inner.one-default
-      .container.content
-        .row
-          .col-md-7.content-boxes-v6
-            i.rounded-x.icon-book-open
-            h1.title-v3-md.text-uppercase.margin-bottom-10 ソリューション
-            p
-              | インターネットが急速に進化・発展している現在、各企業ではビジネスに直結したWebシステム構築の重要性が高まっています。 インターネット戦略の核となるWebシステムの構築は、企業の事業戦略、マーケティング戦略 に対する貢献度が大きい重要課題の１つであり、 各企業のWebシステムのサービスレベル及び品質レベルが、各社の事業を成功に導く重要な鍵となっております。 当社はWebシステムのトータル・ソリューションをご提供いたします。
-          .col-md-5
-            img.margin-bottom-10.img-responsive(src='/img/masonry/blog2.jpg', alt='')
-    #product.one-page-inner.one-red
-      .container.content
-        .row
-          .col-md-5
-            img.img-responsive.margin-bottom-10(src='/img/main/11.jpg', alt='')
-          .col-md-7.content-boxes-v6
-            i.rounded-x.icon-screen-tablet
-            h1.title-v3-md.text-uppercase.margin-bottom-10 製品及びサービス
-            p
-              | 次世代端末（スマートフォン、タブレット等）の急速な普及に伴い、お客様（コンシューマ様やクライアント様）のからのマルチデバイス対応のニーズが高まっています。 当社は新たな技術を駆使し、お客様の様々なニーズに向き合い、最善な製品をご提供いたします。 主な製品：スマートフォン関連、クラウドサービスなど。
-    #e-comerce.one-page-inner.one-default
-      .container.content
-        .row
-          .col-md-7.content-boxes-v6
-            i.rounded-x.icon-present
-            h1.title-v3-md.text-uppercase.margin-bottom-10 グローバル　イー・コーマス（GEC）事業
-            p 大変申し訳ございませんが、こちらの内容は只今建設中です。
-          .col-md-5
-            img.img-responsive(src='/img/masonry/blog5.jpg', alt='')
-    #media.one-page-inner.one-green
-      .container.content
-        .row.margin-bottom-30
-          .col-md-5
-            img.img-responsive.margin-bottom-10(src='/img/main/2.jpg', alt='')
-          .col-md-7.content-boxes-v6
-            i.rounded-x.icon-camcorder
-            h1.title-v3-md.text-uppercase.margin-bottom-10 ウェブメディア（WME）事業
-            p 大変申し訳ございませんが、こちらの内容は只今建設中です。
+        i.pull-left.icon-support
+        .content-boxes-in-v4
+          h2 Stunning Support
+          p
+            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          a(href='#') Learn More
+  // === End Service Blocks ===
+  // === Cube Portfolio ===
+  .container.content-sm
+    .text-center.margin-bottom-30
+      h2.title-v2.title-center LATEST PROJECTS
+      p.space-lg-hor
+        | If you are going to use a
+        span.color-green passage of Lorem Ipsum
+        | , you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making
+        span.color-green this the first
+        |  true generator on the Internet.
+    .cube-portfolio.container.margin-bottom-20
+      .margin-bottom-30
+        #filters-container.cbp-l-filters-text
+          .cbp-filter-item-active.cbp-filter-item(data-filter='*')  All
+          |  |
+          .cbp-filter-item(data-filter='.illustration')  Illustration
+          |  |
+          .cbp-filter-item(data-filter='.web-design')  Web Design
+          |  |
+          .cbp-filter-item(data-filter='.graphic')  Graphic
+          |  |
+          .cbp-filter-item(data-filter='.logo')  Logo
+        // /end Filters Container
+      #grid-container.cbp-l-grid-gallery
+        .cbp-item.illustration.web-design
+          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project1.html', data-title='World Clock Widget<br>by Paul Flavius Nechita')
+            .cbp-caption-defaultWrap
+              img(src='assets/img/portfolio/20.jpg', alt='')
+            .cbp-caption-activeWrap
+              .cbp-l-caption-alignLeft
+                .cbp-l-caption-body
+                  .cbp-l-caption-title Paul Flavius
+                  .cbp-l-caption-desc Development
+        .cbp-item.web-design.logo
+          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project2.html', data-title='Bolt UI<br>by Tiberiu Neamu')
+            .cbp-caption-defaultWrap
+              img(src='assets/img/portfolio/19.jpg', alt='')
+            .cbp-caption-activeWrap
+              .cbp-l-caption-alignLeft
+                .cbp-l-caption-body
+                  .cbp-l-caption-title Tiberiu Neamu
+                  .cbp-l-caption-desc Web-Design
+        .cbp-item.illustration.web-design
+          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project3.html', data-title='WhereTO App<br>by Tiberiu Neamu')
+            .cbp-caption-defaultWrap
+              img(src='assets/img/portfolio/21.jpg', alt='')
+            .cbp-caption-activeWrap
+              .cbp-l-caption-alignLeft
+                .cbp-l-caption-body
+                  .cbp-l-caption-title Tiberiu Neamu
+                  .cbp-l-caption-desc Illustration
+        .cbp-item.web-design.illustration
+          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project4.html', data-title='iDevices<br>by Tiberiu Neamu')
+            .cbp-caption-defaultWrap
+              img(src='assets/img/portfolio/22.jpg', alt='')
+            .cbp-caption-activeWrap
+              .cbp-l-caption-alignLeft
+                .cbp-l-caption-body
+                  .cbp-l-caption-title Tiberiu Neamu
+                  .cbp-l-caption-desc Illustration
+        .cbp-item.web-design.graphic
+          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project5.html', data-title='Seemple* Music for iPad<br>by Tiberiu Neamu')
+            .cbp-caption-defaultWrap
+              img(src='assets/img/portfolio/24.jpg', alt='')
+            .cbp-caption-activeWrap
+              .cbp-l-caption-alignLeft
+                .cbp-l-caption-body
+                  .cbp-l-caption-title Tiberiu Neamu
+                  .cbp-l-caption-desc Illustration
+        .cbp-item.illustration.web-design.graphic
+          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project6.html', data-title='Remind~Me Widget<br>by Tiberiu Neamu')
+            .cbp-caption-defaultWrap
+              img(src='assets/img/portfolio/23.jpg', alt='')
+            .cbp-caption-activeWrap
+              .cbp-l-caption-alignLeft
+                .cbp-l-caption-body
+                  .cbp-l-caption-title Tiberiu Neamu
+                  .cbp-l-caption-desc Web-Design
+      // /end Grid Container
+  // === End Cube Portfolio ===
