@@ -1,183 +1,264 @@
 doctype html
-<!--[if IE 8]><html lang="ja" class="ie8"><![endif]-->
-<!--[if IE 9]><html lang="ja" class="ie9"><![endif]-->
-<!--[if !IE]><!--><html lang="ja"><!--<![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 head
+    title #{__('title')}
+    // Meta
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='shinesoft')
+    // Favicon
+    link(rel='shortcut icon', href='favicon.ico')
 
-  title 株式会社イー・ビジネス(E-Business)
+    // CSS
+    block css
 
-  // Meta
-  meta(charset='utf-8')
-  meta(http-equiv="X-UA-Compatible", content="IE=edge")
-  meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
-  meta(name='description', content='')
-  meta(name='author', content='JoeHetfield')
-
-  // Favicon
-  link(rel='shortcut icon', href='/favicon.ico')
-
-  // CSS
-  block css
-
-body.header-fixed
-
-  // Loader
-  #loading
-    .loading-inner
-      img(src='/img/loader/flat/1.gif', alt='loading...')
-
-  // Wrapper
-  .wrapper
-
-    // Header
-    .header.header-sticky
-
-      // Topbar
-      .topbar
+    // CSS Theme
+    link#style_color(rel='stylesheet', href='/assets/css/theme-colors/blue.css')
+    link(rel='stylesheet', href='/assets/css/theme-skins/dark.css')
+  body.header-fixed.header-fixed-space-default
+    .wrapper
+      // === Header ===
+      .header.header-sticky
         .container
-          // Topbar Navigation
-          ul.loginbar.pull-right
-            //- li.languagesSelector
-            //-   i.fa.fa-globe
-            //-   |
-            //-   a #{__('topBar.language')}
-            //-   ul.languages
-            //-     li(class=(locale === "ja")?"active":"")
-            //-       a(href='/ja/#{path}', hreflang="ja") #{__('topBar.languageOpt.ja')}
-            //-     li(class=(locale === "zh")?"active":"")
-            //-       a(href='/zh/#{path}', hreflang="zh") #{__('topBar.languageOpt.zh')}
-            //-     li(class=(locale === "en")?"active":"")
-            //-       a(href='/en/#{path}', hreflang="en") #{__('topBar.languageOpt.en')}
-            //- li.topbar-devider
-            //- li
-            //-   a(href='/login') #{__('topBar.login')}
-
-      // Navbar
-      .navbar.navbar-default.mega-menu(role='navigation')
-        .container
-          // Brand
-          .navbar-header
-            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
-              span.sr-only Toggle navigation
-              span.fa.fa-bars
-            a.navbar-brand(href='/home')
-              img#logo-header(src='/img/eb/logo.gif', alt='Logo', style="height: 39px; width: auto; margin-bottom: 5px;")
-              h3 E-Business Inc.
-          // Collect the nav links
-          .collapse.navbar-collapse.navbar-responsive-collapse
+          // Logo
+          a.logo(href='/home')
+            img(src='assets/img/themes/logo1-blue.png', alt='Logo')
+          // End Logo
+          // Topbar
+          .topbar
+            ul.loginbar.pull-right
+              li.hoverSelector
+                i.fa.fa-globe
+                a #{__('topBar').language}
+                ul.languages.hoverSelectorBlock
+                  li.active
+                    a(href='#')
+                      | #{__('topBar').languageOpt.ja}
+                      i.fa.fa-check
+                  li
+                    a(href='#') #{__('topBar').languageOpt.en}
+                  li
+                    a(href='#') #{__('topBar').languageOpt.zh}
+                = ' '
+              li.topbar-devider
+              li
+                a(href='page_login.html') #{__('topBar').login}
+          // End Topbar
+          // Toggle get grouped for better mobile display
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+            span.sr-only Toggle navigation
+            span.fa.fa-bars
+          // End Toggle
+        // /end container
+        // Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse.mega-menu.navbar-responsive-collapse
+          .container
             ul.nav.navbar-nav
+              // home | about-us | service | recruitment | contact
               li(class=(path === "home")?"active":"")
                 a(href='/home')
-                  | トップ
+                  | #{__('menu').home}
               li(class=(path === "about-us")?"active":"")
                 a(href='/about-us')
-                  | 会社概要
+                  | #{__('menu').about}
               li(class=(path === "services")?"active":"")
                 a(href='/services')
-                  | 事業内容
+                  | #{__('menu').service}
               li(class=(path === "recruitment")?"active":"")
                 a(href='/recruitment')
-                  | 採用情報
+                  | #{__('menu').recruitment}
               li(class=(path === "contact")?"active":"")
                 a(href='/contact')
-                  | お問合せ
+                  | #{__('menu').contact}
+              //End home | about-us | service | recruitment | contact
+              // Search Block
+              li
+                i.search.fa.fa-search.search-btn
+                .search-open
+                  .input-group.animated.fadeInDown
+                    input.form-control(type='text', placeholder='Search')
+                    span.input-group-btn
+                      button.btn-u(type='button') Go
+              // End Search Block
+          // /end container
+        // /navbar-collapse
+      // === End Header ===
 
-    // Slider
-    block slider
+      // Slider
+      block slider
 
-    // Breadcrumbs
-    block breadcrumbs
+      // Breadcrumbs
+      block breadcrumbs
 
-    // Content
-    block content
+      // Content
+      block content
 
-    // Footer
-    .footer-v1
-      .footer
-        .container
-          .row
-            // About
-            .col-sm-6.col-md-3.md-margin-bottom-40
-              a(href='/home')
-                //- img#logo-footer.footer-logo(src='/img/logo2-default.png', alt='')
-                h2 株式会社イー・ビジネス
-              p
-                | 社会と人々の生活をより豊かなものへと推進し、進化をもたらせるIT組織を目指していきます
-              img#logo-footer.footer-logo(src='/img/eb/pmark.jpg', alt='', style="width: 65px; height: 75px;")
-              img#logo-footer.footer-logo(src='/img/eb/isms.jpg', alt='', style="width: auto; height: 75px; margin-left: 10px;")
-              img#logo-footer.footer-logo(src='/img/eb/isa.jpg', alt='', style="width: auto; height: 75px; margin-left: 10px;")
-            // Latest
-            .col-sm-6.col-md-3.md-margin-bottom-40
-              .posts
+      // === Footer ===
+      #footer-default.footer-default
+        .footer
+          .container
+            .row
+              .col-md-4.md-margin-bottom-40
+                // About
                 .headline
-                  h2 最新ニュース
-                ul.list-unstyled.latest-list
+                  h2 #{__('footer').brand}
+                p.margin-bottom-25.md-margin-bottom-40
+                p #{__('footer').statement1}
+                p #{__('footer').statement2}
+                p #{__('footer').statement3}
+                p #{__('footer').statement4}
+                // End About
+              // /col-md-4
+              .col-md-4.md-margin-bottom-40
+                // Recent News
+                .posts
+                  .headline
+                    h2 #{__('footer').news.header}
+                  dl.dl-horizontal
+                    dt
+                      a(href='#')
+                        img(src='assets/img/sliders/elastislide/6.jpg', alt='')
+                    dd
+                      p
+                        a(href='#') #{__('footer').news.news1.title}
+                      small #{__('footer').news.news1.date}
+                  dl.dl-horizontal
+                    dt
+                      a(href='#')
+                        img(src='assets/img/sliders/elastislide/10.jpg', alt='')
+                    dd
+                      p
+                        a(href='#') #{__('footer').news.news2.title}
+                      small #{__('footer').news.news2.date}
+                  dl.dl-horizontal
+                    dt
+                      a(href='#')
+                        img(src='assets/img/sliders/elastislide/11.jpg', alt='')
+                    dd
+                      p
+                        a(href='#') #{__('footer').news.news3.title}
+                      small #{__('footer').news.news3.date}
+                // End Recent News
+              // /col-md-4
+              .col-md-4
+                // Contact Us
+                .headline
+                  h2 #{__('footer').contact.header}
+                address.md-margin-bottom-40
+                  | #{__('footer').contact.address}
+                  br
+                  | #{__('footer').contact.zipCode}
+                  br
+                  | #{__('footer').contact.tel}
+                  br
+                  | #{__('footer').contact.fax}
+                  br
+                  | #{__('footer').contact.email}
+                  a(href='mailto:info@shinesoft.co.jp') info@shinesoft.co.jp
+                // End Contact Us
+                // Social Links
+                .headline
+                  h2 Stay Connected
+                ul.social-icons
                   li
-                    a(href='#') ISO27001(ISMS)認証を取得しました
-                    small 2014年5月30日
+                    a.social_rss(href='#', data-original-title='Feed')
                   li
-                    a(href='#') 事業拡大のため、本社を東京都港区芝に移転
-                    small 2014年1月8日
+                    a.social_facebook(href='#', data-original-title='Facebook')
                   li
-                    a(href='#') 資本金を1850万円に増資
-                    small 2013年12月20日
-            // Link List
-            .col-sm-6.col-md-3.md-margin-bottom-40
-              .headline
-                h2 リンク集
-              ul.list-unstyled.link-list
-                li
-                  a(href='/home') トップ
-                  i.fa.fa-angle-right
-                li
-                  a(href='/about-us') 会社概要
-                  i.fa.fa-angle-right
-                li
-                  a(href='/services') 事業内容
-                  i.fa.fa-angle-right
-                li
-                  a(href='/recruitment') 採用情報
-                  i.fa.fa-angle-right
-                li
-                  a(href='/contact') お問合せ
-                  i.fa.fa-angle-right
-            // Contact
-            .col-sm-6.col-md-3.map-img.md-margin-bottom-40
-              .headline
-                h2 お問合せ
-              address.md-margin-bottom-40
-                | 東京都港区芝2-28-8芝2丁目ビル10階
-                br
-                | 〒 105-0014
-                br
-                | Tel: 03-6809-3235
-                br
-                | Fax: 03-6809-3238
-                br
-                | Email:
-                a(href='mailto:info@e-business.co.jp') info@e-business.co.jp
-                br
-                img#logo-footer.footer-logo(src='/img/eb/E-businessQR.jpg', alt='', style="width: auto; height: 75px;")
+                    a.social_twitter(href='#', data-original-title='Twitter')
+                  li
+                    a.social_googleplus(href='#', data-original-title='Goole Plus')
+                  li
+                    a.social_pintrest(href='#', data-original-title='Pinterest')
+                  li
+                    a.social_linkedin(href='#', data-original-title='Linkedin')
+                  li
+                    a.social_vimeo(href='#', data-original-title='Vimeo')
+                // End Social Links
+              // /col-md-4
+        // /footer
+        .copyright
+          .container
+            .row
+              .col-md-6
+                p
+                  | #{__('copyright').statement}
+                  = ' '
+                  a(href='#') #{__('copyright').privacy}
+                  = ' | '
+                  a(href='#') #{__('copyright').terms}
+              .col-md-6
+                a(href='index.html')
+                  img#logo-footer.pull-right(src='assets/img/themes/logo2-blue.png', alt='')
+        // /copyright
+      // === End Footer ===
+    // /wrapper
 
-      .copyright
-        .container
-          .row
-            .col-md-6
-              p Copyright © 2007-2015 E-Business Corporation. All Rights Reserved.
-            .col-md-6
-              p.pull-right
-                a(href='/privacy') 個人情報保護方針
-                |  |
-                a(href='/terms-of-service')  個人情報の利用目的の公表に関する事項
-                |  |
-                a(href='/margin-rate')  労働者派遣のマージン率等
+    // === Style Switcher ===
+    i.style-switcher-btn.fa.fa-cogs.hidden-xs
+    .style-switcher.animated.fadeInRight
+      .style-swticher-header
+        .style-switcher-heading Style Switcher
+        .theme-close
+          i.icon-close
+      .style-swticher-body
+        // Theme Colors
+        .style-switcher-heading Theme Colors
+        ul.list-unstyled
+          li.theme-default(data-style='default', data-header='light')
+          li.theme-blue.theme-active(data-style='blue', data-header='light')
+          li.theme-orange(data-style='orange', data-header='light')
+          li.theme-red(data-style='red', data-header='light')
+          li.theme-light(data-style='light', data-header='light')
+          li.theme-purple.last(data-style='purple', data-header='light')
+          li.theme-aqua(data-style='aqua', data-header='light')
+          li.theme-brown(data-style='brown', data-header='light')
+          li.theme-dark-blue(data-style='dark-blue', data-header='light')
+          li.theme-light-green(data-style='light-green', data-header='light')
+          li.theme-dark-red(data-style='dark-red', data-header='light')
+          li.theme-teal.last(data-style='teal', data-header='light')
+        // Theme Skins
+        .style-switcher-heading Theme Skins
+        .row.no-col-space.margin-bottom-20.skins-section
+          .col-xs-6
+            button.btn-u.btn-u-xs.btn-u-dark.btn-block.active-switcher-btn.handle-skins-btn(data-skins='default') Light
+          .col-xs-6
+            button.btn-u.btn-u-xs.btn-u-dark.btn-block.skins-btn(data-skins='dark') Dark
+        hr
+        // Layout Styles
+        .style-switcher-heading Layout Styles
+        .row.no-col-space.margin-bottom-20
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block.active-switcher-btn.wide-layout-btn(href='javascript:void(0);') Wide
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block.boxed-layout-btn(href='javascript:void(0);') Boxed
+        hr
+        // Theme Type
+        .style-switcher-heading Theme Types and Versions
+        .row.no-col-space.margin-bottom-10
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block(href='E-Commerce/index.html')
+              | Shop UI
+              small.dp-block Template
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block(href='One-Pages/Classic/index.html')
+              | One Page
+              small.dp-block Template
+        .row.no-col-space
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block(href='Blog-Magazine/index.html')
+              | Blog
+              small.dp-block Template
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block(href='RTL/index.html')
+              | RTL
+              small.dp-block Version
+    // /style-switcher
+    // === End Style Switcher ===
 
-  // JS
-  block js
-
-  <!--[if lt IE 9]>
-  <script src="/plugins/respond.js"></script>
-  <script src="/plugins/html5shiv.js"></script>
-  <![endif]-->
-
+    // JS
+    block js
 </html>

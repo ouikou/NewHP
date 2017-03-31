@@ -1,0 +1,23 @@
+extends layout
+
+block css
+  link(rel="stylesheet", href="/css/common.css")
+  link(rel="stylesheet", href="/unify/pages/page_404_error.css")
+
+block js
+  script(data-main="/js/common", src="/components/requirejs/require.js")
+
+block breadcrumbs
+  .breadcrumbs
+    .container
+      h1.pull-left #{error.status} #{error.message}
+
+block content
+  .container.content
+    .row
+      .col-md-8.col-md-offset-2
+        .error-v1
+          span.error-v1-title #{error.status}
+          span #{error.message}
+          p 大変申し訳ございませんが、該当ページは存在しません。下記ボタンをクリックして、ホームページに戻ってください。
+          a.btn-u.btn-border(href="/home") ホームに戻る

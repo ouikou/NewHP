@@ -3,11 +3,21 @@ var path = require('path'),
   favicon = require('serve-favicon'),
   compression = require('compression'),
   lessMiddleware = require('less-middleware'),
-  errorhandler = require('errorhandler');
+  //errorhandler = require('errorhandler'),
+  i18n = require('i18n');
+
+  i18n.configure({
+      // 対応する言語を設定
+      locales: ['en', 'ja', 'zh'],
+      directory: path.join(config.root, '/config/locales')
+  });
 
 module.exports = function(config) {
 
   var app = express();
+
+  // i18n
+  app.use(i18n.init);
 
   // View directory
   app.set('views', path.join(config.root, '/app/views'));
@@ -37,7 +47,7 @@ module.exports = function(config) {
     app.use(express.static(path.join(config.root, 'public')));
 
     // Error handler, not linked in production
-    app.use(errorhandler());
+    //app.use(errorhandler());
 
   }
   // production setting
@@ -68,6 +78,9 @@ module.exports = function(config) {
   // will print stacktrace
   if (app.get('env') === 'development') {
     app.use(function(err, req, res, next) {
+      console.log('/////////////////////////////////');
+      console.log(err.message);
+      console.log('/////////////////////////////////');
       res.status(err.status || 500);
       res.render('error', {
         message: err.message,

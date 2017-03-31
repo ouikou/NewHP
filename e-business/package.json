@@ -11,6 +11,7 @@
     "errorhandler": "^1.4.3",
     "express": "^5.0.0-alpha.2",
     "express-logger": "*",
+    "i18n": "^0.8.3",
     "jade": "^1.11.0",
     "less-middleware": "^2.2.0",
     "morgan": "^1.7.0",

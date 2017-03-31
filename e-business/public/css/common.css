@@ -1,6 +1,10 @@
-@import url(../components/bootstrap/dist/css/bootstrap.min.css);
-@import url(../components/font-awesome/css/font-awesome.min.css);
-@import url(../unify/style.css);
-@import url(../unify/theme-colors/aqua.css);
-@import url(../components/simple-line-icons/css/simple-line-icons.css);
-@import url(custom.css);
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin');
+/* CSS Global Compulsory */
+@import url('../assets/plugins/bootstrap/css/bootstrap.min.css');
+@import url('../assets/css/style.css');
+/* CSS Header and Footer */
+@import url('../assets/css/headers/header-default.css');
+@import url('../assets/css/footers/footer-default.css');
+/* CSS Customization */
+@import url('../assets/css/custom.css');

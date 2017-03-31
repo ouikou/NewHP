@@ -1,5 +1,5 @@
 {
-	"title": "株式会社イー・ビジネス(E-Business)",
+	"title": "株式会社シャインソフト(ShineSoft Co.,Ltd.)",
 	"topBar": {
 		"language": "语言选择",
 		"languageOpt": {
@@ -17,44 +17,47 @@
 		"contact": "联系我们"
 	},
 	"footer": {
-		"brand": "株式会社イー・ビジネス",
-		"statement": "让社会和人们的生活更加富裕多彩，建设不断创新和进化的IT企业",
+		"brand": "株式会社シャインソフト",
+		"statement1": "シャインソフトは会社も社員も永続的に常に進化を続け、進化をする為の努力を続けるということを、シャインソフトにいる人間のマインドとします",
+		"statement2": "日本企業の中国進出、また中国企業の日本進出におけるシステム開発支援を行う、コンピュータ・ソフトウェア・プログラミングを手段に、国際社会に新たな価値を創出します",
+		"statement3": "技術スペシャリストの立場におごらず、様々な立場の方と共に学びあいます。そして、一人で導き出すことの難しい、価値ある結果を出します",
+		"statement4": "最新の技術動向から、様々な状況を予測し、技術戦略を提案します。未知なる状況こそ、まだ見ぬ宝石を探し当てる絶好の機会です",
 		"news": {
 			"header": "最新动态",
 			"news1": {
-				"title": "取得ISO27001(ISMS)认证",
-				"date": "2014年5月30日"
+				"title": "本社新橋へ移転",
+				"date": "2012年08月28日"
 			},
 			"news2": {
-				"title": "随着事业的扩大，总公司迁至东京都港区",
-				"date": "2014年1月8日"
+				"title": "本社神田へ移転",
+				"date": "2007年03月28日"
 			},
 			"news3": {
-				"title": "资本金增资至1850万日元",
-				"date": "2013年12月20日"
+				"title": "900万円まで増資、株式会社シャーインソフトを「株式会社シャインソフト」に社名変更",
+				"date": "2006年10月11日"
 			}
 		},
 		"links": {
 			"header": "相关链接",
-			"link1": "关于我们",
-			"link2": "服务内容",
-			"link3": "招聘信息",
-			"link4": "联系我们"
+			"link1": "首页",
+			"link2": "关于我们",
+			"link3": "服务内容",
+			"link4": "招聘信息",
+			"link5": "公司内部系统"
 		},
 		"contact": {
 			"header": "联系我们",
-			"address": "东京都港区芝2-28-8芝2丁目大厦10层",
-			"zipCode": "〒 105-0014",
-			"tel": "Tel: 03-6809-3235",
-			"fax": "Fax: 03-6809-3238",
+			"address": "東京都港区新橋5-12-6　ウェルディ新橋4F",
+			"zipCode": "〒 105-0004",
+			"tel": "Tel: 03-6721-5778",
+			"fax": "Fax: 03-6721-5779",
 			"email": "Email: "
 		}
 	},
 	"copyright": {
-		"statement": "Copyright © 2007-2015 E-Business Inc. All Rights Reserved.",
-		"privacy": "个人信息保护方针",
-		"terms": "关于个人信息使用的公告",
-		"margin": "关于劳动者派遣的毛利率"
+		"statement": "Copyright © 2006 ShineSoft Co.,Ltd. All Rights Reserved.",
+		"privacy": "Privacy Policy",
+		"terms": "Terms of Service"
 	},
 	"home": {
 		"slider": {
@@ -374,5 +377,9 @@
 	"error": {
 		"404": "非常抱歉，您访问的网页不存在。请点击下面的按钮回到首页。",
 		"backBtn": "回到首页"
-	}
+	},
+	"topBar.language": "topBar.language",
+	"topBar_language": "topBar_language",
+	"topBar:language": "topBar:language",
+	"topBar/language": "topBar/language"
 }

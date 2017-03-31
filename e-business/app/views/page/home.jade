@@ -4,94 +4,185 @@ block css
   link(rel="stylesheet", href="/css/home.css")
 
 block js
-  script(src="components/jquery/dist/jquery.js")
-  script(src="components/tether/dist/js/tether.js")
-  script(src="components/bootstrap/dist/js/bootstrap.js")
-  script(src="components/fastclick/lib/fastclick.js")
-  script(src="components/back-to-top/dist/back-to-top.js")
-  script(src="components/gsap/src/minified/TweenMax.min.js")
-  script(src="components/waypoints/lib/jquery.waypoints.js")
-  script(src="components/jpreloader/js/jpreloader.min.js")
-  script(src="components/jquery-touchswipe/jquery.touchSwipe.min.js")
-  script(src="components/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js")
-  script(src="components/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js")
-  script(src="js/home.js")
+  // JS Global Compulsory
+  script(type='text/javascript', src='assets/plugins/jquery/jquery.min.js')
+  script(type='text/javascript', src='assets/plugins/jquery/jquery-migrate.min.js')
+  script(type='text/javascript', src='assets/plugins/bootstrap/js/bootstrap.min.js')
+  // JS Implementing Plugins
+  script(type='text/javascript', src='assets/plugins/back-to-top.js')
+  script(type='text/javascript', src='assets/plugins/smoothScroll.js')
+  script(type='text/javascript', src='assets/plugins/parallax-slider/js/modernizr.js')
+  script(type='text/javascript', src='assets/plugins/parallax-slider/js/jquery.cslider.js')
+  script(type='text/javascript', src='assets/plugins/owl-carousel/owl-carousel/owl.carousel.js')
+  // JS Page Level
+  script(type='text/javascript', src='assets/js/app.js')
+  script(type='text/javascript', src='assets/js/plugins/owl-carousel.js')
+  script(type='text/javascript', src='assets/js/plugins/style-switcher.js')
+  script(type='text/javascript', src='assets/js/plugins/parallax-slider.js')
+  script(type='text/javascript', src='assets/js/plugins/owl-recent-works.js')
+  // JS Customization
+  script(src="/js/common.js")
+  script(src="/js/home.js")
+  != '\n<!--[if lt IE 9]>'
+  script(src='assets/plugins/respond.js')
+  script(src='assets/plugins/html5shiv.js')
+  script(src='ssets/plugins/placeholder-IE-fixes.js')
+  != '\n<![endif]-->\n'
 
 block slider
-  .tp-banner-container
-    .tp-banner
-      ul
-        li.revolution-mch-1(data-transition='random', data-slotamount='5', data-masterspeed='1000', data-title="会社ビジョン")
-          img(src='/img/eb/kaisya2.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
-          .tp-caption.revolution-ch1.sft.start(data-x='center', data-hoffset='0', data-y='100', data-speed='1500', data-start='500', data-easing='Back.easeInOut', data-endeasing='Power1.easeIn', data-endspeed='300')
-            | 社会と人々の生活をより豊かなものへと推進し
-          .tp-caption.revolution-ch1.sft(data-x='center', data-hoffset='0', data-y='190', data-speed='1400', data-start='2000', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6;')
-            | 進化をもたらせるIT組織を目指していきます
-        li.revolution-mch-1(data-transition='random', data-slotamount='5', data-masterspeed='1000', data-title="経営理念")
-          img(src='/img/eb/DSC_3972.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
-          .tp-caption.revolution-ch1.sft.start(data-x='center', data-hoffset='0', data-y='100', data-speed='1500', data-start='500', data-easing='Back.easeInOut', data-endeasing='Power1.easeIn', data-endspeed='300')
-            | 社員の幸せを優先する会社づくり
-          .tp-caption.revolution-ch1.sft(data-x='center', data-hoffset='0', data-y='190', data-speed='1400', data-start='2000', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6;')
-            | 顧客満足度を最大とするためのビジネス展開
-        li.revolution-mch-1(data-transition='random', data-slotamount='5', data-masterspeed='1000', data-title="イー国際会社に目指す")
-          img(src='/img/sliders/2.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
-          .tp-caption.revolution-ch1.sft.start(data-x='center', data-hoffset='0', data-y='100', data-speed='1500', data-start='500', data-easing='Back.easeInOut', data-endeasing='Power1.easeIn', data-endspeed='300')
-            | 国際的な視野に立ち
-          .tp-caption.revolution-ch1.sft(data-x='center', data-hoffset='0', data-y='190', data-speed='1400', data-start='2000', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6;')
-            | より高い利便性を追求
-          .tp-caption.revolution-ch1.sft(data-x='center', data-hoffset='0', data-y='280', data-speed='1400', data-start='3000', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6;')
-            | より高品質なITサービスを提供
-      .tp-bannertimer.tp-bottom
+  // === Slider ===
+  .slider-inner
+    #da-slider.da-slider
+      .da-slide
+        h2
+          i CLEAN & FRESH
+          br
+          i FULLY RESPONSIVE
+          br
+          i DESIGN
+        p
+          i Lorem ipsum dolor amet
+          br
+          i tempor incididunt ut
+          br
+          i veniam omnis
+        .da-img
+          img.img-responsive(src='assets/plugins/parallax-slider/img/1.png', alt='')
+      .da-slide
+        h2
+          i RESPONSIVE VIDEO
+          br
+          i SUPPORT AND
+          br
+          i MANY MORE
+        p
+          i Lorem ipsum dolor amet
+          br
+          i tempor incididunt ut
+        .da-img
+          iframe(src='http://player.vimeo.com/video/47911018', width='530', height='300', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+      .da-slide
+        h2
+          i USING BEST WEB
+          br
+          i SOLUTIONS WITH
+          br
+          i HTML5/CSS3
+        p
+          i Lorem ipsum dolor amet
+          br
+          i tempor incididunt ut
+          br
+          i veniam omnis
+        .da-img
+          img(src='assets/plugins/parallax-slider/img/html5andcss3.png', alt='image01')
+      .da-arrows
+        span.da-arrows-prev
+        span.da-arrows-next
+  // /slider
+  // === End Slider ===
 
 block breadcrumbs
+  // === Purchase Block ===
   .purchase
     .container
       .row
-        .col-md-9
-          span 株式会社 イー・ビジネス
+        .col-md-9.animated.fadeInLeft
+          span Unify is a clean and fully responsive incredible Template.
           p
-            | お客様とともに歩み、絶えず進化する高い生産効率と信頼の高品質で貢献する先進のテクノロジに積極果敢に挑戦し異文化融合を目指す企業の先駆けとなり常に信頼され、支持される企業に
-        .col-md-3.btn-buy
-          a.btn-u.btn-u-lg(href='contact')
-            i.icon-earphones-alt
+            | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat corrupti quos.
+        .col-md-3.btn-buy.animated.fadeInRight
+          a.btn-u.btn-u-lg(href='/contact')
+            i.icon-envelope
             |  お問合せ
+  // /row
+  // End Purchase Block
 
 block content
+  // === Content Part ===
   .container.content
-    #sub-cate.row.margin-bottom-20
-      .col-sm-4
-        .thumbnails.thumbnail-style.thumbnail-kenburn
-          .thumbnail-img
-            .overflow-hidden
-              img.img-responsive(src='/img/main/1.jpg', alt='')
-            a.btn-more.btn-blue.hover-effect(href='about-us') read more +
-          .caption
-            h3
-              a.hover-effect(href='about-us') 会社概要
-      .col-sm-4
-        .thumbnails.thumbnail-style.thumbnail-kenburn
-          .thumbnail-img
-            .overflow-hidden
-              img.img-responsive(src='/img/main/16.jpg', alt='')
-            a.btn-more.hover-effect(href='services') read more +
-          .caption
-            h3
-              a.hover-effect(href='services') 事業内容
-      .col-sm-4
-        .thumbnails.thumbnail-style.thumbnail-kenburn
-          .thumbnail-img
-            .overflow-hidden
-              img.img-responsive(src='/img/main/17.jpg', alt='')
-            a.btn-more.hover-effect(href='recruitment') read more +
-          .caption
-            h3
-              a.hover-effect(href='recruitment') 採用情報
-      //- .col-md-4.col-xs-6
-      //-   .thumbnails.thumbnail-style.thumbnail-kenburn
-      //-     .thumbnail-img
-      //-       .overflow-hidden
-      //-         img.img-responsive(src='/img/main/11.jpg', alt='')
-      //-       a.btn-more.hover-effect(href='contact') read more +
-      //-     .caption
-      //-       h3
-      //-         a.hover-effect(href='contact') お問合せ
+    // Recent Works
+    .owl-carousel-v1.owl-work-v1.margin-bottom-40
+      .headline
+        h2.pull-left Recent Works
+        .owl-navigation
+          .customNavigation
+            a.owl-btn.prev-v2
+              i.fa.fa-angle-left
+            a.owl-btn.next-v2
+              i.fa.fa-angle-right
+        // /navigation
+      .owl-recent-works-v1
+        .item
+          a(href='#')
+            em.overflow-hidden
+              img.img-responsive(src='assets/img/main/img1.jpg', alt='')
+            span
+              strong Happy New Year
+              i Anim pariatur cliche reprehenderit
+        .item
+          a(href='#')
+            em.overflow-hidden
+              img.img-responsive(src='assets/img/main/img2.jpg', alt='')
+            span
+              strong Award Winning Agency
+              i Responsive Bootstrap Template
+        .item
+          a(href='#')
+            em.overflow-hidden
+              img.img-responsive(src='assets/img/main/img3.jpg', alt='')
+            span
+              strong Wolf Moon Officia
+              i Pariatur prehe cliche reprehrit
+        .item
+          a(href='#')
+            em.overflow-hidden
+              img.img-responsive(src='assets/img/main/img4.jpg', alt='')
+            span
+              strong Food Truck Quinoa Nesciunt
+              i Craft labore wes anderson cred
+        .item
+          a(href='#')
+            em.overflow-hidden
+              img.img-responsive(src='assets/img/main/img5.jpg', alt='')
+            span
+              strong Happy New Year
+              i Anim pariatur cliche reprehenderit
+        .item
+          a(href='#')
+            em.overflow-hidden
+              img.img-responsive(src='assets/img/main/img1.jpg', alt='')
+            span
+              strong Happy New Year
+              i Anim pariatur cliche reprehenderit
+        .item
+          a(href='#')
+            em.overflow-hidden
+              img.img-responsive(src='assets/img/main/img2.jpg', alt='')
+            span
+              strong Award Winning Agency
+              i Responsive Bootstrap Template
+        .item
+          a(href='#')
+            em.overflow-hidden
+              img.img-responsive(src='assets/img/main/img3.jpg', alt='')
+            span
+              strong Wolf Moon Officia
+              i Pariatur prehe cliche reprehrit
+        .item
+          a(href='#')
+            em.overflow-hidden
+              img.img-responsive(src='assets/img/main/img4.jpg', alt='')
+            span
+              strong Food Truck Quinoa Nesciunt
+              i Craft labore wes anderson cred
+        .item
+          a(href='#')
+            em.overflow-hidden
+              img.img-responsive(src='assets/img/main/img5.jpg', alt='')
+            span
+              strong Happy New Year
+              i Anim pariatur cliche reprehenderit
+    // End Recent Works
+  // /container
+  // End Content Part

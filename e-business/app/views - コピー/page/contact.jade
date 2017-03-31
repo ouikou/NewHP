@@ -1,0 +1,95 @@
+extends ../layout
+
+block css
+  link(rel="stylesheet", href="/css/contact.css")
+
+block js
+  script(src="http://maps.google.com/maps/api/js?sensor=true")
+  script(src="components/jquery/dist/jquery.js")
+  script(src="components/bootstrap/dist/js/bootstrap.js")
+  script(src="components/fastclick/lib/fastclick.js")
+  script(src="components/back-to-top/dist/back-to-top.js")
+  script(src="components/gsap/src/minified/TweenMax.min.js")
+  script(src="components/jpreloader/js/jpreloader.min.js")
+  script(src="components/gmaps/gmaps.js")
+  script(src="js/contact.js")
+
+block breadcrumbs
+  .breadcrumbs
+    .container
+      h1.pull-left お問合せ
+
+block content
+  // Google Map
+  #map.map
+  .container.content(ng-app='inquiry')
+    .row.margin-bottom-30(ng-controller='MainController as ctrl')
+      //- .col-md-9.mb-margin-bottom-30
+      //-   .headline
+      //-     h2 #{__('contact.form.title')}
+      //-   p
+      //-     | #{__('contact.form.description')}
+      //-   br
+      //-   form#sky-form3.sky-form.sky-changes-3(ng-submit='ctrl.submit()', name="inquiryForm")
+      //-     fieldset
+      //-       .row
+      //-         section.col.col-6
+      //-           label.label #{__('contact.form.name')}
+      //-           label.input(ng-class='inquiryForm.name.$error.required && inquiryForm.name.$dirty ? "state-error" : ""')
+      //-             i.icon-append.fa.fa-user
+      //-             input#name(type='text', name='name', ng-model='ctrl.inquiry.name', required)
+      //-           em.invalid(for='name', ng-show='inquiryForm.name.$error.required && inquiryForm.name.$dirty') ご氏名を入力してください
+      //-         section.col.col-6
+      //-           label.label #{__('contact.form.email')}
+      //-           label.input(ng-class='(inquiryForm.email.$error.required || inquiryForm.email.$error.email) && inquiryForm.email.$dirty ? "state-error" : ""')
+      //-             i.icon-append.fa.fa-envelope-o
+      //-             input#email(type='email', name='email', ng-model='ctrl.inquiry.email', required)
+      //-           em.invalid(for='email', ng-show='inquiryForm.email.$error.required && inquiryForm.email.$dirty') メールアドレスを入力してください
+      //-           em.invalid(for='email', ng-show='inquiryForm.email.$error.email && inquiryForm.email.$dirty') 正しいフォーマットでメールアドレスを入力してください
+      //-       section
+      //-         label.label #{__('contact.form.subject')}
+      //-         label.input
+      //-           i.icon-append.fa.fa-tag
+      //-           input#subject(type='text', name='subject', ng-model='ctrl.inquiry.subject', required)
+      //-       section
+      //-         label.label #{__('contact.form.message')}
+      //-         label.textarea
+      //-           i.icon-append.fa.fa-comment
+      //-           textarea#message(rows='4', name='message', ng-model='ctrl.inquiry.message', required)
+      //-     footer
+      //-       button.btn.btn-u(type='submit', ng-disabled='inquiryForm.$invalid') #{__('contact.form.send')}
+      //-     .message
+      //-       i.rounded-x.fa.fa-check
+      //-       p #{__('contact.form.success')}
+
+      .col-md-4
+        // Contacts
+        .headline
+          h2 会社案内
+        ul.list-unstyled.who.margin-bottom-30
+          li
+            i.fa.fa-home
+            | 東京都港区芝2-28-8 芝2丁目ビル10階
+          li
+            i.fa.fa-envelope
+            | info@e-business.co.jp
+          li
+            i.fa.fa-phone
+            | 03-6809-3235
+          li
+            i.fa.fa-globe
+            a(href="http://www.e-business.co.jp") http://www.e-business.co.jp
+      .col-md-4
+        // Business Hours
+        .headline
+          h2 営業時間
+        ul.list-unstyled.margin-bottom-30
+          li
+            strong 平日:
+            |  9:30 〜 18:00
+          //- li
+          //-   strong #{__('contact.time.saturday')}
+          //-   |  11am 〜 15pm
+          //- li
+          //-   strong #{__('contact.time.sunday')}
+          //-   | #{__('contact.time.rest')}

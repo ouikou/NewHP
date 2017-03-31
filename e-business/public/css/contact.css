@@ -1,7 +1,10 @@
-@import url(../components/bootstrap/dist/css/bootstrap.min.css);
-@import url(../components/simple-line-icons/css/simple-line-icons.css);
-@import url(../components/font-awesome/css/font-awesome.min.css);
-@import url(../unify/pages/page_contact.css);
-@import url(../unify/style.css);
-@import url(../unify/theme-colors/blue.css);
-@import url(custom.css);
+@import url('common.css');
+/*  CSS Implementing Plugins */
+@import url('../assets/plugins/animate.css');
+@import url('../assets/plugins/line-icons/line-icons.css');
+@import url('../assets/plugins/font-awesome/css/font-awesome.min.css');
+@import url('../assets/plugins/owl-carousel/owl-carousel/owl.carousel.css');
+@import url('../assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css');
+@import url('../assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css');
+/*  CSS Page Style */
+@import url('../assets/css/pages/page_contact.css');

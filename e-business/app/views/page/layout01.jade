@@ -1,0 +1,474 @@
+doctype html
+<!--[if IE 8]><html lang="ja" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="ja" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ja"><!--<![endif]-->
+  head
+    title About Us | Unify - Responsive Website Template
+    // Meta
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='shinesoft')
+    // Favicon
+    link(rel='shortcut icon', href='favicon.ico')
+    // Web Fonts
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin', rel='stylesheet')
+    // CSS Global Compulsory
+    link(rel='stylesheet', href='/assets/plugins/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/assets/css/style.css')
+    // CSS Header and Footer
+    link(rel='stylesheet', href='/assets/css/headers/header-default.css')
+    link(rel='stylesheet', href='/assets/css/footers/footer-default.css')
+    // CSS Implementing Plugins
+    link(rel='stylesheet', href='/assets/plugins/animate.css')
+    link(rel='stylesheet', href='/assets/plugins/line-icons/line-icons.css')
+    link(rel='stylesheet', href='/assets/plugins/font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/assets/plugins/parallax-slider/css/parallax-slider.css')
+    link(rel='stylesheet', href='/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css')
+    // CSS Theme
+    link#style_color(rel='stylesheet', href='/assets/css/theme-colors/blue.css')
+    link(rel='stylesheet', href='/assets/css/theme-skins/dark.css')
+    // CSS Customization
+    link(rel='stylesheet', href='/assets/css/custom.css')
+  body.header-fixed.header-fixed-space-default
+    .wrapper
+      // === Header ===
+      .header.header-sticky
+        .container
+          // Logo
+          a.logo(href='/home')
+            img(src='assets/img/themes/logo1-blue.png', alt='Logo')
+          // End Logo
+          // Topbar
+          .topbar
+            ul.loginbar.pull-right
+              li.hoverSelector
+                i.fa.fa-globe
+                a #{__('topBar').language}
+                ul.languages.hoverSelectorBlock
+                  li.active
+                    a(href='#')
+                      | #{__('topBar').languageOpt.ja}
+                      i.fa.fa-check
+                  li
+                    a(href='#') #{__('topBar').languageOpt.en}
+                  li
+                    a(href='#') #{__('topBar').languageOpt.zh}
+                = ' '
+              li.topbar-devider
+              li
+                a(href='page_login.html') #{__('topBar').login}
+          // End Topbar
+          // Toggle get grouped for better mobile display
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+            span.sr-only Toggle navigation
+            span.fa.fa-bars
+          // End Toggle
+        // /end container
+        // Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse.mega-menu.navbar-responsive-collapse
+          .container
+            ul.nav.navbar-nav
+              // home | about-us | service | recruitment | contact
+              li(class=(path === "home")?"active":"")
+                a(href='/home')
+                  | #{__('menu').home}
+              li(class=(path === "about-us")?"active":"")
+                a(href='/about-us')
+                  | #{__('menu').about}
+              li(class=(path === "services")?"active":"")
+                a(href='/services')
+                  | #{__('menu').service}
+              li(class=(path === "recruitment")?"active":"")
+                a(href='/recruitment')
+                  | #{__('menu').recruitment}
+              li(class=(path === "contact")?"active":"")
+                a(href='/contact')
+                  | #{__('menu').contact}
+              //End home | about-us | service | recruitment | contact
+          // /end container
+        // /navbar-collapse
+      // === End Header ===
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // === Slider ===
+      .slider-inner
+        #da-slider.da-slider
+          .da-slide
+            h2
+              i CLEAN & FRESH
+              br
+              i FULLY RESPONSIVE
+              br
+              i DESIGN
+            p
+              i Lorem ipsum dolor amet
+              br
+              i tempor incididunt ut
+              br
+              i veniam omnis
+            .da-img
+              img.img-responsive(src='assets/plugins/parallax-slider/img/1.png', alt='')
+          .da-slide
+            h2
+              i RESPONSIVE VIDEO
+              br
+              i SUPPORT AND
+              br
+              i MANY MORE
+            p
+              i Lorem ipsum dolor amet
+              br
+              i tempor incididunt ut
+            .da-img
+              iframe(src='http://player.vimeo.com/video/47911018', width='530', height='300', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+          .da-slide
+            h2
+              i USING BEST WEB
+              br
+              i SOLUTIONS WITH
+              br
+              i HTML5/CSS3
+            p
+              i Lorem ipsum dolor amet
+              br
+              i tempor incididunt ut
+              br
+              i veniam omnis
+            .da-img
+              img(src='assets/plugins/parallax-slider/img/html5andcss3.png', alt='image01')
+          .da-arrows
+            span.da-arrows-prev
+            span.da-arrows-next
+      // /slider
+      // === End Slider ===
+      // === Purchase Block ===
+      .purchase
+        .container
+          .row
+            .col-md-9.animated.fadeInLeft
+              span Unify is a clean and fully responsive incredible Template.
+              p
+                | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat corrupti quos.
+            .col-md-3.btn-buy.animated.fadeInRight
+              a.btn-u.btn-u-lg(href='/contact')
+                i.icon-envelope
+                |  お問合せ
+      // /row
+      // End Purchase Block
+
+      // === Content Part ===
+      .container.content
+        // Recent Works
+        .owl-carousel-v1.owl-work-v1.margin-bottom-40
+          .headline
+            h2.pull-left Recent Works
+            .owl-navigation
+              .customNavigation
+                a.owl-btn.prev-v2
+                  i.fa.fa-angle-left
+                a.owl-btn.next-v2
+                  i.fa.fa-angle-right
+            // /navigation
+          .owl-recent-works-v1
+            .item
+              a(href='#')
+                em.overflow-hidden
+                  img.img-responsive(src='assets/img/main/img1.jpg', alt='')
+                span
+                  strong Happy New Year
+                  i Anim pariatur cliche reprehenderit
+            .item
+              a(href='#')
+                em.overflow-hidden
+                  img.img-responsive(src='assets/img/main/img2.jpg', alt='')
+                span
+                  strong Award Winning Agency
+                  i Responsive Bootstrap Template
+            .item
+              a(href='#')
+                em.overflow-hidden
+                  img.img-responsive(src='assets/img/main/img3.jpg', alt='')
+                span
+                  strong Wolf Moon Officia
+                  i Pariatur prehe cliche reprehrit
+            .item
+              a(href='#')
+                em.overflow-hidden
+                  img.img-responsive(src='assets/img/main/img4.jpg', alt='')
+                span
+                  strong Food Truck Quinoa Nesciunt
+                  i Craft labore wes anderson cred
+            .item
+              a(href='#')
+                em.overflow-hidden
+                  img.img-responsive(src='assets/img/main/img5.jpg', alt='')
+                span
+                  strong Happy New Year
+                  i Anim pariatur cliche reprehenderit
+            .item
+              a(href='#')
+                em.overflow-hidden
+                  img.img-responsive(src='assets/img/main/img1.jpg', alt='')
+                span
+                  strong Happy New Year
+                  i Anim pariatur cliche reprehenderit
+            .item
+              a(href='#')
+                em.overflow-hidden
+                  img.img-responsive(src='assets/img/main/img2.jpg', alt='')
+                span
+                  strong Award Winning Agency
+                  i Responsive Bootstrap Template
+            .item
+              a(href='#')
+                em.overflow-hidden
+                  img.img-responsive(src='assets/img/main/img3.jpg', alt='')
+                span
+                  strong Wolf Moon Officia
+                  i Pariatur prehe cliche reprehrit
+            .item
+              a(href='#')
+                em.overflow-hidden
+                  img.img-responsive(src='assets/img/main/img4.jpg', alt='')
+                span
+                  strong Food Truck Quinoa Nesciunt
+                  i Craft labore wes anderson cred
+            .item
+              a(href='#')
+                em.overflow-hidden
+                  img.img-responsive(src='assets/img/main/img5.jpg', alt='')
+                span
+                  strong Happy New Year
+                  i Anim pariatur cliche reprehenderit
+        // End Recent Works
+      // /container
+      // End Content Part
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // === Footer ===
+      #footer-default.footer-default
+        .footer
+          .container
+            .row
+              .col-md-4.md-margin-bottom-40
+                // About
+                .headline
+                  h2 #{__('footer').brand}
+                p.margin-bottom-25.md-margin-bottom-40
+                p #{__('footer').statement1}
+                p #{__('footer').statement2}
+                p #{__('footer').statement3}
+                p #{__('footer').statement4}
+                // End About
+              // /col-md-4
+              .col-md-4.md-margin-bottom-40
+                // Recent News
+                .posts
+                  .headline
+                    h2 #{__('footer').news.header}
+                  dl.dl-horizontal
+                    dt
+                      a(href='#')
+                        img(src='assets/img/sliders/elastislide/6.jpg', alt='')
+                    dd
+                      p
+                        a(href='#') #{__('footer').news.news1.title}
+                      small #{__('footer').news.news1.date}
+                  dl.dl-horizontal
+                    dt
+                      a(href='#')
+                        img(src='assets/img/sliders/elastislide/10.jpg', alt='')
+                    dd
+                      p
+                        a(href='#') #{__('footer').news.news2.title}
+                      small #{__('footer').news.news2.date}
+                  dl.dl-horizontal
+                    dt
+                      a(href='#')
+                        img(src='assets/img/sliders/elastislide/11.jpg', alt='')
+                    dd
+                      p
+                        a(href='#') #{__('footer').news.news3.title}
+                      small #{__('footer').news.news3.date}
+                // End Recent News
+              // /col-md-4
+              .col-md-4
+                // Contact Us
+                .headline
+                  h2 #{__('footer').contact.header}
+                address.md-margin-bottom-40
+                  | #{__('footer').contact.address}
+                  br
+                  | #{__('footer').contact.zipCode}
+                  br
+                  | #{__('footer').contact.tel}
+                  br
+                  | #{__('footer').contact.fax}
+                  br
+                  | #{__('footer').contact.email}
+                  a(href='mailto:info@shinesoft.co.jp') info@shinesoft.co.jp
+                // End Contact Us
+                // Social Links
+                .headline
+                  h2 Stay Connected
+                ul.social-icons
+                  li
+                    a.social_rss(href='#', data-original-title='Feed')
+                  li
+                    a.social_facebook(href='#', data-original-title='Facebook')
+                  li
+                    a.social_twitter(href='#', data-original-title='Twitter')
+                  li
+                    a.social_googleplus(href='#', data-original-title='Goole Plus')
+                  li
+                    a.social_pintrest(href='#', data-original-title='Pinterest')
+                  li
+                    a.social_linkedin(href='#', data-original-title='Linkedin')
+                  li
+                    a.social_vimeo(href='#', data-original-title='Vimeo')
+                // End Social Links
+              // /col-md-4
+        // /footer
+        .copyright
+          .container
+            .row
+              .col-md-6
+                p
+                  | #{__('copyright').statement}
+                  = ' '
+                  a(href='#') #{__('copyright').privacy}
+                  = ' | '
+                  a(href='#') #{__('copyright').terms}
+              .col-md-6
+                a(href='index.html')
+                  img#logo-footer.pull-right(src='assets/img/themes/logo2-blue.png', alt='')
+        // /copyright
+      // === End Footer ===
+    // /wrapper
+
+    // === Style Switcher ===
+    i.style-switcher-btn.fa.fa-cogs.hidden-xs
+    .style-switcher.animated.fadeInRight
+      .style-swticher-header
+        .style-switcher-heading Style Switcher
+        .theme-close
+          i.icon-close
+      .style-swticher-body
+        // Theme Colors
+        .style-switcher-heading Theme Colors
+        ul.list-unstyled
+          li.theme-default(data-style='default', data-header='light')
+          li.theme-blue.theme-active(data-style='blue', data-header='light')
+          li.theme-orange(data-style='orange', data-header='light')
+          li.theme-red(data-style='red', data-header='light')
+          li.theme-light(data-style='light', data-header='light')
+          li.theme-purple.last(data-style='purple', data-header='light')
+          li.theme-aqua(data-style='aqua', data-header='light')
+          li.theme-brown(data-style='brown', data-header='light')
+          li.theme-dark-blue(data-style='dark-blue', data-header='light')
+          li.theme-light-green(data-style='light-green', data-header='light')
+          li.theme-dark-red(data-style='dark-red', data-header='light')
+          li.theme-teal.last(data-style='teal', data-header='light')
+        // Theme Skins
+        .style-switcher-heading Theme Skins
+        .row.no-col-space.margin-bottom-20.skins-section
+          .col-xs-6
+            button.btn-u.btn-u-xs.btn-u-dark.btn-block.active-switcher-btn.handle-skins-btn(data-skins='default') Light
+          .col-xs-6
+            button.btn-u.btn-u-xs.btn-u-dark.btn-block.skins-btn(data-skins='dark') Dark
+        hr
+        // Layout Styles
+        .style-switcher-heading Layout Styles
+        .row.no-col-space.margin-bottom-20
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block.active-switcher-btn.wide-layout-btn(href='javascript:void(0);') Wide
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block.boxed-layout-btn(href='javascript:void(0);') Boxed
+        hr
+        // Theme Type
+        .style-switcher-heading Theme Types and Versions
+        .row.no-col-space.margin-bottom-10
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block(href='E-Commerce/index.html')
+              | Shop UI
+              small.dp-block Template
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block(href='One-Pages/Classic/index.html')
+              | One Page
+              small.dp-block Template
+        .row.no-col-space
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block(href='Blog-Magazine/index.html')
+              | Blog
+              small.dp-block Template
+          .col-xs-6
+            a.btn-u.btn-u-xs.btn-u-dark.btn-block(href='RTL/index.html')
+              | RTL
+              small.dp-block Version
+    // /style-switcher
+    // === End Style Switcher ===
+
+    // JS Global Compulsory
+    script(type='text/javascript', src='assets/plugins/jquery/jquery.min.js')
+    script(type='text/javascript', src='assets/plugins/jquery/jquery-migrate.min.js')
+    script(type='text/javascript', src='assets/plugins/bootstrap/js/bootstrap.min.js')
+    // JS Implementing Plugins
+    script(type='text/javascript', src='assets/plugins/back-to-top.js')
+    script(type='text/javascript', src='assets/plugins/smoothScroll.js')
+    script(type='text/javascript', src='assets/plugins/parallax-slider/js/modernizr.js')
+    script(type='text/javascript', src='assets/plugins/parallax-slider/js/jquery.cslider.js')
+    script(type='text/javascript', src='assets/plugins/owl-carousel/owl-carousel/owl.carousel.js')
+    // JS Customization
+    script(type='text/javascript', src='assets/js/custom.js')
+    // JS Page Level
+    script(type='text/javascript', src='assets/js/app.js')
+    script(type='text/javascript', src='assets/js/plugins/owl-carousel.js')
+    script(type='text/javascript', src='assets/js/plugins/style-switcher.js')
+    script(type='text/javascript', src='assets/js/plugins/parallax-slider.js')
+    script(type='text/javascript', src='assets/js/plugins/owl-recent-works.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function() {
+      App.init();
+      StyleSwitcher.initStyleSwitcher();
+      OwlCarousel.initOwlCarousel();
+      OwlRecentWorks.initOwlRecentWorksV2();
+      ParallaxSlider.initParallaxSlider();
+      });
+    //if lt IE 9
+      script(src='assets/plugins/respond.js')
+      script(src='assets/plugins/html5shiv.js')
+      script(src='assets/plugins/placeholder-IE-fixes.js')
