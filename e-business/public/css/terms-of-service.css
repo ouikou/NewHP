@@ -1,0 +1,5 @@
+@import url('common.css');
+/*  CSS Implementing Plugins */
+@import url('../assets/plugins/animate.css');
+@import url('../assets/plugins/line-icons/line-icons.css');
+@import url('../assets/plugins/font-awesome/css/font-awesome.min.css');

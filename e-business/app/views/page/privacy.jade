@@ -1,50 +1,91 @@
 extends ../layout
 
 block css
-  link(rel="stylesheet", href="/css/common.css")
+  link(rel="stylesheet", href="/css/privacy.css")
 
 block js
-  //- script(src="components/jquery/dist/jquery.js")
-  //- script(src="components/bootstrap/dist/js/bootstrap.js")
-  //- script(src="components/fastclick/lib/fastclick.js")
-  //- script(src="components/back-to-top/index.js")
-  //- script(src="components/gsap/src/minified/TweenMax.min.js")
-  //- script(src="components/jpreloader/js/jpreloader.min.js")
-  script(src="js/common.js")
-    
+  // JS Global Compulsory
+  script(type='text/javascript', src='assets/plugins/jquery/jquery.min.js')
+  script(type='text/javascript', src='assets/plugins/jquery/jquery-migrate.min.js')
+  script(type='text/javascript', src='assets/plugins/bootstrap/js/bootstrap.min.js')
+  // JS Implementing Plugins
+  script(type='text/javascript', src='assets/plugins/back-to-top.js')
+  script(type='text/javascript', src='assets/plugins/smoothScroll.js')
+  // JS Page Level
+  script(type='text/javascript', src='assets/js/app.js')
+  script(type='text/javascript', src='assets/js/plugins/style-switcher.js')
+  // JS Customization
+  script(src="/js/common.js")
+  script(src="/js/privacy.js")
+  != '\n<!--[if lt IE 9]>'
+  script(src='assets/plugins/respond.js')
+  script(src='assets/plugins/html5shiv.js')
+  script(src='ssets/plugins/placeholder-IE-fixes.js')
+  != '\n<![endif]-->\n'
+
 block breadcrumbs
+  // === Breadcrumbs ===
   .breadcrumbs
     .container
-      h1.pull-left 個人情報保護方針
+      h1.pull-left Privacy Policy
+  // /breadcrumbs
+  // === End Breadcrumbs ===
+
 
 block content
+  // === Content Part ===
   .container.content
-    .shadow-wrapper.margin-bottom-60
-      .tag-box.tag-box-v1.box-shadow.shadow-effect-2
-        h4 当社は、システム開発・運用等の事業を営むにあたり、個人情報を取得・利用させて頂いている社会的責任を充分認識し、個人情報の適切な取り扱いと保護に全社を挙げて取り組むことを宣言します。
-    .margin-bottom-30
-      .service
-        i.service-icon.icon-loop
-        .desc
-          h4.no-top-space 個人情報保護マネジメントシステム」の策定及び継続的改善
-          p 当社は、個人情報保護の重要性を強く認識し、個人情報を適切に利用し、保護するための「個人情報保護マネジメントシステム」を策定し、これを着実に実施・維持し、継続的に改善する。
-      .service
-        i.service-icon.icon-envelope-letter
-        .desc
-          h4.no-top-space 個人情報収集、利用、提供
-          p 当社は、個人情報保護のためのマネジメントシステムを確立し、情報通信サービス産業における適切な個人情報の収集、利用、提供を実現する。また、目的を逸脱した利用がなされない様に確認手順を設けて実施し、体制整備と安全措置を講じます。
-      .service
-        i.service-icon.icon-lock
-        .desc
-          h4.no-top-space 安全対策の実施
-          p 当社は、個人情報の正確性及び安全性を確保するため、安全対策を実施し、個人情報に対する不正アクセス、個人情報の紛失、破壊、改竄及び漏洩等の予防並びに是正に関する適切な措置を講じます。
-      .service
-        i.service-icon.icon-support
-        .desc
-          h4.no-top-space 情報主体の権利尊重
-          p 当社は、個人情報に関する本人の権利を尊重し、本人からの苦情及び相談へは、社会通念や慣行上の合理的な範囲でこれに応じる。
-      .service
-        i.service-icon.icon-book-open
-        .desc
-          h4.no-top-space 法令、規範の遵守
-          p 当社は、個人情報に関する法令及びその他の規範を遵守する。また、当社の「個人情報保護マネジメントシステム」をこれらの法令及びその他の規範に適合させていく。
+    .row-fluid.privacy
+      p.lead
+        em
+          | 個人情報保護方針
+      br
+      ol
+        li.h4
+          | 個人情報の収集と利用
+        p
+          | 弊社が収集したお客様個人に関する情報（以下、「個人情報」といいます）は、サービス提供上必要なものに限ります。 また、個人情報のご利用は、収集目的から逸脱しない範囲とし、以下の目的の範囲内とします。
+        ol
+          li
+            | 業務上のご連絡、特に弊社とお客様又はお客様の所属する事業者との取引に関するご連絡や、その連絡履歴の管理。
+          li
+            | お客様が弊社製品の利用者である場合に、当該製品に関する技術・営業情報のご提供や、その提供履歴の管理。
+          li
+            | 上記 (1、2) に加え、取得時に弊社が利用目的を明示している場合にはその利用目的。
+        br
+        li.h4
+          | 個人情報の管理と保護
+        p
+          | 弊社が取得した個人情報に関して、必要なデータ以外は、電子処理にてマスクし最低限度の情報のみ利用いたします。
+        ol
+          li
+            | 個人情報への不正アクセス、紛失、破壊、改ざん及び漏えい等を防止する為の措置を講じております。
+          li
+            | お客様が弊社製品の利用者である場合に、当該製品に関する技術・営業情報のご提供や、その提供履歴の管理。
+          li
+            | 弊社が、個人情報の処理を外部へ委託する場合には、漏えいや再提供を行わないよう契約により義務づけ、適切な管理をさせていただきます。
+          li
+            | 委託元よりお預かりした個人情報は、厳正なる管理を行い契約の範囲内で利用いたします。
+        br
+        li.h4
+          | 法令、規範の遵守
+        p
+          | 弊社は、常時「個人情報保護管理責任者」を配し、弊社が所有する個人情報に関して適用される法令、規範を遵守いたします。
+        br
+        li.h4
+          | 個人情報保護管理体制及び仕組みの継続改善
+        p
+          | 弊社では、個人情報保護に関する重要性は役員及び社員全員が認識しており、上記取組み及び保護活動を、維持、改善しています。
+        br
+      p
+        | ※個人情報保護方針に関するお問合せは、
+        a(href='mailto:info@shinesoft.co.jp') info@shinesoft.co.jp
+        = ' '
+        | までご連絡ください。
+      .col-sm-11.col-md-11.text-right
+        p 制定：平成18年6月1日
+        p 株式会社シャインソフト
+        p 個人情報保護管理責任者
+    // /row-fluid
+  // /container
+  // === End Content Part ===
