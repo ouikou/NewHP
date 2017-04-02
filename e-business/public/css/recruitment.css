@@ -1,0 +1,10 @@
+@import url('common.css');
+/*  CSS Implementing Plugins */
+@import url('../assets/plugins/animate.css');
+@import url('../assets/plugins/line-icons/line-icons.css');
+@import url('../assets/plugins/font-awesome/css/font-awesome.min.css');
+@import url('../assets/plugins/hover-effects/css/custom-hover-effects.css');
+@import url('../assets/plugins/owl-carousel/owl-carousel/owl.carousel.css');
+/*  CSS Page Style */
+@import url('../assets/css/pages/page_job_inner1.css');
+@import url('../assets/css/pages/page_pricing.css');

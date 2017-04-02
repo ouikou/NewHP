@@ -1,1 +1,50 @@
 /* Add here all your css styles (customizations) */
+.tab-v1 .nav-tabs > .regular-employee > a:hover,
+.tab-v1 .nav-tabs > .regular-employee.active > a,
+.tab-v1 .nav-tabs > .regular-employee.active > a:hover,
+.tab-v1 .nav-tabs > .regular-employee.active > a:focus {
+	color: #fff;
+	border: none;
+	background: #2ecc71;
+}
+
+.tab-v1 .nav-tabs > .contract-employee > a:hover,
+.tab-v1 .nav-tabs > .contract-employee.active > a,
+.tab-v1 .nav-tabs > .contract-employee.active > a:hover,
+.tab-v1 .nav-tabs > .contract-employee.active > a:focus {
+	color: #fff;
+	border: none;
+	background: #e67e22;
+}
+
+.tab-v1 .nav-tabs > .free-employee > a:hover,
+.tab-v1 .nav-tabs > .free-employee.active > a,
+.tab-v1 .nav-tabs > .free-employee.active > a:hover,
+.tab-v1 .nav-tabs > .free-employee.active > a:focus {
+	color: #fff;
+	border: none;
+	background: #9b6bcc;
+}
+
+
+.pricing-head.regular-employee h3 {
+	background: #2ecc71;
+	text-shadow: 0 1px 0 #2980b9;
+}
+
+.pricing-head.contract-employee h3 {
+	background: #e67e22;
+	text-shadow: 0 1px 0 #2980b9;
+}
+
+.pricing-head.free-employee h3 {
+	background: #9b6bcc;
+	text-shadow: 0 1px 0 #2980b9;
+}
+
+.job-description .right-inner img#owl-carousel {
+	float: left;
+	width: auto;
+	height: auto;
+	margin-right: 10px;
+}

@@ -1,0 +1,356 @@
+extends ../layout
+
+block css
+  link(rel="stylesheet", href="css/about-us.css")
+
+block js
+  // JS Global Compulsory
+  script(type='text/javascript', src='assets/plugins/jquery/jquery.min.js')
+  script(type='text/javascript', src='assets/plugins/jquery/jquery-migrate.min.js')
+  script(type='text/javascript', src='assets/plugins/bootstrap/js/bootstrap.min.js')
+  // JS Implementing Plugins
+  script(type='text/javascript', src='assets/plugins/back-to-top.js')
+  script(type='text/javascript', src='assets/plugins/smoothScroll.js')
+  script(type='text/javascript', src='assets/plugins/image-hover/js/touch.js')
+  script(type='text/javascript', src='assets/plugins/image-hover/js/modernizr.js')
+  // JS Page Level
+  script(type='text/javascript', src='assets/js/app.js')
+  script(type='text/javascript', src='assets/js/plugins/style-switcher.js')
+  // JS Customization
+  script(src="js/common.js")
+  script(src="js/about-us.js")
+  != '\n<!--[if lt IE 9]>'
+  script(src='assets/plugins/respond.js')
+  script(src='assets/plugins/html5shiv.js')
+  script(src='assets/plugins/placeholder-IE-fixes.js')
+  != '\n<![endif]-->\n'
+
+block breadcrumbs
+  // === Breadcrumbs ===
+  .breadcrumbs
+    .container
+      h1.pull-left About Us
+  // /breadcrumbs
+  // === End Breadcrumbs ===
+
+block content
+  // Icon Boxes 31
+  .container
+    .title-box-v2
+      h2
+        | About
+        = ' '
+        span.color-green Shinesoft
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    .row
+      .col-md-4
+        .content-boxes-v5.margin-bottom-30
+          i.rounded-x.icon-star
+          .overflow-h
+            h3.no-top-space 設立日
+            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
+        .content-boxes-v5.md-margin-bottom-30
+          i.rounded-x.icon-diamond
+          .overflow-h
+            h3.no-top-space 資本金3800万円
+            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
+      .col-md-4
+        .content-boxes-v5.margin-bottom-30
+          i.rounded-x.icon-user-following
+          .overflow-h
+            h3.no-top-space 代表者
+            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
+        .content-boxes-v5.md-margin-bottom-30
+          i.rounded-x.icon-finance-011
+          .overflow-h
+            h3.no-top-space 取引銀行
+            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
+      .col-md-4
+        .content-boxes-v5.margin-bottom-30
+          i.rounded-x.icon-pointer
+          .overflow-h
+            h3.no-top-space 所在地
+            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
+        .content-boxes-v5.md-margin-bottom-30
+          i.rounded-x.icon-rocket
+          .overflow-h
+            h3.no-top-space 派遣事業
+            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
+  // End Icon Boxes 31
+  // === Begin Timeline ===
+  .container.content-md.parallax-counter-v2.parallaxBg1
+    .title-box-v2
+      h2
+        | Our Company
+        = ' '
+        span.color-green Life
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    ul.timeline-v2
+      li.equal-height-columns
+        .cbp_tmtime.equal-height-column
+          span 4/1/08
+          span January
+        i.cbp_tmicon.rounded-x.hidden-xs
+        .cbp_tmlabel.equal-height-column
+          h2 Our first step
+          .row
+            .col-md-4
+              img.img-responsive(src='assets/img/main/img1.jpg', alt='')
+              .md-margin-bottom-20
+            .col-md-8
+              p
+                | Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape.
+              p
+                | Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato.
+      li.equal-height-columns
+        .cbp_tmtime.equal-height-column
+          span 7/2/09
+          span February
+        i.cbp_tmicon.rounded-x.hidden-xs
+        .cbp_tmlabel.equal-height-column
+          h2 First achievements
+          p
+            | Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
+          .row
+            .col-sm-6
+              ul.list-unstyled
+                li
+                  i.fa.fa-check.color-green
+                  |  Donec id elit non mi porta gravida
+                li
+                  i.fa.fa-check.color-green
+                  |  Corporate and Creative
+                li
+                  i.fa.fa-check.color-green
+                  |  Responsive Bootstrap Template
+                li
+                  i.fa.fa-check.color-green
+                  |  Corporate and Creative
+            .col-sm-6
+              ul.list-unstyled
+                li
+                  i.fa.fa-check.color-green
+                  |  Donec id elit non mi porta gravida
+                li
+                  i.fa.fa-check.color-green
+                  |  Corporate and Creative
+                li
+                  i.fa.fa-check.color-green
+                  |  Responsive Bootstrap Template
+                li
+                  i.fa.fa-check.color-green
+                  |  Corporate and Creative
+      li.equal-height-columns
+        .cbp_tmtime.equal-height-column
+          span 28/6/12
+          span May
+        i.cbp_tmicon.rounded-x.hidden-xs
+        .cbp_tmlabel.equal-height-column
+          h2 Difficulties
+          p
+            | Parsley amaranth tigernut silver beet maize fennel spinach. Ricebean black-eyed pea maize scallion green bean spinach cabbage jícama bell pepper carrot onion corn plantain garbanzo. Sierra leone bologi komatsuna celery peanut swiss chard silver beet squash dandelion maize chicory burdock tatsoi dulse radish wakame beetroot.
+      li.equal-height-columns
+        .cbp_tmtime.equal-height-column
+          span 11/3/10
+          span March
+        i.cbp_tmicon.rounded-x.hidden-xs
+        .cbp_tmlabel.equal-height-column
+          h2 Our Popularity
+          p
+            | Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard.
+          .margin-bottom-20
+          .row
+            .col-sm-6
+              // Progress Bar Text
+              .progress-bar-text
+                p.text-left HTML & CSS
+                p.text-right 91%
+                .progress.progress-u.progress-xs
+                  .progress-bar.progress-bar-u.progress-bar-u-success(role='progressbar', aria-valuenow='91', aria-valuemin='0', aria-valuemax='100', style='width: 91%')
+              // End Progress Bar Text
+              // Progress Bar Text
+              .progress-bar-text
+                p.text-left Web Animation
+                p.text-right 55%
+                .progress.progress-u.progress-xs
+                  .progress-bar.progress-bar-u.progress-bar-u-info(role='progressbar', aria-valuenow='55', aria-valuemin='0', aria-valuemax='100', style='width: 55%')
+              // End Progress Bar Text
+            .col-sm-6
+              // Progress Bar Text
+              .progress-bar-text
+                p.text-left Web Design
+                p.text-right 67%
+                .progress.progress-u.progress-xs
+                  .progress-bar.progress-bar-u.progress-bar-u-danger(role='progressbar', aria-valuenow='67', aria-valuemin='0', aria-valuemax='100', style='width: 67%')
+              // End Progress Bar Text
+              // Progress Bar Text
+              .progress-bar-text
+                p.text-left PHP & Javascript
+                p.text-right 73%
+                .progress.progress-u.progress-xs
+                  .progress-bar.progress-bar-u.progress-bar-u-warning(role='progressbar', aria-valuenow='73', aria-valuemin='0', aria-valuemax='100', style='width: 73%')
+              // End Progress Bar Text
+      li.equal-height-columns
+        .cbp_tmtime.equal-height-column
+          span 2/4/11
+          span April
+        i.cbp_tmicon.rounded-x.hidden-xs
+        .cbp_tmlabel.equal-height-column
+          h2 Back to the past
+          p
+            | Peanut gourd nori welsh onion rock melon mustard jícama. Desert raisin amaranth kombu aubergine kale seakale brussels sprout pea. Black-eyed pea celtuce bamboo shoot salad kohlrabi leek squash prairie turnip catsear rock melon chard taro broccoli turnip greens. Fennel quandong potato watercress ricebean swiss chard garbanzo. Endive daikon brussels sprout lotus root silver beet epazote melon shallot.
+      li.equal-height-columns
+        .cbp_tmtime.equal-height-column
+          span 18/7/13
+          span June
+        i.cbp_tmicon.rounded-x.hidden-xs
+        .cbp_tmlabel.equal-height-column
+          h2 Unify in recent years
+          p
+            | Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.
+          p
+            | Bitterleaf celery coriander epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout.
+          .margin-bottom-20
+          .row
+            .col-md-4.col-xs-6
+              img.img-responsive.md-margin-bottom-10(src='assets/img/main/img2.jpg', alt='')
+            .col-md-4.col-xs-6
+              img.img-responsive.md-margin-bottom-10(src='assets/img/main/img4.jpg', alt='')
+            .col-md-4.col-xs-6
+              img.img-responsive.md-margin-bottom-10(src='assets/img/main/img3.jpg', alt='')
+  // === End Timeline ===
+  // === Job Partners ===
+  .container.job-partners
+    .title-box-v2
+      h2
+        | Our Featured
+        = ' '
+        span.color-green Partners
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    ul#effect-2.list-inline.our-clients
+      li
+        figure
+          img(src='assets/img/clients2/ea-canada.png', alt='')
+          .img-hover
+            h4 Ea Canada
+      li
+        figure
+          img(src='assets/img/clients2/inspiring.png', alt='')
+          .img-hover
+            h4 Inspiring
+      li
+        figure
+          img(src='assets/img/clients2/ucweb.png', alt='')
+          .img-hover
+            h4 UcWeb
+      li
+        figure
+          img(src='assets/img/clients2/clarks.png', alt='')
+          .img-hover
+            h4 Clarks
+      li
+        figure
+          img(src='assets/img/clients2/corepreserves.png', alt='')
+          .img-hover
+            h4 Core Preserves
+      li
+        figure
+          img(src='assets/img/clients2/finals.png', alt='')
+          .img-hover
+            h4 USL Champions
+      li
+        figure
+          img(src='assets/img/clients2/getaround.png', alt='')
+          .img-hover
+            h4 GetAround
+      li
+        figure
+          img(src='assets/img/clients2/baderbrau.png', alt='')
+          .img-hover
+            h4 Baderbrau
+      li
+        figure
+          img(src='assets/img/clients2/emirates.png', alt='')
+          .img-hover
+            h4 Emirates
+      li
+        figure
+          img(src='assets/img/clients2/fddw.png', alt='')
+          .img-hover
+            h4 Field Days
+      li
+        figure
+          img(src='assets/img/clients2/district-karaoke.png', alt='')
+          .img-hover
+            h4 District Karaoke
+      li
+        figure
+          img(src='assets/img/clients2/marianos.png', alt='')
+          .img-hover
+            h4 Mariano's
+      li
+        figure
+          img(src='assets/img/clients2/grifting-tree.png', alt='')
+          .img-hover
+            h4 The Grifting Tree
+      li
+        figure
+          img(src='assets/img/clients2/jaguar.png', alt='')
+          .img-hover
+            h4 Jaguar
+      li
+        figure
+          img(src='assets/img/clients2/hermes.png', alt='')
+          .img-hover
+            h4 Hermes
+      li
+        figure
+          img(src='assets/img/clients2/starbucks.png', alt='')
+          .img-hover
+            h4 Starbucks
+      li
+        figure
+          img(src='assets/img/clients2/national-geographic.png', alt='')
+          .img-hover
+            h4 National Geographic
+      li
+        figure
+          img(src='assets/img/clients2/much-more.png', alt='')
+          .img-hover
+            h4 Much More
+      li
+        figure
+          img(src='assets/img/clients2/hotiron.png', alt='')
+          .img-hover
+            h4 Hotiron
+      li
+        figure
+          img(src='assets/img/clients2/fred-perry.png', alt='')
+          .img-hover
+            h4 Fred Perry
+      li
+        figure
+          img(src='assets/img/clients2/bellfield.png', alt='')
+          .img-hover
+            h4 Bellfield
+      li
+        figure
+          img(src='assets/img/clients2/getapp.png', alt='')
+          .img-hover
+            h4 GetApp
+      li
+        figure
+          img(src='assets/img/clients2/austrian-airlines.png', alt='')
+          .img-hover
+            h4 Austrian Airlines
+      li
+        figure
+          img(src='assets/img/clients2/general-electric.png', alt='')
+          .img-hover
+            h4 General Electronic
+  // /container
+  // === End Job Partners ===

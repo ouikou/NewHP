@@ -1,8 +1,13 @@
-@import url(../components/bootstrap/dist/css/bootstrap.min.css);
-@import url(../components/simple-line-icons/css/simple-line-icons.css);
-@import url(../components/font-awesome/css/font-awesome.min.css);
-@import url(../components/image-hover/css/img-hover.css);
-@import url(../unify/pages/feature_timeline1.css);
-@import url(../unify/style.css);
-@import url(../unify/theme-colors/blue.css);
-@import url(custom.css);
+@import url('common.css');
+/*  CSS Implementing Plugins */
+@import url('../assets/plugins/animate.css');
+@import url('../assets/plugins/line-icons/line-icons.css');
+@import url('../assets/plugins/line-icons-pro/styles.css');
+@import url('../assets/plugins/image-hover/css/img-hover.css');
+@import url('../assets/plugins/font-awesome/css/font-awesome.min.css');
+/*  CSS Page Style */
+
+@import url('../assets/css/pages/page_job.css');
+@import url('../assets/css/pages/page_search.css');
+@import url('../assets/css/pages/profile.css');
+@import url('../assets/css/pages/shortcode_timeline2.css');

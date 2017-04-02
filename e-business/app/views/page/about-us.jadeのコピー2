@@ -1,7 +1,10 @@
 extends ../layout
 
 block css
-  link(rel="stylesheet", href="css/about-us.css")
+  link(rel="stylesheet", href='css/about-us.css')
+  != '\n<!--[if lt IE 9]>'
+  link(rel="stylesheet", href='assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css')
+  != '\n<![endif]-->\n'
 
 block js
   // JS Global Compulsory
@@ -11,8 +14,6 @@ block js
   // JS Implementing Plugins
   script(type='text/javascript', src='assets/plugins/back-to-top.js')
   script(type='text/javascript', src='assets/plugins/smoothScroll.js')
-  script(type='text/javascript', src='assets/plugins/image-hover/js/touch.js')
-  script(type='text/javascript', src='assets/plugins/image-hover/js/modernizr.js')
   // JS Page Level
   script(type='text/javascript', src='assets/js/app.js')
   script(type='text/javascript', src='assets/js/plugins/style-switcher.js')
@@ -34,61 +35,56 @@ block breadcrumbs
   // === End Breadcrumbs ===
 
 block content
-  // Icon Boxes 31
+  // === Content ===
   .container.content
-    .title-box-v2
-      h2
-        | About
-        = ' '
-        span.color-green Shinesoft
-      p
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-    .row
-      .col-md-4
-        .content-boxes-v5.margin-bottom-30
-          i.rounded-x.icon-star
-          .overflow-h
-            h3.no-top-space 設立日
-            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
-        .content-boxes-v5.md-margin-bottom-30
-          i.rounded-x.icon-diamond
-          .overflow-h
-            h3.no-top-space 資本金3800万円
-            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
-      .col-md-4
-        .content-boxes-v5.margin-bottom-30
-          i.rounded-x.icon-user-following
-          .overflow-h
-            h3.no-top-space 代表者
-            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
-        .content-boxes-v5.md-margin-bottom-30
-          i.rounded-x.icon-finance-011
-          .overflow-h
-            h3.no-top-space 取引銀行
-            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
-      .col-md-4
-        .content-boxes-v5.margin-bottom-30
-          i.rounded-x.icon-pointer
-          .overflow-h
-            h3.no-top-space 所在地
-            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
-        .content-boxes-v5.md-margin-bottom-30
-          i.rounded-x.icon-rocket
-          .overflow-h
-            h3.no-top-space 派遣事業
-            p Proin et augue vel nisi rhoncus tincidunt. Cras venenatis
-  // End Icon Boxes 31
-  // === Begin Timeline ===
-  .row.parallax-counter-v2
-    .container
-      .title-box-v2
-        h2
-          | Our Company
-          = ' '
-          span.color-green Life
-        p
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    // Top Categories
+    .headline
+      h2 Top Categories
+    // Begin Section-Block
+    .col-md-4.col-sm-12
+      .section-block
+        .text-center
+          i.rounded.icon-custom.icon-sm.icon-bg-darker.line-icon.icon-graph
+          h2 Popular Search
+          p
+            | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
+            a(href='#') View more
+        br
+        // Progress Bar
+        h3.heading-xs.no-top-space
+          | Web Design
+          span.pull-right 88%
+        .progress.progress-u.progress-xxs
+          .progress-bar.progress-bar-u(style='width: 88%', aria-valuemax='100', aria-valuemin='0', aria-valuenow='88', role='progressbar')
+        h3.heading-xs.no-top-space
+          | PHP/WordPress
+          span.pull-right 76%
+        .progress.progress-u.progress-xxs
+          .progress-bar.progress-bar-u(style='width: 76%', aria-valuemax='100', aria-valuemin='0', aria-valuenow='76', role='progressbar')
+        h3.heading-xs.no-top-space
+          | HTML/CSS
+          span.pull-right 97%
+        .progress.progress-u.progress-xxs
+          .progress-bar.progress-bar-u(style='width: 97%', aria-valuemax='100', aria-valuemin='0', aria-valuenow='97', role='progressbar')
+        // End Progress Bar
+        .clearfix
+        .section-block-info
+          ul.list-inline.tags-v1
+            li
+              a(href='#') #HTML5
+            li
+              a(href='#') #Bootstrap
+            li
+              a(href='#') #Blog and Portfolio
+            li
+              a(href='#') #Responsive
+            li
+              a(href='#') #Unify
+            li
+              a(href='#') #JavaScript
+    // End Section-Block
+    // Begin Content
+    .col-md-8
       ul.timeline-v2
         li.equal-height-columns
           .cbp_tmtime.equal-height-column
@@ -222,137 +218,7 @@ block content
                 img.img-responsive.md-margin-bottom-10(src='assets/img/main/img4.jpg', alt='')
               .col-md-4.col-xs-6
                 img.img-responsive.md-margin-bottom-10(src='assets/img/main/img3.jpg', alt='')
-  // === End Timeline ===
-
-  // === Job Partners ===
-  .container.content.job-partners
-    .title-box-v2
-      h2
-        | Our Featured
-        = ' '
-        span.color-green Partners
-      p
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    ul#effect-2.list-inline.our-clients
-      li
-        figure
-          img(src='assets/img/clients2/ea-canada.png', alt='')
-          .img-hover
-            h4 Ea Canada
-      li
-        figure
-          img(src='assets/img/clients2/inspiring.png', alt='')
-          .img-hover
-            h4 Inspiring
-      li
-        figure
-          img(src='assets/img/clients2/ucweb.png', alt='')
-          .img-hover
-            h4 UcWeb
-      li
-        figure
-          img(src='assets/img/clients2/clarks.png', alt='')
-          .img-hover
-            h4 Clarks
-      li
-        figure
-          img(src='assets/img/clients2/corepreserves.png', alt='')
-          .img-hover
-            h4 Core Preserves
-      li
-        figure
-          img(src='assets/img/clients2/finals.png', alt='')
-          .img-hover
-            h4 USL Champions
-      li
-        figure
-          img(src='assets/img/clients2/getaround.png', alt='')
-          .img-hover
-            h4 GetAround
-      li
-        figure
-          img(src='assets/img/clients2/baderbrau.png', alt='')
-          .img-hover
-            h4 Baderbrau
-      li
-        figure
-          img(src='assets/img/clients2/emirates.png', alt='')
-          .img-hover
-            h4 Emirates
-      li
-        figure
-          img(src='assets/img/clients2/fddw.png', alt='')
-          .img-hover
-            h4 Field Days
-      li
-        figure
-          img(src='assets/img/clients2/district-karaoke.png', alt='')
-          .img-hover
-            h4 District Karaoke
-      li
-        figure
-          img(src='assets/img/clients2/marianos.png', alt='')
-          .img-hover
-            h4 Mariano's
-      li
-        figure
-          img(src='assets/img/clients2/grifting-tree.png', alt='')
-          .img-hover
-            h4 The Grifting Tree
-      li
-        figure
-          img(src='assets/img/clients2/jaguar.png', alt='')
-          .img-hover
-            h4 Jaguar
-      li
-        figure
-          img(src='assets/img/clients2/hermes.png', alt='')
-          .img-hover
-            h4 Hermes
-      li
-        figure
-          img(src='assets/img/clients2/starbucks.png', alt='')
-          .img-hover
-            h4 Starbucks
-      li
-        figure
-          img(src='assets/img/clients2/national-geographic.png', alt='')
-          .img-hover
-            h4 National Geographic
-      li
-        figure
-          img(src='assets/img/clients2/much-more.png', alt='')
-          .img-hover
-            h4 Much More
-      li
-        figure
-          img(src='assets/img/clients2/hotiron.png', alt='')
-          .img-hover
-            h4 Hotiron
-      li
-        figure
-          img(src='assets/img/clients2/fred-perry.png', alt='')
-          .img-hover
-            h4 Fred Perry
-      li
-        figure
-          img(src='assets/img/clients2/bellfield.png', alt='')
-          .img-hover
-            h4 Bellfield
-      li
-        figure
-          img(src='assets/img/clients2/getapp.png', alt='')
-          .img-hover
-            h4 GetApp
-      li
-        figure
-          img(src='assets/img/clients2/austrian-airlines.png', alt='')
-          .img-hover
-            h4 Austrian Airlines
-      li
-        figure
-          img(src='assets/img/clients2/general-electric.png', alt='')
-          .img-hover
-            h4 General Electronic
+    // End Content
+  // End Top Categories
   // /container
-  // === End Job Partners ===
+  // === End Content ===
