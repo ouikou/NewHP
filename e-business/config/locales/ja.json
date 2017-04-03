@@ -52,6 +52,9 @@
 			"tel": "Tel: 03-6721-5778",
 			"fax": "Fax: 03-6721-5779",
 			"email": "Email: "
+		},
+		"follow": {
+			"header": "SHINESOFT をフォローする"
 		}
 	},
 	"copyright": {
@@ -61,27 +64,59 @@
 	},
 	"home": {
 		"slider": {
-			"title1": "会社ビジョン",
-			"title2": "経営理念",
-			"title3": "イー国際会社に目指す",
-			"statement1": "社会と人々の生活をより豊かなものへと推進し",
-			"statement2": "進化をもたらせるIT組織を目指していきます",
-			"statement3": "社員の幸せを優先する会社づくり",
-			"statement4": "顧客満足度を最大とするためのビジネス展開",
-			"statement5": "国際的な視野に立ち",
-			"statement6": "より高い利便性を追求",
-			"statement7": "より高品質なITサービスを提供"
+			"title1": {
+        "text1": "ビッグデータ & アナリティクス",
+        "text2": "コンテンツ統合管理（ECM)",
+        "text3": "情報統合とガバナンス"
+			},
+			"statement1": {
+        "text1": "構造化データと非構造化データを",
+        "text2": "収集、管理、分析して、洞察を向上させ",
+        "text3": "リアルタイムでビジネスの意思決定を行います。"
+			},
+			"title2": {
+        "text1": "セキュリティー",
+        "text2": "モバイル・ファースト",
+        "text3": "企業間連携/統合/SOA"
+			},
+			"statement2": {
+        "text1": "オンプレミスでもクラウドでも、アプリケーション",
+        "text2": "やデータやプロセスを接続して統合できます。"
+			},
+			"title3": {
+        "text1": "インタラクティブ",
+        "text2": "コマース",
+        "text3": "コラボレーション"
+			},
+			"statement3": {
+        "text1": "クラウドまたはオンプレミスで、",
+        "text2": "ビジネス向け統合コラボレーション・ツールを",
+        "text3": "ほぼすべてのデバイスやアプリケーションに提供します。"
+			}
 		},
 		"breadcrumb": {
-			"title": "株式会社 イー・ビジネス",
-			"statement": "お客様とともに歩み、絶えず進化する高い生産効率と信頼の高品質で貢献する先進のテクノロジに積極果敢に挑戦し異文化融合を目指す企業の先駆けとなり常に信頼され、支持される企業に",
+			"title": "株式会社 シャインソフト",
+			"statement": "日本企業の中国進出、また中国企業の日本進出におけるシステム開発支援を行う、コンピュータ・ソフトウェア・プログラミングを手段に、国際社会に新たな価値を創出します。",
 			"contact": "お問合せ"
 		},
-		"subCate": {
-			"sub1": "会社概要",
-			"sub2": "事業内容",
-			"sub3": "採用情報",
-			"sub4": "お問合せ"
+		"content": {
+			"title": "事業内容",
+			"sub1": {
+				"title": "システム構築支援",
+				"statement": "Anim pariatur cliche reprehenderit"
+			},
+			"sub2": {
+				"title": "ソフトウェア開発",
+				"statement": "Responsive Bootstrap Template"
+			},
+			"sub3": {
+				"title": "中国オフショア開発",
+				"statement": "Pariatur prehe cliche reprehrit"
+			},
+			"sub4": {
+				"title": "コンサルティング",
+				"statement": "Craft labore wes anderson cred"
+			}
 		}
 	},
 	"aboutus": {

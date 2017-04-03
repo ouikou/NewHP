@@ -35,45 +35,45 @@ block slider
     #da-slider.da-slider
       .da-slide
         h2
-          i CLEAN & FRESH
+          i #{__('home').slider.title1.text1}
           br
-          i FULLY RESPONSIVE
+          i #{__('home').slider.title1.text2}
           br
-          i DESIGN
+          i #{__('home').slider.title1.text3}
         p
-          i Lorem ipsum dolor amet
+          i #{__('home').slider.statement1.text1}
           br
-          i tempor incididunt ut
+          i #{__('home').slider.statement1.text2}
           br
-          i veniam omnis
+          i #{__('home').slider.statement1.text3}
         .da-img
           img.img-responsive(src='assets/plugins/parallax-slider/img/1.png', alt='')
       .da-slide
         h2
-          i RESPONSIVE VIDEO
+          i #{__('home').slider.title2.text1}
           br
-          i SUPPORT AND
+          i #{__('home').slider.title2.text2}
           br
-          i MANY MORE
+          i #{__('home').slider.title2.text3}
         p
-          i Lorem ipsum dolor amet
+          i #{__('home').slider.statement2.text1}
           br
-          i tempor incididunt ut
+          i #{__('home').slider.statement2.text2}
         .da-img
           iframe(src='http://player.vimeo.com/video/47911018', width='530', height='300', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
       .da-slide
         h2
-          i USING BEST WEB
+          i #{__('home').slider.title3.text1}
           br
-          i SOLUTIONS WITH
+          i #{__('home').slider.title3.text2}
           br
-          i HTML5/CSS3
+          i #{__('home').slider.title3.text3}
         p
-          i Lorem ipsum dolor amet
+          i #{__('home').slider.statement3.text1}
           br
-          i tempor incididunt ut
+          i #{__('home').slider.statement3.text2}
           br
-          i veniam omnis
+          i #{__('home').slider.statement3.text3}
         .da-img
           img(src='assets/plugins/parallax-slider/img/html5andcss3.png', alt='image01')
       .da-arrows
@@ -88,13 +88,13 @@ block breadcrumbs
     .container
       .row
         .col-md-9.animated.fadeInLeft
-          span 株式会社 シャインソフト
+          span #{__('home').breadcrumb.title}
           p
-            | 日本企業の中国進出、また中国企業の日本進出におけるシステム開発支援を行う、コンピュータ・ソフトウェア・プログラミングを手段に、国際社会に新たな価値を創出します。
+            | #{__('home').breadcrumb.statement}
         .col-md-3.btn-buy.animated.fadeInRight
           a.btn-u.btn-u-lg(href='/contact')
             i.icon-envelope
-            |  お問合せ
+            |  #{__('home').breadcrumb.contact}
   // /row
   // End Purchase Block
 
@@ -104,7 +104,7 @@ block content
     // Recent Works
     .owl-carousel-v1.owl-work-v1.margin-bottom-40
       .headline
-        h2.pull-left Recent Works
+        h2.pull-left #{__('home').content.title}
         .owl-navigation
           .customNavigation
             a.owl-btn.prev-v2
@@ -118,71 +118,29 @@ block content
             em.overflow-hidden
               img.img-responsive(src='assets/img/main/img1.jpg', alt='')
             span
-              strong Happy New Year
-              i Anim pariatur cliche reprehenderit
+              strong #{__('home').content.sub1.title}
+              i #{__('home').content.sub1.statement}
         .item
           a(href='#')
             em.overflow-hidden
               img.img-responsive(src='assets/img/main/img2.jpg', alt='')
             span
-              strong Award Winning Agency
-              i Responsive Bootstrap Template
+              strong #{__('home').content.sub2.title}
+              i #{__('home').content.sub2.statement}
         .item
           a(href='#')
             em.overflow-hidden
               img.img-responsive(src='assets/img/main/img3.jpg', alt='')
             span
-              strong Wolf Moon Officia
-              i Pariatur prehe cliche reprehrit
+              strong #{__('home').content.sub3.title}
+              i #{__('home').content.sub3.statement}
         .item
           a(href='#')
             em.overflow-hidden
               img.img-responsive(src='assets/img/main/img4.jpg', alt='')
             span
-              strong Food Truck Quinoa Nesciunt
-              i Craft labore wes anderson cred
-        .item
-          a(href='#')
-            em.overflow-hidden
-              img.img-responsive(src='assets/img/main/img5.jpg', alt='')
-            span
-              strong Happy New Year
-              i Anim pariatur cliche reprehenderit
-        .item
-          a(href='#')
-            em.overflow-hidden
-              img.img-responsive(src='assets/img/main/img1.jpg', alt='')
-            span
-              strong Happy New Year
-              i Anim pariatur cliche reprehenderit
-        .item
-          a(href='#')
-            em.overflow-hidden
-              img.img-responsive(src='assets/img/main/img2.jpg', alt='')
-            span
-              strong Award Winning Agency
-              i Responsive Bootstrap Template
-        .item
-          a(href='#')
-            em.overflow-hidden
-              img.img-responsive(src='assets/img/main/img3.jpg', alt='')
-            span
-              strong Wolf Moon Officia
-              i Pariatur prehe cliche reprehrit
-        .item
-          a(href='#')
-            em.overflow-hidden
-              img.img-responsive(src='assets/img/main/img4.jpg', alt='')
-            span
-              strong Food Truck Quinoa Nesciunt
-              i Craft labore wes anderson cred
-        .item
-          a(href='#')
-            em.overflow-hidden
-              img.img-responsive(src='assets/img/main/img5.jpg', alt='')
-            span
-              strong Happy New Year
-              i Anim pariatur cliche reprehenderit
+              strong #{__('home').content.sub4.title}
+              i #{__('home').content.sub4.statement}
     // End Recent Works
   // /container
   // End Content Part
