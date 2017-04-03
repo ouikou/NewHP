@@ -48,3 +48,7 @@
 	height: auto;
 	margin-right: 10px;
 }
+
+.owl-navigation .customNavigation a {
+	margin-right: 2px;
+}
