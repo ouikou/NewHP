@@ -32,7 +32,7 @@ block breadcrumbs
   // === Breadcrumbs ===
   .breadcrumbs
     .container
-      h1.pull-left Services
+      h1.pull-left #{__('services').breadcrumb.title}
   // /breadcrumbs
   // === End Breadcrumbs ===
 
@@ -40,92 +40,90 @@ block content
   // === Service Blocks ===
   .container.content-sm
     .text-center.margin-bottom-50
-      h2.title-v2.title-center OUR SERVICES
+      h2
+        span.color-green #{__('services').category.title[0]}
+        = ' '
+        | #{__('services').category.title[1]}
       p.space-lg-hor
-        | If you are going to use a
-        span.color-green passage of Lorem Ipsum
-        | , you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making
-        span.color-green this the first
-        |  true generator on the Internet.
+        | #{__('services').category.statement}
     .row.content-boxes-v4.content-boxes-v4-sm.margin-bottom-30
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-directions
         .content-boxes-in-v4
-          h2 Creative Ideas
+          h2 #{__('services').category.item1.title}
           p
-            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            | #{__('services').category.item1.content}
           a(href='#') Learn More
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-handbag
         .content-boxes-in-v4
-          h2 E-Commerce Pages
+          h2 #{__('services').category.item2.title}
           p
-            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            | #{__('services').category.item2.content}
           a(href='#') Learn More
       .col-md-4
         i.pull-left.icon-chemistry
         .content-boxes-in-v4
-          h2 Clean Code
+          h2 #{__('services').category.item3.title}
           p
-            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            | #{__('services').category.item3.content}
           a(href='#') Learn More
     hr
     .row.content-boxes-v4.content-boxes-v4-sm.margin-bottom-30
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-info.margin-right-10
         .content-boxes-in-v4
-          h2 Extensive Documentation
+          h2 #{__('services').category.item4.title}
           p
-            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            | #{__('services').category.item4.content}
           a(href='#') Learn More
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-social-youtube.margin-right-10
         .content-boxes-in-v4
-          h2 Vimeo / Youtube
+          h2 #{__('services').category.item5.title}
           p
-            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            | #{__('services').category.item5.content}
           a(href='#') Learn More
       .col-md-4
         i.pull-left.icon-fire.margin-right-10
         .content-boxes-in-v4
-          h2 Excellent Features
+          h2 #{__('services').category.item6.title}
           p
-            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            | #{__('services').category.item6.content}
           a(href='#') Learn More
     hr
     .row.content-boxes-v4.content-boxes-v4-sm
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-layers
         .content-boxes-in-v4
-          h2 Multiple Layouts
+          h2 #{__('services').category.item7.title}
           p
-            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            | #{__('services').category.item7.content}
           a(href='#') Learn More
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-rocket
         .content-boxes-in-v4
-          h2 Ready To Use
+          h2 #{__('services').category.item8.title}
           p
-            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            | #{__('services').category.item8.content}
           a(href='#') Learn More
       .col-md-4
         i.pull-left.icon-support
         .content-boxes-in-v4
-          h2 Stunning Support
+          h2 #{__('services').category.item9.title}
           p
-            | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            | #{__('services').category.item9.content}
           a(href='#') Learn More
   // === End Service Blocks ===
   // === Cube Portfolio ===
   .container.content-sm
     .text-center.margin-bottom-30
-      h2.title-v2.title-center LATEST PROJECTS
+      h2
+        | #{__('services').solution.title[0]}
+        = ' '
+        span.color-green #{__('services').solution.title[1]}
       p.space-lg-hor
-        | If you are going to use a
-        span.color-green passage of Lorem Ipsum
-        | , you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making
-        span.color-green this the first
-        |  true generator on the Internet.
+        | #{__('services').solution.statement}
     .cube-portfolio.container.margin-bottom-20
       .margin-bottom-30
         #filters-container.cbp-l-filters-text
@@ -141,58 +139,58 @@ block content
         // /end Filters Container
       #grid-container.cbp-l-grid-gallery
         .cbp-item.illustration.web-design
-          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project1.html', data-title='World Clock Widget<br>by Paul Flavius Nechita')
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item1.dataUrl}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/20.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title Paul Flavius
-                  .cbp-l-caption-desc Development
+                  .cbp-l-caption-title #{__('services').solution.item1.captionTitle}
+                  .cbp-l-caption-desc #{__('services').solution.item1.captionDescription}
         .cbp-item.web-design.logo
-          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project2.html', data-title='Bolt UI<br>by Tiberiu Neamu')
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item2.dataUrl}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/19.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title Tiberiu Neamu
-                  .cbp-l-caption-desc Web-Design
+                  .cbp-l-caption-title #{__('services').solution.item2.captionTitle}
+                  .cbp-l-caption-desc #{__('services').solution.item2.captionDescription}
         .cbp-item.illustration.web-design
-          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project3.html', data-title='WhereTO App<br>by Tiberiu Neamu')
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item3.dataUrl}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/21.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title Tiberiu Neamu
-                  .cbp-l-caption-desc Illustration
+                  .cbp-l-caption-title #{__('services').solution.item3.captionTitle}
+                  .cbp-l-caption-desc #{__('services').solution.item3.captionDescription}
         .cbp-item.web-design.illustration
-          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project4.html', data-title='iDevices<br>by Tiberiu Neamu')
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item4.dataUrl}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/22.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title Tiberiu Neamu
-                  .cbp-l-caption-desc Illustration
+                  .cbp-l-caption-title #{__('services').solution.item4.captionTitle}
+                  .cbp-l-caption-desc #{__('services').solution.item4.captionDescription}
         .cbp-item.web-design.graphic
-          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project5.html', data-title='Seemple* Music for iPad<br>by Tiberiu Neamu')
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item5.dataUrl}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/24.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title Tiberiu Neamu
-                  .cbp-l-caption-desc Illustration
+                  .cbp-l-caption-title #{__('services').solution.item5.captionTitle}
+                  .cbp-l-caption-desc #{__('services').solution.item5.captionDescription}
         .cbp-item.illustration.web-design.graphic
-          a.cbp-caption.cbp-singlePageInline(href='assets/ajax/cube-portfolio/project6.html', data-title='Remind~Me Widget<br>by Tiberiu Neamu')
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item6.dataUrl}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/23.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title Tiberiu Neamu
-                  .cbp-l-caption-desc Web-Design
+                  .cbp-l-caption-title #{__('services').solution.item6.captionTitle}
+                  .cbp-l-caption-desc #{__('services').solution.item6.captionDescription}
       // /end Grid Container
   // === End Cube Portfolio ===

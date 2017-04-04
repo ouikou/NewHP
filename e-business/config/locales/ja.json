@@ -47,7 +47,7 @@
     },
     "contact": {
       "header": "お問合せ",
-      "address": "東京都港区新橋5-12-6 ウェルディ新橋4F",
+      "address": "東京都港区新橋5-12-6 ウェルディ新橋4階",
       "zipCode": "〒 105-0004",
       "tel": "Tel: 03-6721-5778",
       "fax": "Fax: 03-6721-5779",
@@ -229,6 +229,110 @@
         "The Grifting Tree", "Jaguar", "Hermes", "Starbucks", "National Geographic", "Much More",
         "Hotiron", "Fred Perry", "Bellfield", "GetApp", "Austrian Airlines", "General Electronic"
       ]
+    }
+  },
+  "services": {
+    "breadcrumb": {
+      "title": "事業内容",
+			"statement": "お客様所有データとさまざまなオープンデータを統合し、都市、地域、街の特性を基にお客様のビジネスから新たな洞察を導き出します。"
+    },
+    "category": {
+      "title": ["サービス", "案内"],
+      "statement": "お客様の課題に共に向き合い、ツールとソリューション、コンサルテーションを組み合わせた解決策を提供しています。",
+      "item1": {
+        "title": "CREATIVE IDEAS",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      },
+      "item2": {
+        "title": "E-COMMERCE PAGES",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      },
+      "item3": {
+        "title": "CLEAN CODE",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      },
+      "item4": {
+        "title": "EXTENSIVE DOCUMENTATION",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      },
+      "item5": {
+        "title": "VIMEO / YOUTUBE",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      },
+      "item6": {
+        "title": "EXCELLENT FEATURES",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      },
+      "item7": {
+        "title": "MULTIPLE LAYOUTS",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      },
+      "item8": {
+        "title": "READY TO USE",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      },
+      "item9": {
+        "title": "STUNNING SUPPORT",
+        "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      }
+    },
+    "solution": {
+      "title": ["SHINESOFTの", "ソリューション"],
+      "statement": "お客様と対話しながら技術戦略を策定し、技術要素、開発技術、管理技術にわたり、ご提案、ご支援いたします。",
+      "filter": {
+        "Illustration": ".illustration",
+        "Web Design": ".web-design",
+        "Graphic": ".graphic",
+        "Logo": ".logo"
+      },
+      "item1": {
+        "captionTitle": "Paul Flavius",
+        "captionDescription": "Development",
+        "dataUrl": "assets/ajax/cube-portfolio/project1.html",
+        "dataTitle": "Paul Flavius",
+        "dataDescription": "Development",
+        "filter": [".illustration", ".web-design"]
+      },
+      "item2": {
+        "captionTitle": "Tiberiu Neamu",
+        "captionDescription": "Web-Design",
+        "dataUrl": "assets/ajax/cube-portfolio/project2.html",
+        "dataTitle": "Bolt UI",
+        "dataDescription": "by Tiberiu Neamu",
+        "filter": [".web-design", ".logo"]
+      },
+      "item3": {
+        "captionTitle": "Tiberiu Neamu",
+        "captionDescription": "Illustration",
+        "dataUrl": "assets/ajax/cube-portfolio/project3.html",
+        "dataTitle": "WhereTO App",
+        "dataDescription": "by Tiberiu Neamu",
+        "filter": [".illustration", ".web-design"]
+      },
+      "item4": {
+        "captionTitle": "Tiberiu Neamu",
+        "captionDescription": "Illustration",
+        "dataUrl": "assets/ajax/cube-portfolio/project4.html",
+        "dataTitle": "iDevices",
+        "dataDescription": "by Tiberiu Neamu",
+        "filter": [".web-design", ".illustration"]
+      },
+      "item5": {
+        "captionTitle": "Tiberiu Neamu",
+        "captionDescription": "Illustration",
+        "dataUrl": "assets/ajax/cube-portfolio/project5.html",
+        "dataTitle": "Seemple* Music for iPad",
+        "dataDescription": "by Tiberiu Neamu",
+        "filter": [".web-design", ".graphic"]
+      },
+      "item6": {
+        "captionTitle": "Tiberiu Neamu",
+        "captionDescription": "Web-Design",
+        "dataUrl": "assets/ajax/cube-portfolio/project6.html",
+        "dataTitle": "Remind~Me Widget",
+          "dataDescription": "by Tiberiu Neamu",
+        "filter": [".illustration", ".web-design", ".graphic"]
+      }
     }
   },
   "recruitment": {
@@ -457,7 +561,7 @@
     },
     "info": {
       "title": "会社案内",
-      "address": "東京都港区新橋5-12-6 ウェルディ新橋4F"
+      "address": "東京都港区新橋5-12-6 ウェルディ新橋4階"
     },
     "time": {
       "title": "営業時間",
