@@ -47,169 +47,169 @@ block content
           .tab-v1.left-inner
             ul.nav.nav-tabs
               li.regular-employee.active
-                a(href='#regular_employee', data-toggle='tab') #{__('recruitment').info.employee.title}
+                a(href='#regular_employee', data-toggle='tab') #{__('recruitment').leftInner.regular.title}
               li.contract-employee
-                a(href='#contract_employee', data-toggle='tab') 契約社員募集
+                a(href='#contract_employee', data-toggle='tab') #{__('recruitment').leftInner.contract.title}
               li.free-employee
-                a(href='#free_employee', data-toggle='tab') フリー募集
+                a(href='#free_employee', data-toggle='tab') #{__('recruitment').leftInner.free.title}
             .tab-content
               #regular_employee.tab-pane.fade.in.active
                 .service-block-v6
                   i.icon-custom.rounded-4x.icon-md.icon-bg-green.fa.fa-lightbulb-o
                   .service-desc
-                    h2 #{__('recruitment').info.employee.content}
+                    h2 #{__('recruitment').leftInner.regular.content}
                     p
-                      | #{__('recruitment').info.employee.statement[0]}
+                      | #{__('recruitment').leftInner.regular.statement[0]}
                     ol
                       li
-                        | #{__('recruitment').info.employee.statement[1]}
+                        | #{__('recruitment').leftInner.regular.statement[1]}
                       li
-                        | #{__('recruitment').info.employee.statement[2]}
+                        | #{__('recruitment').leftInner.regular.statement[2]}
                       li
-                        | #{__('recruitment').info.employee.statement[3]}
+                        | #{__('recruitment').leftInner.regular.statement[3]}
                       li
-                        | #{__('recruitment').info.employee.statement[4]}
+                        | #{__('recruitment').leftInner.regular.statement[4]}
                     p
-                      | #{__('recruitment').info.employee.statement[5]}
+                      | #{__('recruitment').leftInner.regular.statement[5]}
                 hr
-                h2 #{__('recruitment').info.employee.job.title}
+                h2 #{__('recruitment').leftInner.regular.job.title}
                 ol
                   li
-                    | #{__('recruitment').info.employee.job.content1}
+                    | #{__('recruitment').leftInner.regular.job.content1}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  #{__('recruitment').info.employee.job.remark1[0]}
+                        |  #{__('recruitment').leftInner.regular.job.remark1[0]}
                       li
                         i.fa.fa-check.color-green
-                        |  #{__('recruitment').info.employee.job.remark1[1]}
+                        |  #{__('recruitment').leftInner.regular.job.remark1[1]}
                       li
                         i.fa.fa-check.color-green
-                        |  #{__('recruitment').info.employee.job.remark1[2]}
+                        |  #{__('recruitment').leftInner.regular.job.remark1[2]}
                   li
-                    | #{__('recruitment').info.employee.job.content2}
+                    | #{__('recruitment').leftInner.regular.job.content2}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  #{__('recruitment').info.employee.job.remark2[0]}
+                        |  #{__('recruitment').leftInner.regular.job.remark2[0]}
                       li
                         i.fa.fa-check.color-green
-                        |  #{__('recruitment').info.employee.job.remark2[1]}
+                        |  #{__('recruitment').leftInner.regular.job.remark2[1]}
                       li
                         i.fa.fa-check.color-green
-                        |  #{__('recruitment').info.employee.job.remark2[2]}
+                        |  #{__('recruitment').leftInner.regular.job.remark2[2]}
                   li
-                    | #{__('recruitment').info.employee.job.content3}
+                    | #{__('recruitment').leftInner.regular.job.content3}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  #{__('recruitment').info.employee.job.remark3[0]}
+                        |  #{__('recruitment').leftInner.regular.job.remark3[0]}
                       li
                         i.fa.fa-check.color-green
-                        |  #{__('recruitment').info.employee.job.remark3[1]}
+                        |  #{__('recruitment').leftInner.regular.job.remark3[1]}
                       li
                         i.fa.fa-check.color-green
-                        |  #{__('recruitment').info.employee.job.remark3[2]}
+                        |  #{__('recruitment').leftInner.regular.job.remark3[2]}
                 hr
-                h2 #{__('recruitment').info.employee.payAndHoliday.title}
+                h2 #{__('recruitment').leftInner.regular.payAndHoliday.title}
                 ul.list-unstyled
                   li
                     i.fa.fa-check.color-green
-                    |  #{__('recruitment').info.employee.payAndHoliday.remark[0]}
+                    |  #{__('recruitment').leftInner.regular.payAndHoliday.remark[0]}
                   li
                     i.fa.fa-check.color-green
-                    |  #{__('recruitment').info.employee.payAndHoliday.remark[1]}
+                    |  #{__('recruitment').leftInner.regular.payAndHoliday.remark[1]}
                   li
                     i.fa.fa-check.color-green
-                    |  #{__('recruitment').info.employee.payAndHoliday.remark[2]}
+                    |  #{__('recruitment').leftInner.regular.payAndHoliday.remark[2]}
                 hr
                 .row
                   .col-md-7
-                    h2 #{__('recruitment').info.employee.application.title}
+                    h2 #{__('recruitment').leftInner.regular.application.title}
                     p
-                      | #{__('recruitment').info.employee.application.content[0]}
+                      | #{__('recruitment').leftInner.regular.application.content[0]}
                       br
-                      a(href="mailto:{#{__('recruitment').info.employee.application.content[1]}}") #{__('recruitment').info.employee.application.content[1]}
+                      a(href="mailto:{#{__('recruitment').leftInner.regular.application.content[1]}}") #{__('recruitment').leftInner.regular.application.content[1]}
                       br
-                      | #{__('recruitment').info.employee.application.content[2]}
+                      | #{__('recruitment').leftInner.regular.application.content[2]}
                   .col-md-5
                     .pricing.hover-effect
                       .pricing-head.regular-employee
                         h3
-                          | 正社員応募
+                          | #{__('recruitment').leftInner.regular.application.download.title}
                       .pricing-footer
                         br
                         button.btn-u.btn-u-green.pulse-grow(data-toggle='modal', data-target='#')
                           i.fa.fa-cloud-download
-                          |  履歴書ダウンロード
+                          |  #{__('recruitment').leftInner.regular.application.download.button}
               #contract_employee.tab-pane.fade.in
                 .service-block-v6
                   i.icon-custom.rounded-2x.icon-lg.icon-bg-orange.fa.fa-bullhorn
                   .service-desc
-                    h2 契約社員を募集しております！！！
+                    h2 #{__('recruitment').leftInner.contract.content}
                     p
-                      | 大手SIからのプロジェクトを中心とする開発。
+                      | #{__('recruitment').leftInner.contract.statement[0]}
                       br
-                      | オープン系、汎用系、制御系と幅広く取組んでいます。
+                      | #{__('recruitment').leftInner.contract.statement[1]}
                       br
-                      | テクニカルな面だけでなく、金融（生保、損保、銀行、証券、クレジット、生産管理、その他）の業務知識をお持ちの方も求めています。業務経験が深ければ50歳代でもプロジェクトへの参入が可能となります。
+                      | #{__('recruitment').leftInner.contract.statement[2]}
                       br
-                      | 将来の目標をお持ちの方、胸を張って主張できる得意分野をお持ちの方、特に歓迎いたします。
+                      | #{__('recruitment').leftInner.contract.statement[3]}
                 hr
-                h2 募集職種
+                h2 #{__('recruitment').leftInner.contract.job.title}
                 ol
                   li
-                    | SE
+                    | #{__('recruitment').leftInner.contract.job.content1}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  プロジェクトマネジメント、要件定義～設計、開発までの担当
+                        | #{__('recruitment').leftInner.contract.job.remark1}
                   li
-                    | PG
+                    | #{__('recruitment').leftInner.contract.job.content2}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  プロジェクトメンバーとして、システム設計、開発、テストまでの担当
+                        | #{__('recruitment').leftInner.contract.job.remark2}
                 hr
-                h2 プロジェクト
+                h2 #{__('recruitment').leftInner.contract.project.title}
                 ol
                   li
-                    | OPEN系
+                    | #{__('recruitment').leftInner.contract.project.content1}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  C、Java、.NET、Oracle、C++、C#等を用いて設計、開発
+                        | #{__('recruitment').leftInner.contract.project.remark1}
                   li
-                    | 汎用系
+                    | #{__('recruitment').leftInner.contract.project.content2}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  COBOL、PL/I、ASM等を用いて設計、開発
+                        | #{__('recruitment').leftInner.contract.project.remark2}
                   li
-                    | 制御系
+                    | #{__('recruitment').leftInner.contract.project.content3}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  C、C++、VC++などを用いて設計、開発
+                        | #{__('recruitment').leftInner.contract.project.remark3}
                 hr
-                h2 待遇
+                h2 #{__('recruitment').leftInner.contract.payAndHoliday.title}
                 ul.list-unstyled
                   li
                     i.fa.fa-check.color-green
-                    |  勤務地： 首都圏各地（東京、神奈川、千葉、埼玉）
+                    | #{__('recruitment').leftInner.contract.payAndHoliday.remark[0]}
                   li
                     i.fa.fa-check.color-green
-                    |  報酬： スキルに応じて相談（25万円～70万円程度）
+                    | #{__('recruitment').leftInner.contract.payAndHoliday.remark[1]}
                 hr
                 .row
                   .col-md-7
-                    h2 応募方法
+                    h2 #{__('recruitment').leftInner.contract.application.title}
                     p
-                      | 履歴書、職務経歴書をメールにてお送りください。
+                      | #{__('recruitment').leftInner.contract.application.content[0]}
                       br
-                      a(href='mailto:info@shinesoft.co.jp') info@shinesoft.co.jp
+                      a(href="mailto:{#{__('recruitment').leftInner.contract.application.content[1]}}") #{__('recruitment').leftInner.contract.application.content[1]}
                       br
-                      | 書類選考後、弊社よりご連絡いたします。
+                      | #{__('recruitment').leftInner.contract.application.content[2]}
                   .col-md-5
                     .pricing.hover-effect
                       .pricing-head.contract-employee
@@ -224,106 +224,106 @@ block content
                 .service-block-v6
                   i.icon-custom.rounded-2x.icon-lg.icon-bg-purple.icon-line.icon-rocket
                   .service-desc
-                    h2 フリーを募集しております！！！
+                    h2 #{__('recruitment').leftInner.free.content}
                     p
-                      | テクニカルな面だけでなく、金融（生保、損保、銀行、証券、クレジット、生産管理、その他）の業務知識をお持ちの方も求めています。業務経験が深ければ50歳代でもプロジェクトへの参入が可能となります。
+                      | #{__('recruitment').leftInner.free.statement}
                 hr
-                h2 募集職種
+                h2 #{__('recruitment').leftInner.free.job.title}
                 ol
                   li
-                    | SE
+                    | #{__('recruitment').leftInner.free.job.content1}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  プロジェクトマネジメント、要件定義～設計、開発までの担当
+                        |  #{__('recruitment').leftInner.free.job.remark1}
                   li
-                    | PG
+                    | #{__('recruitment').leftInner.free.job.content2}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  プロジェクトメンバーとして、システム設計、開発、テストまでの担当
+                        |  #{__('recruitment').leftInner.free.job.remark2}
                 hr
-                h2 プロジェクト
+                h2 #{__('recruitment').leftInner.free.project.title}
                 ol
                   li
-                    | OPEN系
+                    | #{__('recruitment').leftInner.free.project.content1}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  C、Java、.NET、Oracle、C++、C#等を用いて設計、開発
+                        |  #{__('recruitment').leftInner.free.project.remark1}
                   li
-                    | 汎用系
+                    | #{__('recruitment').leftInner.free.project.content2}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  COBOL、PL/I、ASM等を用いて設計、開発
+                        |  #{__('recruitment').leftInner.free.project.remark2}
                   li
-                    | 制御系
+                    | #{__('recruitment').leftInner.free.project.content3}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  C、C++、VC++などを用いて設計、開発
+                        |  #{__('recruitment').leftInner.free.project.remark3}
                 hr
-                h2 待遇
+                h2 #{__('recruitment').leftInner.free.payAndHoliday.title}
                 ul.list-unstyled
                   li
                     i.fa.fa-check.color-green
-                    |  勤務地： 首都圏各地（東京、神奈川、千葉、埼玉）
+                    |  #{__('recruitment').leftInner.free.payAndHoliday.remark[0]}
                   li
                     i.fa.fa-check.color-green
-                    |  報酬： 案件条件に応じてご相談
+                    |  #{__('recruitment').leftInner.free.payAndHoliday.remark[1]}
                 hr
                 .row
                   .col-md-7
-                    h2 応募方法
+                    h2 #{__('recruitment').leftInner.free.application.title}
                     p
-                      | 履歴書、職務経歴書をメールにてお送りください。
+                      | #{__('recruitment').leftInner.free.application.content[0]}
                       br
-                      a(href='mailto:info@shinesoft.co.jp') info@shinesoft.co.jp
+                      a(href="mailto:{#{__('recruitment').leftInner.free.application.content[0]}}") #{__('recruitment').leftInner.free.application.content[1]}
                       br
-                      | 書類選考後、弊社よりご連絡いたします。
+                      | #{__('recruitment').leftInner.free.application.content[2]}
                   .col-md-5
                     .pricing.hover-effect
                       .pricing-head.free-employee
                         h3
-                          | フリー応募
+                          | #{__('recruitment').leftInner.free.application.download.title}
                       .pricing-footer
                         br
                         button.btn-u.btn-u-purple.pulse-grow(data-toggle='modal', data-target='#')
                           i.fa.fa-cloud-download
-                          |  履歴書ダウンロード
+                          |  #{__('recruitment').leftInner.free.application.download.button}
         // End Left Inner
         // Right Inner
         .col-md-5
           .right-inner
             #testimonials-3.carousel.slide.testimonials.testimonials-v1
               .headline.margin-bottom-60
-                h2.pull-left 社員たちの声
+                h2.pull-left #{__('recruitment').rightInner.voices.title}
               .carousel-inner
                 .item.active
                   p.rounded-2x
-                    | Ducimusqui ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sunt in culpaid delvoe molestias..
-                  .testimonial-info
-                    img.rounded-2x(src='assets/img/testimonials/img2.jpg', alt='')
-                    span.testimonial-author
-                      | Jeremy Asigner
-                      em Web Developer, Unify Theme.
-                .item
-                  p.rounded-2x
-                    | Ducimusqui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sunt in culpaid delvoe molestias..
+                    | #{__('recruitment').rightInner.voices.content1.statement}
                   .testimonial-info
                     img.rounded-2x(src='assets/img/testimonials/img1.jpg', alt='')
                     span.testimonial-author
-                      | User
-                      em Java Developer, Htmlstream
+                      | #{__('recruitment').rightInner.voices.content1.name}
+                      em #{__('recruitment').rightInner.voices.content1.description}
                 .item
                   p.rounded-2x
-                    | Ducimusqui ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sunt in culpaid delvoe molestias..
+                    | #{__('recruitment').rightInner.voices.content2.statement}
                   .testimonial-info
-                    img.rounded-2x(src='assets/img/testimonials/user.jpg', alt='')
+                    img.rounded-2x(src='assets/img/testimonials/img2.jpg', alt='')
                     span.testimonial-author
-                      | Kate Davenport
-                      em Web Designer, Google Inc.
+                      | #{__('recruitment').rightInner.voices.content2.name}
+                      em #{__('recruitment').rightInner.voices.content2.description}
+                .item
+                  p.rounded-2x
+                    | #{__('recruitment').rightInner.voices.content3.statement}
+                  .testimonial-info
+                    img.rounded-2x(src='assets/img/testimonials/img3.jpg', alt='')
+                    span.testimonial-author
+                      | #{__('recruitment').rightInner.voices.content3.name}
+                      em #{__('recruitment').rightInner.voices.content3.description}
               .carousel-arrow
                 a.left.carousel-control(href='#testimonials-3', data-slide='prev')
                   i.fa.fa-angle-left.rounded
@@ -332,7 +332,7 @@ block content
             hr
             .owl-carousel-v1.owl-work-v1.margin-bottom-40
               .headline
-                h2.pull-left 会社生活
+                h2.pull-left #{__('recruitment').rightInner.news.title}
                 .owl-navigation
                   .customNavigation
                     a.owl-btn.prev-v2
@@ -347,35 +347,28 @@ block content
                     em.overflow-hidden
                       img#owl-carousel.img-responsive(src='assets/img/main/img1.jpg', alt='')
                     span
-                      strong Happy New Year
-                      i Anim pariatur cliche reprehenderit
+                      strong #{__('recruitment').rightInner.news.item1.title}
+                      i #{__('recruitment').rightInner.news.item1.content}
                 .item
                   a(href='#')
                     em.overflow-hidden
                       img#owl-carousel.img-responsive(src='assets/img/main/img2.jpg', alt='')
                     span
-                      strong Award Winning Agency
-                      i Responsive Bootstrap Template
+                      strong #{__('recruitment').rightInner.news.item2.title}
+                      i #{__('recruitment').rightInner.news.item2.content}
                 .item
                   a(href='#')
                     em.overflow-hidden
                       img#owl-carousel.img-responsive(src='assets/img/main/img3.jpg', alt='')
                     span
-                      strong Wolf Moon Officia
-                      i Pariatur prehe cliche reprehrit
+                      strong #{__('recruitment').rightInner.news.item3.title}
+                      i #{__('recruitment').rightInner.news.item3.content}
                 .item
                   a(href='#')
                     em.overflow-hidden
                       img#owl-carousel.img-responsive(src='assets/img/main/img4.jpg', alt='')
                     span
-                      strong Food Truck Quinoa Nesciunt
-                      i Craft labore wes anderson cred
-                .item
-                  a(href='#')
-                    em.overflow-hidden
-                      img#owl-carousel.img-responsive(src='assets/img/main/img5.jpg', alt='')
-                    span
-                      strong Happy New Year
-                      i Anim pariatur cliche reprehenderit
+                      strong #{__('recruitment').rightInner.news.item4.title}
+                      i #{__('recruitment').rightInner.news.item4.content}
         // End Right Inner
   // === End Job Description ===

@@ -1,423 +1,494 @@
 {
-	"title": "株式会社シャインソフト(ShineSoft Co.,Ltd.)",
-	"topBar": {
-		"language": "言語選択",
-		"languageOpt": {
-			"ja": "日本語",
-			"en": "英語",
-			"zh": "中国語"
-		},
-		"login": "ログイン"
-	},
-	"menu": {
-		"home": "トップ",
-		"about": "会社概要",
-		"service": "事業内容",
-		"recruitment": "採用情報",
-		"contact": "お問合せ"
-	},
-	"footer": {
-		"brand": "株式会社シャインソフト",
-		"statement1": "シャインソフトは会社も社員も永続的に常に進化を続け、進化をする為の努力を続けるということを、シャインソフトにいる人間のマインドとします",
-		"statement2": "日本企業の中国進出、また中国企業の日本進出におけるシステム開発支援を行う、コンピュータ・ソフトウェア・プログラミングを手段に、国際社会に新たな価値を創出します",
-		"statement3": "技術スペシャリストの立場におごらず、様々な立場の方と共に学びあいます。そして、一人で導き出すことの難しい、価値ある結果を出します",
-		"statement4": "最新の技術動向から、様々な状況を予測し、技術戦略を提案します。未知なる状況こそ、まだ見ぬ宝石を探し当てる絶好の機会です",
-		"news": {
-			"header": "最新ニュース",
-			"news1": {
-				"title": "本社新橋へ移転",
-				"date": "2012年08月28日"
-			},
-			"news2": {
-				"title": "本社神田へ移転",
-				"date": "2007年03月28日"
-			},
-			"news3": {
-				"title": "900万円まで増資、株式会社シャーインソフトを「株式会社シャインソフト」に社名変更",
-				"date": "2006年10月11日"
-			}
-		},
-		"links": {
-			"header": "リンク集",
-			"link1": "トップ",
-			"link2": "会社概要",
-			"link3": "事業内容",
-			"link4": "採用情報",
-			"link5": "社内システム"
-		},
-		"contact": {
-			"header": "お問合せ",
-			"address": "東京都港区新橋5-12-6　ウェルディ新橋4F",
-			"zipCode": "〒 105-0004",
-			"tel": "Tel: 03-6721-5778",
-			"fax": "Fax: 03-6721-5779",
-			"email": "Email: "
-		},
-		"follow": {
-			"header": "SHINESOFT をフォローする"
-		}
-	},
-	"copyright": {
-		"statement": "Copyright © 2006 ShineSoft Co.,Ltd. All Rights Reserved.",
-		"privacy": "プライバシーポリシー",
-		"terms": "利用規約"
-	},
-	"home": {
-		"slider": {
-			"title1": {
-        "text1": "ビッグデータ & アナリティクス",
-        "text2": "コンテンツ統合管理（ECM)",
-        "text3": "情報統合とガバナンス"
-			},
-			"statement1": {
-        "text1": "構造化データと非構造化データを",
-        "text2": "収集、管理、分析して、洞察を向上させ",
-        "text3": "リアルタイムでビジネスの意思決定を行います。"
-			},
-			"title2": {
-        "text1": "セキュリティー",
-        "text2": "モバイル・ファースト",
-        "text3": "企業間連携/統合/SOA"
-			},
-			"statement2": {
-        "text1": "オンプレミスでもクラウドでも、アプリケーション",
-        "text2": "やデータやプロセスを接続して統合できます。"
-			},
-			"title3": {
-        "text1": "インタラクティブ",
-        "text2": "コマース",
-        "text3": "コラボレーション"
-			},
-			"statement3": {
-        "text1": "クラウドまたはオンプレミスで、",
-        "text2": "ビジネス向け統合コラボレーション・ツールを",
-        "text3": "ほぼすべてのデバイスやアプリケーションに提供します。"
-			}
-		},
-		"breadcrumb": {
-			"title": "株式会社 シャインソフト",
-			"statement": "日本企業の中国進出、また中国企業の日本進出におけるシステム開発支援を行う、コンピュータ・ソフトウェア・プログラミングを手段に、国際社会に新たな価値を創出します。",
-			"contact": "お問合せ"
-		},
-		"content": {
-			"title": "事業内容",
-			"sub1": {
-				"title": "システム構築支援",
-				"statement": "Anim pariatur cliche reprehenderit"
-			},
-			"sub2": {
-				"title": "ソフトウェア開発",
-				"statement": "Responsive Bootstrap Template"
-			},
-			"sub3": {
-				"title": "中国オフショア開発",
-				"statement": "Pariatur prehe cliche reprehrit"
-			},
-			"sub4": {
-				"title": "コンサルティング",
-				"statement": "Craft labore wes anderson cred"
-			}
-		}
-	},
-	"aboutus": {
-		"breadcrumb": {
-			"title": "会社概要"
-		},
-		"message": {
-			"title": "社長からのメッセージ",
-			"paragraph1": "当社は2007年に発足して以来、短い８年間と言いながら、リーマンショックをきっかけとした不況、東日本大震災、アベノミクス等、いろんな激しい変化を経験して参りました。その厳しい創業期を乗り越え、無事第8期を迎える事が出来ましたのも、当社のお客様、ビジネスパートナー様、 その他関係者全ての皆様のお力によるものでございます。ここで改めて深く御礼申し上げます。",
-			"paragraph2": "社会環境の変化に伴い、IT業界でも技術革新のスピードがますます速くなり、企業の優勝劣敗の残酷さをしみじみ感じております。この危機感を抱えながら、いかに業界最新動向を捉え、会社全体のコミュニケーション力、思考力と実行力を高めることが極めて重要だと思っております。",
-			"paragraph3": "専門性、実用性、耐久性の高い会社になるため、社員満足から始まる顧客満足を向上させるために、当社は試行錯誤を重ねて、常に進化を追求し続けて参ります。",
-			"paragraph4": "今後とも変わらぬ、一層の皆様のご愛顧とご指導、ご支援賜りますようお願い申し上げます。",
-			"paragraph5": "社長取締役　花 東江"
-		},
-		"info": {
-			"date": {
-				"title": "設立日",
-				"content": "2007年6月（平成19年6月）"
-			},
-			"ceo": {
-				"title": "代表者",
-				"content": "社長取締役 花東江",
-				"btn": "ご挨拶"
-			},
-			"address": {
-				"title": "所在地",
-				"content": "東京都港区芝2-28-8芝2丁目ビル10階"
-			},
-			"capital": {
-				"title": "資本金",
-				"unit": "万円",
-				"date": "平成27年1月現在"
-			},
-			"employee": {
-				"title": "従業員数",
-				"unit": "人",
-				"date": "平成27年1月現在",
-				"btn": "会社組織図"
-			},
-			"branch": {
-				"title": "海外支社",
-				"content": "中国・大連易商共創科技株式会社"
-			},
-			"profit": {
-				"title": "直近年商",
-				"unit": "億",
-				"date": "平成26年度"
-			},
-			"profit2": {
-				"title": "本年度売上",
-				"unit": "億",
-				"date": "平成27年度見込み"
-			},
-			"certification": {
-				"title": "取得資格",
-				"name1": " 一般労働者派遣資格",
-				"name2": " 一般競争入札資格",
-				"name3": " 中小企業経営革新認定企業認定",
-				"name4": " プライバシーマーク",
-				"name5": " ISO27001(ISMS)認証",
-				"name6": " ISO9001(ISA)認証"
-			}
-		},
-		"profit": "売上実績",
-		"organization": "会社組織図",
-		"customer": {
-			"title": "主な取引先",
-			"name1": "株式会社電通国際情報サービス(ISID)",
-			"name2": "アイエックス・ナレッジ株式会社(IKI)",
-			"name3": "株式会社　DTS",
-			"name4": "株式会社ＮＳＤ",
-			"name5": "ＴＤＣソフトウェアエンジニアリング株式会社",
-			"name6": "株式会社フジクラ",
-			"name7": "株式会社東邦システムサイエンス",
-			"name8": "株式会社日立ソリューションズ",
-			"name9": "スミセイ情報システム株式会社"
-		},
-		"history": {
-			"title": "会社沿革",
-			"event1": {
-				"title": "資本金を3800万円に増資",
-				"date": "平成27年1月"
-			},
-			"event2": {
-				"title": "ISO27001(ISMS)認証を取得",
-				"content": "ISO27001は、組織が保有する情報にかかわるさまざまなリスクを適切に管理し、組織の価値向上をもたらすISMSの国際規格です。",
-				"date": "平成26年5月30日"
-			},
-			"event3": {
-				"title": "中国・大連易商共創科技株式会社を設立",
-				"content": "大連易商共創科技有限公司成立於2014年4月。 做為株式會社イー.ビジネス（英文社名E-BUSINESS Inc.）的第一家中國地區子公司。是為順應日本總公司的高速發展而成立的海外據點。伴隨著日本經濟的逐步復蘇，イー.ビジネス所接手的項目激增，需要大量優秀人才。大連易商共創科技有限公司初期的主要職能是為總公司召集優秀人才，重視實戰性，同時也保證優秀人才的豐厚待遇。另一個職能是作為總公司在海外的據點拓展海外業務。我們歡迎優秀的各位加入易商共創。我們會給您提供最好的發展平臺。",
-				"date": "平成26年4月4日",
-				"btn": "易商共創科技"
-			},
-			"event4": {
-				"title": "本社を東京都港区芝に移転",
-				"content": "事業拡大に伴い、本社を東京都港区芝に移転",
-				"date": "平成26年1月",
-				"btn": "アクセス"
-			},
-			"event5": {
-				"title": "資本金を1850万円に増資",
-				"content": "",
-				"date": "平成25年7月"
-			},
-			"event6": {
-				"title": "一般競争入札資格取得",
-				"content": "一般競争入札とは、競争入札のうち入札情報を公告して参加申込を募り、希望者同士で競争に付して契約者を決める方式。日本の官庁発注案件においては会計法第29条の3に規定されている。各省各庁の長は参加資格を定めることが出来（予算決算及び会計令第72条）、参加資格を定めた場合は、随時申請を受け付けて審査して名簿に登録しなければならない。また、契約担当官等（地方事務所の所長など）は、各省各庁の長が定めた参加資格の他に、さらに必要な資格を定めることが出来る（予算決算及び会計令第73条）。",
-				"date": "平成24年4月"
-			},
-			"event7": {
-				"title": "プライバシーマーク取得",
-				"content": "プライバシーマークとは、個人情報保護に関して一定の要件を満たした事業者（基本的には法人単位。ただし、医療関連については病院ごとなど例外あり）に対し、一般財団法人日本情報経済社会推進協会 (JIPDEC) により使用を認められる登録商標（サービスマーク）の事である。Pマークと略して呼ばれることもある。",
-				"date": "平成24年3月"
-			},
-			"event8": {
-				"title": "駐日経貿連絡事務所招商代表に就任",
-				"content": "代表取締役社長花東江が、中国塩城市政府の要請を受け、駐日経貿連絡事務所招商代表に就任。",
-				"date": "平成21年9月"
-			},
-			"event9": {
-				"title": "経営革新企業認定取得",
-				"content": "中小企業新事業活動促進法に準じ、中小企業経営革新認定企業の認定を受ける。",
-				"date": "平成21年8月",
-				"btn": "平成21年度8月経営革新計画承認書"
-			},
-			"event10": {
-				"title": "会社設立",
-				"content": "東京都千代田区において資本金800万円にて設立",
-				"date": "平成19年6月"
-			}
-		}
-	},
-	"recruitment": {
-		"breadcrumb": {
-			"title": "採用情報"
-		},
-		"info": {
-			"employ": {
-				"title": "雇用形態",
-				"content": "正社員、契約社員"
-			},
-			"education": {
-				"title": "学歴",
-				"content": "専門学校卒業以上",
-				"remark": "※高校卒業の場合は二年以上実務経験者のみ可"
-			},
-			"workplace": {
-				"title": "勤務地",
-				"content": "東京近辺・名古屋・大阪",
-				"remark": "※現住所を考慮し決定します"
-			},
-			"category": {
-				"title": "職種",
-				"content": "PM、PL、システムエンジニア、プログラマー"
-			},
-			"job": {
-				"title": "仕事内容",
-				"content1": "大型汎用機系−各種アプリケーションの設計・開発",
-				"remark1": "※金融系、流通系、COBOL、PL/1他",
-				"content2": "オープン系−Windowsアプリケーションの設計・開発",
-				"remark2": "※Java VB C C++ C# ASP.NET SQL Server Oracle　映像・画像 他"
-			},
-			"qualification": {
-				"title": "応募資格",
-				"content1": "新卒の場合はIT関連大学また専門学校の卒業生のみ",
-				"content2": "転職の場合は22歳～38歳位迄の実務経験者",
-				"remark": "ＳＥ・ＰＧ・ＯＰ・機種・言語不問　※ＯＡ操作経験のみは不可"
-			},
-			"application": {
-				"title": "応募方法",
-				"content": "経歴書をご記入の上、saiyou@e-business.co.jpまでご送付ください"
-			},
-			"selection": {
-				"title": "選考方法",
-				"content": "書類選考、面接"
-			},
-			"holiday": {
-				"title": "休日休暇",
-				"content": "完全週休2日制、祝日",
-				"remark": "※客先による変動可能性があります"
-			},
-			"contact": {
-				"title": "お問い合わせ窓口"
-			}
-		},
-		"download": "履歴書ダウンロード",
-		"agreement": {
-			"title": "個人情報に関するご通知（募集時）",
-			"info1": {
-				"title": "利用又は提供の目的",
-				"content": "当社は、貴殿から取得した氏名、生年月日、住所等の個人に関する情報を、当社の採用活動にのみ利用する目的で取得するものであり、それ以外の目的に利用もしくは他に提供・開示することは一切ありません。 "
-			},
-			"info2": {
-				"title": "個人情報の取扱いについて",
-				"content": "当社は、取得した貴殿の個人情報を、当社の責任のもとで適切に取扱い管理するものとし、又当社の採用活動の終了に伴い、当社の責任のもとで適切に廃棄･消去致します。"
-			},
-			"info3": {
-				"title": "個人情報の当社への提供の任意性について",
-				"content": "当社が貴殿から取得する個人情報は、当社の業務を遂行する上で必要なもののみを取得しています。したがって、貴殿が本事項に定めた個人情報の取扱いに同意されない場合は、お申込をお断りすることがあります。"
-			},
-			"info4": {
-				"title": "貴方の個人情報の開示、訂正・削除について",
-				"content": "貴殿は、当社に対しご提供されたご自身の個人情報について、開示を請求することができます。又、開示の結果、ご自身の個人情報につきまして訂正・削除を請求することもできます。貴殿が弊社に対し、このような請求をされる場合は、下記の連絡先までご連絡下さい。 "
-			},
-			"info5": {
-				"title": "連絡先",
-				"content": "個人情報の開示・訂正・削除等のご請求、その他ご上明な点につきましては下記までご連絡ください。",
-				"contact": " 連絡先: 株式会社イー・ビジネス",
-				"window": " 窓口担当: 花 東江",
-				"tel": " 電話番号: ",
-				"fax": " FAX番号: "
-			},
-			"agree": "同意",
-			"disagree": "同意しない"
-		},
-		"voices": {
-			"title": "社員たちの声",
-			"voice1": {
-				"content": "この会社の皆は単なる同僚ではなく、まさに家族だ！お帰り!",
-				"name": "万力",
-				"position": "取締役"
-			},
-			"voice2": {
-				"content": "「成功の成否は人の和にあり」自分の「和」の能力を生かして皆様の成長を見守って行きたいと思います。あなたの活躍を期待しています、ご応募をお待ちしております。",
-				"name": "趙威",
-				"position": "営業一部・部長"
-			},
-			"voice3": {
-				"content": "いい会社の条件の一つは、社員の声を聞かせる。",
-				"name": "王飛翔",
-				"position": "取締役"
-			},
-			"voice4": {
-				"content": "性格は変えられませんが、行動が変えられます。",
-				"name": "陳栄",
-				"position": "経理部・部長"
-			}
-		},
-		"photos": {
-			"title": "会社生活",
-			"title1": "リーダ研修での熱い討議",
-			"title2": "社内教育で、ベテラン社員が新入社員に技術を教える",
-			"title3": "新入社員が真剣に教育を受ける",
-			"title4": "iOS開発勉強会１",
-			"title5": "iOS開発勉強会２",
-			"title6": "準備中......",
-			"title7": "いよいよ始まるぞ",
-			"title8": "アットホームな雰囲気で皆が盛り上げる",
-			"title9": "おいしい料理を食べながら、同僚達が熱く語り合う",
-			"title10": "今回のイベントも盛上り、楽しいひと時を過しました"
-		}
-	},
-	"contact": {
-		"breadcrumb": {
-			"title": "お問合せ"
-		},
-		"form": {
-			"title": "お問合せ",
-			"description": "お気軽に問い合わせください。",
-			"name": "ご氏名",
-			"email": "メールアドレス",
-			"subject": "タイトル",
-			"message": "メーセッジ",
-			"send": "送信",
-			"success": "Your message was successfully sent!"
-		},
-		"info": {
-			"title": "会社案内",
-			"address": "東京都港区芝2-28-8 芝2丁目ビル10階"
-		},
-		"time": {
-			"title": "営業時間",
-			"workday": "平日:",
-			"saturday": "土曜日:",
-			"sunday": "日曜日:",
-			"rest": " 休日"
-		}
-	},
-	"login": {
-		"breadcrumb": {
-			"title": "システムログイン"
-		},
-		"form": {
-			"title": "ログイン",
-			"email": "メールアドレス",
-			"password": "パスワード",
-			"button": "ログイン",
-			"forgotPass": "パスワード忘れました？",
-			"resetPassLink": "こちらで",
-			"resetpass": "パスワードをリセット"
-		}
-	},
-	"error": {
-		"404": "大変申し訳ございませんが、該当ページは存在しません。下記ボタンをクリックして、ホームページに戻ってください。",
-		"backBtn": "ホームに戻る"
-	},
-	"topBar.language": "topBar.language",
-	"language": "language",
-	"topBar_language": "topBar_language",
-	"topBar:language": "topBar:language",
-	"topBar/language": "topBar/language",
-	"news": "news"
+  "title": "株式会社シャインソフト(ShineSoft Co.,Ltd.)",
+  "topBar": {
+    "language": "言語選択",
+    "languageOpt": {
+      "ja": "日本語",
+      "en": "英語",
+      "zh": "中国語"
+    },
+    "login": "ログイン"
+  },
+  "menu": {
+    "home": "トップ",
+    "about": "会社概要",
+    "service": "事業内容",
+    "recruitment": "採用情報",
+    "contact": "お問合せ"
+  },
+  "footer": {
+    "brand": "株式会社シャインソフト",
+    "statement1": "シャインソフトは会社も社員も永続的に常に進化を続け、進化をする為の努力を続けるということを、シャインソフトにいる人間のマインドとします",
+    "statement2": "日本企業の中国進出、また中国企業の日本進出におけるシステム開発支援を行う、コンピュータ・ソフトウェア・プログラミングを手段に、国際社会に新たな価値を創出します",
+    "statement3": "技術スペシャリストの立場におごらず、様々な立場の方と共に学びあいます。そして、一人で導き出すことの難しい、価値ある結果を出します",
+    "statement4": "最新の技術動向から、様々な状況を予測し、技術戦略を提案します。未知なる状況こそ、まだ見ぬ宝石を探し当てる絶好の機会です",
+    "news": {
+      "header": "最新ニュース",
+      "news1": {
+        "title": "本社新橋へ移転",
+        "date": "2012年08月28日"
+      },
+      "news2": {
+        "title": "本社神田へ移転",
+        "date": "2007年03月28日"
+      },
+      "news3": {
+        "title": "900万円まで増資、株式会社シャーインソフトを「株式会社シャインソフト」に社名変更",
+        "date": "2006年10月11日"
+      }
+    },
+    "links": {
+    "header": "リンク集",
+      "link1": "トップ",
+      "link2": "会社概要",
+      "link3": "事業内容",
+      "link4": "採用情報",
+      "link5": "社内システム"
+    },
+    "contact": {
+      "header": "お問合せ",
+      "address": "東京都港区新橋5-12-6 ウェルディ新橋4F",
+      "zipCode": "〒 105-0004",
+      "tel": "Tel: 03-6721-5778",
+      "fax": "Fax: 03-6721-5779",
+      "email": "Email: "
+    },
+    "follow": {
+      "header": "SHINESOFT をフォローする"
+    }
+  },
+  "copyright": {
+    "statement": "Copyright © 2006 ShineSoft Co.,Ltd. All Rights Reserved.",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
+  },
+  "home": {
+    "slider": {
+      "title1": [
+        "ビッグデータ & アナリティクス",
+        "コンテンツ統合管理（ECM)",
+        "情報統合とガバナンス"
+      ],
+      "statement1": [
+        "構造化データと非構造化データを",
+        "収集、管理、分析して、洞察を向上させ",
+        "リアルタイムでビジネスの意思決定を行います。"
+      ],
+      "title2": [
+        "セキュリティー",
+        "モバイル・ファースト",
+        "企業間連携/統合/SOA"
+      ],
+      "statement2": [
+        "オンプレミスでもクラウドでも、アプリケーション",
+        "やデータやプロセスを接続して統合できます。"
+      ],
+      "title3": [
+        "インタラクティブ",
+        "コマース",
+        "コラボレーション"
+      ],
+      "statement3": [
+        "クラウドまたはオンプレミスで、",
+        "ビジネス向け統合コラボレーション・ツールを",
+        "ほぼすべてのデバイスやアプリケーションに提供します。"
+      ]
+    },
+    "breadcrumb": {
+      "title": "株式会社 シャインソフト",
+      "statement": "日本企業の中国進出、また中国企業の日本進出におけるシステム開発支援を行う、コンピュータ・ソフトウェア・プログラミングを手段に、国際社会に新たな価値を創出します。",
+      "contact": "お問合せ"
+    },
+    "content": {
+      "title": "事業内容",
+      "sub1": {
+        "title": "システム構築支援",
+        "statement": "Anim pariatur cliche reprehenderit"
+      },
+      "sub2": {
+        "title": "ソフトウェア開発",
+        "statement": "Responsive Bootstrap Template"
+      },
+      "sub3": {
+        "title": "中国オフショア開発",
+        "statement": "Pariatur prehe cliche reprehrit"
+      },
+      "sub4": {
+        "title": "コンサルティング",
+        "statement": "Craft labore wes anderson cred"
+      }
+    }
+  },
+  "aboutus": {
+    "breadcrumb": {
+      "title": "会社概要"
+    },
+    "message": {
+      "title": "社長からのメッセージ",
+      "paragraph1": "当社は2007年に発足して以来、短い８年間と言いながら、リーマンショックをきっかけとした不況、東日本大震災、アベノミクス等、いろんな激しい変化を経験して参りました。その厳しい創業期を乗り越え、無事第8期を迎える事が出来ましたのも、当社のお客様、ビジネスパートナー様、 その他関係者全ての皆様のお力によるものでございます。ここで改めて深く御礼申し上げます。",
+      "paragraph2": "社会環境の変化に伴い、IT業界でも技術革新のスピードがますます速くなり、企業の優勝劣敗の残酷さをしみじみ感じております。この危機感を抱えながら、いかに業界最新動向を捉え、会社全体のコミュニケーション力、思考力と実行力を高めることが極めて重要だと思っております。",
+      "paragraph3": "専門性、実用性、耐久性の高い会社になるため、社員満足から始まる顧客満足を向上させるために、当社は試行錯誤を重ねて、常に進化を追求し続けて参ります。",
+      "paragraph4": "今後とも変わらぬ、一層の皆様のご愛顧とご指導、ご支援賜りますようお願い申し上げます。",
+      "paragraph5": "社長取締役　花 東江"
+    },
+    "info": {
+      "title": ["ShineSoft", "概要"],
+      "statement": "ITのリーディングカンパニーとして、多くのお客様を支援しています。お客様は民間企業だけではなく、官公庁・病院・学校等の公共機関・団体まで広がっています。",
+      "date": {
+        "title": "設立日",
+        "content": "2006年6月1日（平成18年6月1日）"
+      },
+      "ceo": {
+        "title": "代表者",
+        "content": "代表取締役 劉　健",
+        "btn": "ご挨拶"
+      },
+      "address": {
+        "title": "所在地",
+        "content": "東京都港区新橋5-12-6　ウェルディ新橋4階"
+      },
+      "capital": {
+        "title": "資本金900万円",
+        "content": "平成29年1月現在"
+      },
+      "employee": {
+        "title": "従業員数50人",
+        "content": "平成29年1月現在"
+      },
+      "business": {
+        "title": "派遣事業",
+        "content": "特定労働者派遣番号　特13-307022"
+      }
+    },
+    "history": {
+      "title": ["ShineSoft", "沿革"],
+      "statement": "ITのリーディングカンパニーとして、多くのお客様を支援しています。お客様は民間企業だけではなく、官公庁・病院・学校等の公共機関・団体まで広がっています。お客様とご一緒にさまざまな取り組みをさせていただき、社会や経済に新たな価値とイノベーションを創り出しています。お客様とご一緒にさまざまな取り組みをさせていただき、社会や経済に新たな価値とイノベーションを創り出しています。",
+      "event1": {
+        "date": ["平成27年1月", "January"],
+        "title": "Our first step",
+        "content": [
+          "Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape.",
+          "Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato."
+        ]
+      },
+      "event2": {
+        "date": ["平成27年2月", "February"],
+        "title": "First Achievements",
+        "content": [
+          "Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.",
+          "Donec id elit non mi porta gravida",
+          "Corporate and Creative",
+          "Responsive Bootstrap Template",
+          "Corporate and Creative",
+          "Donec id elit non mi porta gravida",
+          "Corporate and Creative",
+          "Responsive Bootstrap Template",
+          "Corporate and Creative"
+        ]
+      },
+      "event3": {
+        "date": ["平成27年3月", "March"],
+        "title": "Difficulties",
+        "content": [
+          "Parsley amaranth tigernut silver beet maize fennel spinach. Ricebean black-eyed pea maize scallion green bean spinach cabbage jícama bell pepper carrot onion corn plantain garbanzo. Sierra leone bologi komatsuna celery peanut swiss chard silver beet squash dandelion maize chicory burdock tatsoi dulse radish wakame beetroot."
+        ]
+      },
+      "event4": {
+        "date": ["平成27年4月", "April"],
+        "title": "Our Popularity",
+        "content": [
+          "Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard.",
+          "HTML & CSS",
+          "Web Animation",
+          "Web Design",
+          "PHP & Javascript"
+        ]
+      },
+      "event5": {
+        "date": ["平成27年5月", "May"],
+        "title": "Back To The Past",
+        "content": [
+          "Peanut gourd nori welsh onion rock melon mustard jícama. Desert raisin amaranth kombu aubergine kale seakale brussels sprout pea. Black-eyed pea celtuce bamboo shoot salad kohlrabi leek squash prairie turnip catsear rock melon chard taro broccoli turnip greens. Fennel quandong potato watercress ricebean swiss chard garbanzo. Endive daikon brussels sprout lotus root silver beet epazote melon shallot."
+        ]
+      },
+      "event6": {
+        "date": ["平成27年6月", "June"],
+        "title": "Unify In Recent Years",
+        "content": [
+          "Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.",
+          "Bitterleaf celery coriander epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout."
+        ]
+      }
+    },
+    "partner": {
+      "title": ["ShineSoft", "パートナー"],
+      "statement": "お客様所有データとさまざまなオープンデータを統合し、都市、地域、街の特性を基にお客様のビジネスから新たな洞察を導き出します。",
+      "partners": [
+        "Ea Canada", "Inspiring", "UcWeb", "Clarks", "Core Preserves", "USL Champions",
+        "GetAround", "Baderbrau", "Emirates", "Field Days", "District Karaoke", "Mariano's",
+        "The Grifting Tree", "Jaguar", "Hermes", "Starbucks", "National Geographic", "Much More",
+        "Hotiron", "Fred Perry", "Bellfield", "GetApp", "Austrian Airlines", "General Electronic"
+      ]
+    }
+  },
+  "recruitment": {
+    "breadcrumb": {
+      "title": "採用情報"
+    },
+    "leftInner": {
+      "regular": {
+        "title": "正社員募集",
+        "content": "正社員を募集しております！！！",
+        "statement": [
+          "弊社が歓迎する人材―４つの能力という基本姿勢。",
+          "問題解決能力の高い人",
+          "指示待ちではなく、自分の頭で物事を考え行動できる人",
+          "さらに、常に向上心を持って取り組むことができる人",
+          "そしてコンピュータに自身の可能性を賭けたい人",
+          "そのような方は性別・年齢・学歴・国籍を問わず募集しております。"
+        ],
+        "job": {
+          "title": "募集職種",
+          "content1": "IT経験者およびエージェント経験者",
+          "remark1": [
+            "プロジェクトマネージャー",
+            "プロジェクトリーダー",
+            "コンピュータシステムのプランニングおよびコンサルティング"
+          ],
+          "content2": "営業および営業責任者",
+          "remark2": [
+            "常駐型技術者の営業",
+            "クライアントは上場、上場に準じた大手ＳＩのみ",
+            "技術者稼動後の技術者に対するケアも大切な仕事です"
+          ],
+          "content3": "SE、BSE、PG",
+          "remark3": [
+            "Java、C、C++、C#、VBでのプログラミング経験のある方",
+            "Java、OracleでE-Business Suiteの経験者",
+            ".NET、Struts、SOAP、EJB、UML等経験者"
+          ]
+        },
+        "payAndHoliday": {
+          "title": "待遇",
+          "remark": [
+            "給与： 経験等を考慮して当社規定により優遇",
+            "待遇： 各種社会保険完備",
+            "休日： 週休二日制、祝日、年末年始、夏期休暇、慶弔休暇"
+          ]
+        },
+        "application": {
+          "title": "応募方法",
+          "content": [
+            "履歴書、職務経歴書をメールにてお送りください。",
+            "info@shinesoft.co.jp",
+            "書類選考後、弊社よりご連絡いたします。"
+          ],
+          "download": {
+            "title": "正社員応募",
+            "button": "履歴書ダウンロード"
+          }
+        }
+      },
+      "contract": {
+        "title": "契約社員募集",
+        "content": "契約社員を募集しております！！！",
+        "statement": [
+          "大手SIからのプロジェクトを中心とする開発。",
+          "オープン系、汎用系、制御系と幅広く取組んでいます。",
+          "テクニカルな面だけでなく、金融（生保、損保、銀行、証券、クレジット、生産管理、その他）の業務知識をお持ちの方も求めています。業務経験が深ければ50歳代でもプロジェクトへの参入が可能となります。",
+          "将来の目標をお持ちの方、胸を張って主張できる得意分野をお持ちの方、特に歓迎いたします。"
+        ],
+        "job": {
+          "title": "募集職種",
+          "content1": "SE",
+          "remark1": [
+            "プロジェクトマネジメント、要件定義～設計、開発までの担当"
+          ],
+          "content2": "PG",
+          "remark2": [
+            "プロジェクトメンバーとして、システム設計、開発、テストまでの担当"
+          ]
+        },
+        "project": {
+          "title": "プロジェクト",
+          "content1": "OPEN系",
+          "remark1": [
+            "C、Java、.NET、Oracle、C++、C#等を用いて設計、開発"
+          ],
+          "content2": "汎用系",
+          "remark2": [
+            "COBOL、PL/I、ASM等を用いて設計、開発"
+          ],
+          "content3": "制御系",
+          "remark3": [
+            "C、C++、VC++などを用いて設計、開発"
+          ]
+        },
+        "payAndHoliday": {
+          "title": "待遇",
+          "remark": [
+            "給与： 勤務地： 首都圏各地（東京、神奈川、千葉、埼玉）",
+            "報酬： スキルに応じて相談（25万円～70万円程度）"
+          ]
+        },
+        "application": {
+          "title": "応募方法",
+          "content": [
+            "履歴書、職務経歴書をメールにてお送りください。",
+            "info@shinesoft.co.jp",
+            "書類選考後、弊社よりご連絡いたします。"
+          ],
+          "download": {
+            "title": "契約社員応募",
+            "button": "履歴書ダウンロード"
+          }
+        }
+      },
+      "free": {
+        "title": "フリー募集",
+        "content": "フリーを募集しております！！！",
+        "statement": [
+          "テクニカルな面だけでなく、金融（生保、損保、銀行、証券、クレジット、生産管理、その他）の業務知識をお持ちの方も求めています。業務経験が深ければ50歳代でもプロジェクトへの参入が可能となります。"
+        ],
+        "job": {
+          "title": "募集職種",
+          "content1": "SE",
+          "remark1": [
+            "プロジェクトマネジメント、要件定義～設計、開発までの担当"
+          ],
+          "content2": "PG",
+          "remark2": [
+            "プロジェクトメンバーとして、システム設計、開発、テストまでの担当"
+          ]
+        },
+        "project": {
+          "title": "プロジェクト",
+          "content1": "OPEN系",
+          "remark1": [
+            "C、Java、.NET、Oracle、C++、C#等を用いて設計、開発"
+          ],
+          "content2": "汎用系",
+          "remark2": [
+            "COBOL、PL/I、ASM等を用いて設計、開発"
+          ],
+          "content3": "制御系",
+          "remark3": [
+            "C、C++、VC++などを用いて設計、開発"
+          ]
+        },
+        "payAndHoliday": {
+          "title": "待遇",
+          "remark": [
+            "給与： 勤務地： 首都圏各地（東京、神奈川、千葉、埼玉）",
+            "報酬： 案件条件に応じてご相談"
+          ]
+        },
+        "application": {
+          "title": "応募方法",
+          "content": [
+            "履歴書、職務経歴書をメールにてお送りください。",
+            "info@shinesoft.co.jp",
+            "書類選考後、弊社よりご連絡いたします。"
+          ],
+          "download": {
+            "title": "フリー応募",
+            "button": "履歴書ダウンロード"
+          }
+        }
+      }
+    },
+    "rightInner": {
+      "voices": {
+        "title": "社員たちの声",
+        "content1": {
+          "name": "Jeremy Asigner",
+          "description": "Web Developer, Unify Theme.",
+          "statement": "Ducimusqui ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sunt in culpaid delvoe molestias.."
+        },
+        "content2": {
+          "name": "User",
+          "description": "Java Developer, Htmlstream",
+          "statement": "Ducimusqui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sunt in culpaid delvoe molestias.."
+        },
+        "content3": {
+          "name": "Kate Davenport",
+          "description": "Web Designer, Google Inc.",
+          "statement": "Ducimusqui ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, sunt in culpaid delvoe molestias.."
+        }
+      },
+      "news": {
+        "title": "会社生活",
+        "item1": {
+          "title": "Happy New Year",
+          "content": "Anim pariatur cliche reprehenderit"
+        },
+        "item2": {
+          "title": "Award Winning Agency",
+          "content": "Responsive Bootstrap Template"
+        },
+        "item3": {
+          "title": "Wolf Moon Officia",
+          "content": "Pariatur prehe cliche reprehrit"
+        },
+        "item4": {
+          "title": "Food Truck Quinoa Nesciunt",
+          "content": "Craft labore wes anderson cred"
+        }
+      }
+    }
+  },
+  "contact": {
+    "breadcrumb": {
+      "title": "お問合せ"
+    },
+    "form": {
+      "title": "お問合せ",
+      "description": [
+        "必要事項をご入力いただき、「送信」ボタンをクリックしてください。",
+        "は必須項目です。",
+        "ご入力頂いた個人情報につきましては、新商品、サービス、イベント、セミナー等に関する情報のお知らせ、弊社製品販売における商品の発送、関連するアフターサービスを目的に、弊社及び代理店で使用させていただきます。"
+      ],
+      "name": "ご氏名",
+      "email": "メールアドレス",
+      "subject": "タイトル",
+      "message": "メーセッジ",
+      "send": "送信",
+      "success": "Your message was successfully sent!"
+    },
+    "info": {
+      "title": "会社案内",
+      "address": "東京都港区新橋5-12-6 ウェルディ新橋4F"
+    },
+    "time": {
+      "title": "営業時間",
+      "workday": "平日",
+      "saturday": "土曜日",
+      "sunday": "日曜日",
+      "rest": "＊祝日・休日および１２月３１日、１月１日～３日は営業いたしません。"
+    }
+  },
+  "login": {
+    "breadcrumb": {
+      "title": "システムログイン"
+    },
+    "form": {
+      "title": "ログイン",
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "button": "ログイン",
+      "forgotPass": "パスワード忘れました？",
+      "resetPassLink": "こちらで",
+      "resetpass": "パスワードをリセット"
+    }
+  },
+  "error": {
+    "404": "大変申し訳ございませんが、該当ページは存在しません。下記ボタンをクリックして、ホームページに戻ってください。",
+    "backBtn": "ホームに戻る"
+  },
+  "topBar.language": "topBar.language",
+  "language": "language",
+  "topBar_language": "topBar_language",
+  "topBar:language": "topBar:language",
+  "topBar/language": "topBar/language",
+  "news": "news"
 }

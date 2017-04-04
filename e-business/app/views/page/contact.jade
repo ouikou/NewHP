@@ -42,7 +42,7 @@ block breadcrumbs
   // === Breadcrumbs ===
   .breadcrumbs
     .container
-      h1.pull-left Our Contacts
+      h1.pull-left #{__('contact').breadcrumb.title}
   // /breadcrumbs
   // === End Breadcrumbs ===
 
@@ -56,88 +56,73 @@ block content
     .row.margin-bottom-30
       .col-md-9.mb-margin-bottom-30
         .headline
-          h2 Contact Form
+          h2 #{__('contact').form.title}
         p
-          | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas feugiat. Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet, consectetur adipiscing elit landitiis.
+          | #{__('contact').form.description[0]}
+          span.color-red *
+          | #{__('contact').form.description[1]}
+          br
+          | #{__('contact').form.description[2]}
         br
         form#sky-form3.sky-form.contact-style(action='assets/php/sky-forms-pro/demo-contacts-process.php', method='post')
           fieldset.no-padding
             label
-              | Name
+              | #{__('contact').form.name}
               span.color-red *
             .row.sky-space-20
               .col-md-7.col-md-offset-0
                 div
                   input#name.form-control(type='text', name='name')
             label
-              | Email
+              | #{__('contact').form.email}
               span.color-red *
             .row.sky-space-20
               .col-md-7.col-md-offset-0
                 div
                   input#email.form-control(type='text', name='email')
             label
-              | Message
+              | #{__('contact').form.message}
               span.color-red *
             .row.sky-space-20
               .col-md-11.col-md-offset-0
                 div
                   textarea#message.form-control(rows='8', name='message')
             p
-              button.btn-u(type='submit') Send Message
+              button.btn-u(type='submit') #{__('contact').form.send}
           .message
             i.rounded-x.fa.fa-check
-            p Your message was successfully sent!
+            p #{__('contact').form.success}
       // /col-md-9
       .col-md-3
         // Contacts
         .headline
-          h2 Contacts
+          h2 #{__('contact').info.title}
         ul.list-unstyled.who.margin-bottom-30
           li
             a(href='#')
               i.fa.fa-home
-              | 5B Streat, City 50987 New Town US
+              | #{__('contact').info.address}
           li
-            a(href='#')
+            a(href='mailto:info@shinesoft.co.jp')
               i.fa.fa-envelope
-              | info@example.com
+              | info@shinesoft.co.jp
           li
             a(href='#')
               i.fa.fa-phone
-              | 1(222) 5x86 x97x
+              | 03-6721-5778
           li
-            a(href='#')
+            a(href='http://www.shinesoft.co.jp')
               i.fa.fa-globe
-              | http://www.example.com
+              | http://www.shinesoft.co.jp
         // Business Hours
         .headline
-          h2 Business Hours
-        ul.list-unstyled.margin-bottom-30
-          li
-            strong Monday-Friday:
-            |  10am to 8pm
-          li
-            strong Saturday:
-            |  11am to 3pm
-          li
-            strong Sunday:
-            |  Closed
-        // Why we are?
-        .headline
-          h2 Why we are?
-        p
-          | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.
+          h2 #{__('contact').time.title}
         ul.list-unstyled
           li
-            i.fa.fa-check.color-green
-            |  Odio dignissimos ducimus
-          li
-            i.fa.fa-check.color-green
-            |  Blanditiis praesentium volup
-          li
-            i.fa.fa-check.color-green
-            |  Eos et accusamus
+            strong #{__('contact').time.workday}:
+            = ' '
+            | 9：00〜18：00
+        p #{__('contact').time.rest}
       // /col-md-3
     // /row
   // /container
