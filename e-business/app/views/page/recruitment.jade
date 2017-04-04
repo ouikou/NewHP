@@ -32,7 +32,7 @@ block breadcrumbs
   // === Breadcrumbs ===
   .breadcrumbs
     .container
-      h1.pull-left Recruitment
+      h1.pull-left #{__('recruitment').breadcrumb.title}
   // /breadcrumbs
   // === End Breadcrumbs ===
 
@@ -47,7 +47,7 @@ block content
           .tab-v1.left-inner
             ul.nav.nav-tabs
               li.regular-employee.active
-                a(href='#regular_employee', data-toggle='tab') 正社員募集
+                a(href='#regular_employee', data-toggle='tab') #{__('recruitment').info.employee.title}
               li.contract-employee
                 a(href='#contract_employee', data-toggle='tab') 契約社員募集
               li.free-employee
@@ -57,82 +57,81 @@ block content
                 .service-block-v6
                   i.icon-custom.rounded-4x.icon-md.icon-bg-green.fa.fa-lightbulb-o
                   .service-desc
-                    h2 正社員を募集しております！！！
+                    h2 #{__('recruitment').info.employee.content}
                     p
-                      | 弊社が歓迎する人材―４つの能力という基本姿勢。
+                      | #{__('recruitment').info.employee.statement[0]}
                     ol
                       li
-                        |  問題解決能力の高い人
+                        | #{__('recruitment').info.employee.statement[1]}
                       li
-                        |  指示待ちではなく、自分の頭で物事を考え行動できる人
+                        | #{__('recruitment').info.employee.statement[2]}
                       li
-                        |  さらに、常に向上心を持って取り組むことができる人
+                        | #{__('recruitment').info.employee.statement[3]}
                       li
-                        |  そしてコンピュータに自身の可能性を賭けたい人
+                        | #{__('recruitment').info.employee.statement[4]}
                     p
-                      | そのような方は性別・年齢・学歴・国籍を問わず募集しております。
+                      | #{__('recruitment').info.employee.statement[5]}
                 hr
-                h2 募集職種
+                h2 #{__('recruitment').info.employee.job.title}
                 ol
                   li
-                    | IT経験者およびエージェント経験者
+                    | #{__('recruitment').info.employee.job.content1}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  プロジェクトマネージャー
+                        |  #{__('recruitment').info.employee.job.remark1[0]}
                       li
                         i.fa.fa-check.color-green
-                        |  プロジェクトリーダー
+                        |  #{__('recruitment').info.employee.job.remark1[1]}
                       li
                         i.fa.fa-check.color-green
-                        |  コンピュータシステムのプランニングおよびコンサルティング
+                        |  #{__('recruitment').info.employee.job.remark1[2]}
                   li
-                    | 営業および営業責任者
+                    | #{__('recruitment').info.employee.job.content2}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  常駐型技術者の営業
+                        |  #{__('recruitment').info.employee.job.remark2[0]}
                       li
                         i.fa.fa-check.color-green
-                        |  クライアントは上場、上場に準じた大手ＳＩのみ
+                        |  #{__('recruitment').info.employee.job.remark2[1]}
                       li
                         i.fa.fa-check.color-green
-                        |  技術者稼動後の技術者に対するケアも大切な仕事です
-
+                        |  #{__('recruitment').info.employee.job.remark2[2]}
                   li
-                    | SE、BSE、PG
+                    | #{__('recruitment').info.employee.job.content3}
                     ul.list-unstyled
                       li
                         i.fa.fa-check.color-green
-                        |  Java、C、C++、C#、VBでのプログラミング経験のある方
+                        |  #{__('recruitment').info.employee.job.remark3[0]}
                       li
                         i.fa.fa-check.color-green
-                        |  Java、OracleでE-Business Suiteの経験者
+                        |  #{__('recruitment').info.employee.job.remark3[1]}
                       li
                         i.fa.fa-check.color-green
-                        |  .NET、Struts、SOAP、EJB、UML等経験者
+                        |  #{__('recruitment').info.employee.job.remark3[2]}
                 hr
-                h2 待遇
+                h2 #{__('recruitment').info.employee.payAndHoliday.title}
                 ul.list-unstyled
                   li
                     i.fa.fa-check.color-green
-                    |  給与： 経験等を考慮して当社規定により優遇
+                    |  #{__('recruitment').info.employee.payAndHoliday.remark[0]}
                   li
                     i.fa.fa-check.color-green
-                    |  待遇： 各種社会保険完備
+                    |  #{__('recruitment').info.employee.payAndHoliday.remark[1]}
                   li
                     i.fa.fa-check.color-green
-                    |  休日： 週休二日制、祝日、年末年始、夏期休暇、慶弔休暇
+                    |  #{__('recruitment').info.employee.payAndHoliday.remark[2]}
                 hr
                 .row
                   .col-md-7
-                    h2 応募方法
+                    h2 #{__('recruitment').info.employee.application.title}
                     p
-                      | 履歴書、職務経歴書をメールにてお送りください。
+                      | #{__('recruitment').info.employee.application.content[0]}
                       br
-                      a(href='mailto:info@shinesoft.co.jp') info@shinesoft.co.jp
+                      a(href="mailto:{#{__('recruitment').info.employee.application.content[1]}}") #{__('recruitment').info.employee.application.content[1]}
                       br
-                      | 書類選考後、弊社よりご連絡いたします。
+                      | #{__('recruitment').info.employee.application.content[2]}
                   .col-md-5
                     .pricing.hover-effect
                       .pricing-head.regular-employee

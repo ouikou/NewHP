@@ -1,0 +1,410 @@
+{
+  "title": "株式会社シャインソフト(ShineSoft Co.,Ltd.)",
+  "topBar": {
+    "language": "言語選択",
+    "languageOpt": {
+      "ja": "日本語",
+      "en": "英語",
+      "zh": "中国語"
+    },
+    "login": "ログイン"
+  },
+  "menu": {
+    "home": "トップ",
+    "about": "会社概要",
+    "service": "事業内容",
+    "recruitment": "採用情報",
+    "contact": "お問合せ"
+  },
+  "footer": {
+    "brand": "株式会社シャインソフト",
+    "statement1": "シャインソフトは会社も社員も永続的に常に進化を続け、進化をする為の努力を続けるということを、シャインソフトにいる人間のマインドとします",
+    "statement2": "日本企業の中国進出、また中国企業の日本進出におけるシステム開発支援を行う、コンピュータ・ソフトウェア・プログラミングを手段に、国際社会に新たな価値を創出します",
+    "statement3": "技術スペシャリストの立場におごらず、様々な立場の方と共に学びあいます。そして、一人で導き出すことの難しい、価値ある結果を出します",
+    "statement4": "最新の技術動向から、様々な状況を予測し、技術戦略を提案します。未知なる状況こそ、まだ見ぬ宝石を探し当てる絶好の機会です",
+    "news": {
+      "header": "最新ニュース",
+      "news1": {
+        "title": "本社新橋へ移転",
+        "date": "2012年08月28日"
+      },
+      "news2": {
+        "title": "本社神田へ移転",
+        "date": "2007年03月28日"
+      },
+      "news3": {
+        "title": "900万円まで増資、株式会社シャーインソフトを「株式会社シャインソフト」に社名変更",
+        "date": "2006年10月11日"
+      }
+    },
+    "links": {
+      "header": "リンク集",
+      "link1": "トップ",
+      "link2": "会社概要",
+      "link3": "事業内容",
+      "link4": "採用情報",
+      "link5": "社内システム"
+    },
+    "contact": {
+      "header": "お問合せ",
+      "address": "東京都港区新橋5-12-6　ウェルディ新橋4F",
+      "zipCode": "〒 105-0004",
+      "tel": "Tel: 03-6721-5778",
+      "fax": "Fax: 03-6721-5779",
+      "email": "Email: "
+    },
+    "follow": {
+      "header": "SHINESOFT をフォローする"
+    }
+  },
+  "copyright": {
+    "statement": "Copyright © 2006 ShineSoft Co.,Ltd. All Rights Reserved.",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
+  },
+  "home": {
+    "slider": {
+      "title1": [
+        "ビッグデータ & アナリティクス",
+        "コンテンツ統合管理（ECM)",
+        "情報統合とガバナンス"
+      ],
+      "statement1": [
+        "構造化データと非構造化データを",
+        "収集、管理、分析して、洞察を向上させ",
+        "リアルタイムでビジネスの意思決定を行います。"
+      ],
+      "title2": [
+        "セキュリティー",
+        "モバイル・ファースト",
+        "企業間連携/統合/SOA"
+      ],
+      "statement2": [
+        "オンプレミスでもクラウドでも、アプリケーション",
+        "やデータやプロセスを接続して統合できます。"
+      ],
+      "title3": [
+        "インタラクティブ",
+        "コマース",
+        "コラボレーション"
+      ],
+      "statement3": [
+        "クラウドまたはオンプレミスで、",
+        "ビジネス向け統合コラボレーション・ツールを",
+        "ほぼすべてのデバイスやアプリケーションに提供します。"
+      ]
+    },
+    "breadcrumb": {
+      "title": "株式会社 シャインソフト",
+      "statement": "日本企業の中国進出、また中国企業の日本進出におけるシステム開発支援を行う、コンピュータ・ソフトウェア・プログラミングを手段に、国際社会に新たな価値を創出します。",
+      "contact": "お問合せ"
+    },
+    "content": {
+      "title": "事業内容",
+      "sub1": {
+        "title": "システム構築支援",
+        "statement": "Anim pariatur cliche reprehenderit"
+      },
+      "sub2": {
+        "title": "ソフトウェア開発",
+        "statement": "Responsive Bootstrap Template"
+      },
+      "sub3": {
+        "title": "中国オフショア開発",
+        "statement": "Pariatur prehe cliche reprehrit"
+      },
+      "sub4": {
+        "title": "コンサルティング",
+        "statement": "Craft labore wes anderson cred"
+      }
+    }
+  },
+  "aboutus": {
+    "breadcrumb": {
+      "title": "会社概要"
+    },
+    "message": {
+      "title": "社長からのメッセージ",
+      "paragraph1": "当社は2007年に発足して以来、短い８年間と言いながら、リーマンショックをきっかけとした不況、東日本大震災、アベノミクス等、いろんな激しい変化を経験して参りました。その厳しい創業期を乗り越え、無事第8期を迎える事が出来ましたのも、当社のお客様、ビジネスパートナー様、 その他関係者全ての皆様のお力によるものでございます。ここで改めて深く御礼申し上げます。",
+      "paragraph2": "社会環境の変化に伴い、IT業界でも技術革新のスピードがますます速くなり、企業の優勝劣敗の残酷さをしみじみ感じております。この危機感を抱えながら、いかに業界最新動向を捉え、会社全体のコミュニケーション力、思考力と実行力を高めることが極めて重要だと思っております。",
+      "paragraph3": "専門性、実用性、耐久性の高い会社になるため、社員満足から始まる顧客満足を向上させるために、当社は試行錯誤を重ねて、常に進化を追求し続けて参ります。",
+      "paragraph4": "今後とも変わらぬ、一層の皆様のご愛顧とご指導、ご支援賜りますようお願い申し上げます。",
+      "paragraph5": "社長取締役　花 東江"
+    },
+    "info": {
+      "title": ["ShineSoft", "概要"],
+      "statement": "ITのリーディングカンパニーとして、多くのお客様を支援しています。お客様は民間企業だけではなく、官公庁・病院・学校等の公共機関・団体まで広がっています。",
+      "date": {
+        "title": "設立日",
+        "content": "2006年6月1日（平成18年6月1日）"
+      },
+      "ceo": {
+        "title": "代表者",
+        "content": "代表取締役 劉　健",
+        "btn": "ご挨拶"
+      },
+      "address": {
+        "title": "所在地",
+        "content": "東京都港区新橋5-12-6　ウェルディ新橋4階"
+      },
+      "capital": {
+        "title": "資本金900万円",
+        "content": "平成29年1月現在"
+      },
+      "employee": {
+        "title": "従業員数50人",
+        "content": "平成29年1月現在"
+      },
+      "business": {
+        "title": "派遣事業",
+        "content": "特定労働者派遣番号　特13-307022"
+      }
+    },
+    "history": {
+      "title": ["ShineSoft", "沿革"],
+      "statement": "ITのリーディングカンパニーとして、多くのお客様を支援しています。お客様は民間企業だけではなく、官公庁・病院・学校等の公共機関・団体まで広がっています。お客様とご一緒にさまざまな取り組みをさせていただき、社会や経済に新たな価値とイノベーションを創り出しています。お客様とご一緒にさまざまな取り組みをさせていただき、社会や経済に新たな価値とイノベーションを創り出しています。",
+      "event1": {
+        "date": ["平成27年1月", "January"],
+        "title": "Our first step",
+        "content": [
+          "Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape.",
+          "Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato."
+        ]
+      },
+      "event2": {
+        "date": ["平成27年2月", "February"],
+        "title": "First Achievements",
+        "content": [
+          "Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.",
+          "Donec id elit non mi porta gravida",
+          "Corporate and Creative",
+          "Responsive Bootstrap Template",
+          "Corporate and Creative",
+          "Donec id elit non mi porta gravida",
+          "Corporate and Creative",
+          "Responsive Bootstrap Template",
+          "Corporate and Creative"
+        ]
+      },
+      "event3": {
+        "date": ["平成27年3月", "March"],
+        "title": "Difficulties",
+        "content": [
+          "Parsley amaranth tigernut silver beet maize fennel spinach. Ricebean black-eyed pea maize scallion green bean spinach cabbage jícama bell pepper carrot onion corn plantain garbanzo. Sierra leone bologi komatsuna celery peanut swiss chard silver beet squash dandelion maize chicory burdock tatsoi dulse radish wakame beetroot."
+        ]
+      },
+      "event4": {
+        "date": ["平成27年4月", "April"],
+        "title": "Our Popularity",
+        "content": [
+          "Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard.",
+          "HTML & CSS",
+          "Web Animation",
+          "Web Design",
+          "PHP & Javascript"
+        ]
+      },
+      "event5": {
+        "date": ["平成27年5月", "May"],
+        "title": "Back To The Past",
+        "content": [
+          "Peanut gourd nori welsh onion rock melon mustard jícama. Desert raisin amaranth kombu aubergine kale seakale brussels sprout pea. Black-eyed pea celtuce bamboo shoot salad kohlrabi leek squash prairie turnip catsear rock melon chard taro broccoli turnip greens. Fennel quandong potato watercress ricebean swiss chard garbanzo. Endive daikon brussels sprout lotus root silver beet epazote melon shallot."
+        ]
+      },
+      "event6": {
+        "date": ["平成27年6月", "June"],
+        "title": "Unify In Recent Years",
+        "content": [
+          "Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.",
+          "Bitterleaf celery coriander epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout."
+        ]
+      }
+    },
+    "partner": {
+      "title": ["ShineSoft", "パートナー"],
+      "statement": "お客様所有データとさまざまなオープンデータを統合し、都市、地域、街の特性を基にお客様のビジネスから新たな洞察を導き出します。",
+      "partners": [
+        "Ea Canada", "Inspiring", "UcWeb", "Clarks", "Core Preserves", "USL Champions",
+        "GetAround", "Baderbrau", "Emirates", "Field Days", "District Karaoke", "Mariano's",
+        "The Grifting Tree", "Jaguar", "Hermes", "Starbucks", "National Geographic", "Much More",
+        "Hotiron", "Fred Perry", "Bellfield", "GetApp", "Austrian Airlines", "General Electronic"
+      ]
+    }
+  },
+  "recruitment": {
+    "breadcrumb": {
+      "title": "採用情報"
+    },
+    "info": {
+      "employee": {
+        "title": "正社員募集",
+        "content": "正社員を募集しております！！！",
+        "statement": [
+          "弊社が歓迎する人材―４つの能力という基本姿勢。",
+          "問題解決能力の高い人",
+          "指示待ちではなく、自分の頭で物事を考え行動できる人",
+          "さらに、常に向上心を持って取り組むことができる人",
+          "そしてコンピュータに自身の可能性を賭けたい人",
+          "そのような方は性別・年齢・学歴・国籍を問わず募集しております。"
+        ],
+        "job": {
+          "title": "募集職種",
+          "content1": "IT経験者およびエージェント経験者",
+          "remark1": [
+            "プロジェクトマネージャー",
+            "プロジェクトリーダー",
+            "コンピュータシステムのプランニングおよびコンサルティング"
+          ],
+          "content2": "営業および営業責任者",
+          "remark2": [
+            "常駐型技術者の営業",
+            "クライアントは上場、上場に準じた大手ＳＩのみ",
+            "技術者稼動後の技術者に対するケアも大切な仕事です"
+          ],
+          "content3": "SE、BSE、PG",
+          "remark3": [
+            "Java、C、C++、C#、VBでのプログラミング経験のある方",
+            "Java、OracleでE-Business Suiteの経験者",
+            ".NET、Struts、SOAP、EJB、UML等経験者"
+          ]
+        },
+        "payAndHoliday": {
+          "title": "待遇 & 休日休暇",
+          "remark": [
+            "給与： 経験等を考慮して当社規定により優遇",
+            "待遇： 各種社会保険完備",
+            "休日： 週休二日制、祝日、年末年始、夏期休暇、慶弔休暇"
+          ]
+        },
+        "application": {
+          "title": "応募方法",
+          "content": [
+            "履歴書、職務経歴書をメールにてお送りください。",
+            "info@shinesoft.co.jp",
+            "書類選考後、弊社よりご連絡いたします。"
+          ],
+          "download": {
+            "title": "正社員応募",
+            "button": "履歴書ダウンロード"
+          }
+        }
+      }
+    },
+    "download": "履歴書ダウンロード",
+    "agreement": {
+      "title": "個人情報に関するご通知（募集時）",
+      "info1": {
+        "title": "利用又は提供の目的",
+        "content": "当社は、貴殿から取得した氏名、生年月日、住所等の個人に関する情報を、当社の採用活動にのみ利用する目的で取得するものであり、それ以外の目的に利用もしくは他に提供・開示することは一切ありません。 "
+      },
+      "info2": {
+        "title": "個人情報の取扱いについて",
+        "content": "当社は、取得した貴殿の個人情報を、当社の責任のもとで適切に取扱い管理するものとし、又当社の採用活動の終了に伴い、当社の責任のもとで適切に廃棄･消去致します。"
+      },
+      "info3": {
+        "title": "個人情報の当社への提供の任意性について",
+        "content": "当社が貴殿から取得する個人情報は、当社の業務を遂行する上で必要なもののみを取得しています。したがって、貴殿が本事項に定めた個人情報の取扱いに同意されない場合は、お申込をお断りすることがあります。"
+      },
+      "info4": {
+        "title": "貴方の個人情報の開示、訂正・削除について",
+        "content": "貴殿は、当社に対しご提供されたご自身の個人情報について、開示を請求することができます。又、開示の結果、ご自身の個人情報につきまして訂正・削除を請求することもできます。貴殿が弊社に対し、このような請求をされる場合は、下記の連絡先までご連絡下さい。 "
+      },
+      "info5": {
+        "title": "連絡先",
+        "content": "個人情報の開示・訂正・削除等のご請求、その他ご上明な点につきましては下記までご連絡ください。",
+        "contact": " 連絡先: 株式会社イー・ビジネス",
+        "window": " 窓口担当: 花 東江",
+        "tel": " 電話番号: ",
+        "fax": " FAX番号: "
+      },
+      "agree": "同意",
+      "disagree": "同意しない"
+    },
+    "voices": {
+      "title": "社員たちの声",
+      "voice1": {
+        "content": "この会社の皆は単なる同僚ではなく、まさに家族だ！お帰り!",
+        "name": "万力",
+        "position": "取締役"
+      },
+      "voice2": {
+        "content": "「成功の成否は人の和にあり」自分の「和」の能力を生かして皆様の成長を見守って行きたいと思います。あなたの活躍を期待しています、ご応募をお待ちしております。",
+        "name": "趙威",
+        "position": "営業一部・部長"
+      },
+      "voice3": {
+        "content": "いい会社の条件の一つは、社員の声を聞かせる。",
+        "name": "王飛翔",
+        "position": "取締役"
+      },
+      "voice4": {
+        "content": "性格は変えられませんが、行動が変えられます。",
+        "name": "陳栄",
+        "position": "経理部・部長"
+      }
+    },
+    "photos": {
+      "title": "会社生活",
+      "title1": "リーダ研修での熱い討議",
+      "title2": "社内教育で、ベテラン社員が新入社員に技術を教える",
+      "title3": "新入社員が真剣に教育を受ける",
+      "title4": "iOS開発勉強会１",
+      "title5": "iOS開発勉強会２",
+      "title6": "準備中......",
+      "title7": "いよいよ始まるぞ",
+      "title8": "アットホームな雰囲気で皆が盛り上げる",
+      "title9": "おいしい料理を食べながら、同僚達が熱く語り合う",
+      "title10": "今回のイベントも盛上り、楽しいひと時を過しました"
+    }
+  },
+  "contact": {
+    "breadcrumb": {
+      "title": "お問合せ"
+    },
+    "form": {
+      "title": "お問合せ",
+      "description": "お気軽に問い合わせください。",
+      "name": "ご氏名",
+      "email": "メールアドレス",
+      "subject": "タイトル",
+      "message": "メーセッジ",
+      "send": "送信",
+      "success": "Your message was successfully sent!"
+    },
+    "info": {
+      "title": "会社案内",
+      "address": "東京都港区芝2-28-8 芝2丁目ビル10階"
+    },
+    "time": {
+      "title": "営業時間",
+      "workday": "平日:",
+      "saturday": "土曜日:",
+      "sunday": "日曜日:",
+      "rest": " 休日"
+    }
+  },
+  "login": {
+    "breadcrumb": {
+      "title": "システムログイン"
+    },
+    "form": {
+      "title": "ログイン",
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "button": "ログイン",
+      "forgotPass": "パスワード忘れました？",
+      "resetPassLink": "こちらで",
+      "resetpass": "パスワードをリセット"
+    }
+  },
+  "error": {
+    "404": "大変申し訳ございませんが、該当ページは存在しません。下記ボタンをクリックして、ホームページに戻ってください。",
+    "backBtn": "ホームに戻る"
+  },
+  "topBar.language": "topBar.language",
+  "language": "language",
+  "topBar_language": "topBar_language",
+  "topBar:language": "topBar:language",
+  "topBar/language": "topBar/language",
+  "news": "news"
+}
