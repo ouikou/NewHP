@@ -20,9 +20,10 @@ var ContactPage = function () {
           animation: google.maps.Animation.DROP,
           title: 'ShineSoft Co.,Ltd.',
           infoWindow: {
-            content: "東京都港区新橋5-12-6 ウェルディ新橋4F"
+            content: '東京都港区新橋5-12-6 ウェルディ新橋4F'
           }
-		      });
+		    });
+        marker.infoWindow.open(map, marker);
 			});
         },
 

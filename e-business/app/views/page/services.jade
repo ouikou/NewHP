@@ -32,7 +32,7 @@ block breadcrumbs
   // === Breadcrumbs ===
   .breadcrumbs
     .container
-      h1.pull-left #{__('services').breadcrumb.title}
+      h1.pull-left #{__('services.breadcrumb.title')}
   // /breadcrumbs
   // === End Breadcrumbs ===
 
@@ -41,89 +41,89 @@ block content
   .container.content-sm
     .text-center.margin-bottom-50
       h2
-        span.color-green #{__('services').category.title[0]}
+        span.color-green #{__('services.category.title.0')}
         = ' '
-        | #{__('services').category.title[1]}
+        | #{__('services.category.title.1')}
       p.space-lg-hor
-        | #{__('services').category.statement}
+        | #{__('services.category.statement')}
     .row.content-boxes-v4.content-boxes-v4-sm.margin-bottom-30
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-directions
         .content-boxes-in-v4
-          h2 #{__('services').category.item1.title}
+          h2 #{__('services.category.item1.title')}
           p
-            | #{__('services').category.item1.content}
+            | #{__('services.category.item1.content')}
           a(href='#') Learn More
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-handbag
         .content-boxes-in-v4
-          h2 #{__('services').category.item2.title}
+          h2 #{__('services.category.item2.title')}
           p
-            | #{__('services').category.item2.content}
+            | #{__('services.category.item2.content')}
           a(href='#') Learn More
       .col-md-4
         i.pull-left.icon-chemistry
         .content-boxes-in-v4
-          h2 #{__('services').category.item3.title}
+          h2 #{__('services.category.item3.title')}
           p
-            | #{__('services').category.item3.content}
+            | #{__('services.category.item3.content')}
           a(href='#') Learn More
     hr
     .row.content-boxes-v4.content-boxes-v4-sm.margin-bottom-30
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-info.margin-right-10
         .content-boxes-in-v4
-          h2 #{__('services').category.item4.title}
+          h2 #{__('services.category.item4.title')}
           p
-            | #{__('services').category.item4.content}
+            | #{__('services.category.item4.content')}
           a(href='#') Learn More
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-social-youtube.margin-right-10
         .content-boxes-in-v4
-          h2 #{__('services').category.item5.title}
+          h2 #{__('services.category.item5.title')}
           p
-            | #{__('services').category.item5.content}
+            | #{__('services.category.item5.content')}
           a(href='#') Learn More
       .col-md-4
         i.pull-left.icon-fire.margin-right-10
         .content-boxes-in-v4
-          h2 #{__('services').category.item6.title}
+          h2 #{__('services.category.item6.title')}
           p
-            | #{__('services').category.item6.content}
+            | #{__('services.category.item6.content')}
           a(href='#') Learn More
     hr
     .row.content-boxes-v4.content-boxes-v4-sm
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-layers
         .content-boxes-in-v4
-          h2 #{__('services').category.item7.title}
+          h2 #{__('services.category.item7.title')}
           p
-            | #{__('services').category.item7.content}
+            | #{__('services.category.item7.content')}
           a(href='#') Learn More
       .col-md-4.md-margin-bottom-40
         i.pull-left.icon-rocket
         .content-boxes-in-v4
-          h2 #{__('services').category.item8.title}
+          h2 #{__('services.category.item8.title')}
           p
-            | #{__('services').category.item8.content}
+            | #{__('services.category.item8.content')}
           a(href='#') Learn More
       .col-md-4
         i.pull-left.icon-support
         .content-boxes-in-v4
-          h2 #{__('services').category.item9.title}
+          h2 #{__('services.category.item9.title')}
           p
-            | #{__('services').category.item9.content}
+            | #{__('services.category.item9.content')}
           a(href='#') Learn More
   // === End Service Blocks ===
   // === Cube Portfolio ===
   .container.content-sm
     .text-center.margin-bottom-30
       h2
-        | #{__('services').solution.title[0]}
+        | #{__('services.solution.title.0')}
         = ' '
-        span.color-green #{__('services').solution.title[1]}
+        span.color-green #{__('services.solution.title.1')}
       p.space-lg-hor
-        | #{__('services').solution.statement}
+        | #{__('services.solution.statement')}
     .cube-portfolio.container.margin-bottom-20
       .margin-bottom-30
         #filters-container.cbp-l-filters-text
@@ -139,58 +139,58 @@ block content
         // /end Filters Container
       #grid-container.cbp-l-grid-gallery
         .cbp-item.illustration.web-design
-          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item1.dataUrl}")
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services.solution.item1.dataUrl')}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/20.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title #{__('services').solution.item1.captionTitle}
-                  .cbp-l-caption-desc #{__('services').solution.item1.captionDescription}
+                  .cbp-l-caption-title #{__('services.solution.item1.captionTitle')}
+                  .cbp-l-caption-desc #{__('services.solution.item1.captionDescription')}
         .cbp-item.web-design.logo
-          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item2.dataUrl}")
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services.solution.item2.dataUrl')}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/19.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title #{__('services').solution.item2.captionTitle}
-                  .cbp-l-caption-desc #{__('services').solution.item2.captionDescription}
+                  .cbp-l-caption-title #{__('services.solution.item2.captionTitle')}
+                  .cbp-l-caption-desc #{__('services.solution.item2.captionDescription')}
         .cbp-item.illustration.web-design
-          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item3.dataUrl}")
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services.solution.item3.dataUrl')}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/21.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title #{__('services').solution.item3.captionTitle}
-                  .cbp-l-caption-desc #{__('services').solution.item3.captionDescription}
+                  .cbp-l-caption-title #{__('services.solution.item3.captionTitle')}
+                  .cbp-l-caption-desc #{__('services.solution.item3.captionDescription')}
         .cbp-item.web-design.illustration
-          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item4.dataUrl}")
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services.solution.item4.dataUrl')}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/22.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title #{__('services').solution.item4.captionTitle}
-                  .cbp-l-caption-desc #{__('services').solution.item4.captionDescription}
+                  .cbp-l-caption-title #{__('services.solution.item4.captionTitle')}
+                  .cbp-l-caption-desc #{__('services.solution.item4.captionDescription')}
         .cbp-item.web-design.graphic
-          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item5.dataUrl}")
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services.solution.item5.dataUrl')}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/24.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title #{__('services').solution.item5.captionTitle}
-                  .cbp-l-caption-desc #{__('services').solution.item5.captionDescription}
+                  .cbp-l-caption-title #{__('services.solution.item5.captionTitle')}
+                  .cbp-l-caption-desc #{__('services.solution.item5.captionDescription')}
         .cbp-item.illustration.web-design.graphic
-          a.cbp-caption.cbp-singlePageInline(href="#{__('services').solution.item6.dataUrl}")
+          a.cbp-caption.cbp-singlePageInline(href="#{__('services.solution.item6.dataUrl')}")
             .cbp-caption-defaultWrap
               img(src='assets/img/portfolio/23.jpg', alt='')
             .cbp-caption-activeWrap
               .cbp-l-caption-alignLeft
                 .cbp-l-caption-body
-                  .cbp-l-caption-title #{__('services').solution.item6.captionTitle}
-                  .cbp-l-caption-desc #{__('services').solution.item6.captionDescription}
+                  .cbp-l-caption-title #{__('services.solution.item6.captionTitle')}
+                  .cbp-l-caption-desc #{__('services.solution.item6.captionDescription')}
       // /end Grid Container
   // === End Cube Portfolio ===

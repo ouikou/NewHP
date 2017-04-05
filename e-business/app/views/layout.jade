@@ -36,20 +36,30 @@ head
             ul.loginbar.pull-right
               li.hoverSelector
                 i.fa.fa-globe
-                a #{__('topBar').language}
+                a #{__('topBar.language')}
                 ul.languages.hoverSelectorBlock
-                  li.active
-                    a(href='#')
-                      | #{__('topBar').languageOpt.ja}
-                      i.fa.fa-check
-                  li
-                    a(href='#') #{__('topBar').languageOpt.en}
-                  li
-                    a(href='#') #{__('topBar').languageOpt.zh}
+                  li(class=(langswitch === "ja")?"active":"")
+                    a(href='/langswitch/ja')
+                      | #{__('topBar.languageOpt.ja')}
+                      if langswitch === "ja"
+                        i.fa.fa-check
+                      else
+                  li(class=(langswitch === "en")?"active":"")
+                    a(href='/langswitch/en')
+                      | #{__('topBar.languageOpt.en')}
+                      if langswitch === "en"
+                        i.fa.fa-check
+                      else
+                  li(class=(langswitch === "zh")?"active":"")
+                    a(href='/langswitch/zh')
+                      | #{__('topBar.languageOpt.zh')}
+                      if langswitch === "zh"
+                        i.fa.fa-check
+                      else
                 = ' '
               li.topbar-devider
               li
-                a(href='page_login.html') #{__('topBar').login}
+                a(href='page_login.html') #{__('topBar.login')}
           // End Topbar
           // Toggle get grouped for better mobile display
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
@@ -64,19 +74,19 @@ head
               // home | about-us | service | recruitment | contact
               li(class=(path === "home")?"active":"")
                 a(href='/home')
-                  | #{__('menu').home}
+                  | #{__('menu.home')}
               li(class=(path === "about-us")?"active":"")
                 a(href='/about-us')
-                  | #{__('menu').about}
+                  | #{__('menu.about')}
               li(class=(path === "services")?"active":"")
                 a(href='/services')
-                  | #{__('menu').service}
+                  | #{__('menu.service')}
               li(class=(path === "recruitment")?"active":"")
                 a(href='/recruitment')
-                  | #{__('menu').recruitment}
+                  | #{__('menu.recruitment')}
               li(class=(path === "contact")?"active":"")
                 a(href='/contact')
-                  | #{__('menu').contact}
+                  | #{__('menu.contact')}
               //End home | about-us | service | recruitment | contact
               // Search Block
               li
@@ -108,64 +118,64 @@ head
               .col-md-4.md-margin-bottom-40
                 // About
                 .headline
-                  h2 #{__('footer').brand}
+                  h2 #{__('footer.brand')}
                 p.margin-bottom-25.md-margin-bottom-40
-                p #{__('footer').statement1}
-                p #{__('footer').statement2}
-                p #{__('footer').statement3}
-                p #{__('footer').statement4}
+                p #{__('footer.statement1')}
+                p #{__('footer.statement2')}
+                p #{__('footer.statement3')}
+                p #{__('footer.statement4')}
                 // End About
               // /col-md-4
               .col-md-4.md-margin-bottom-40
                 // Recent News
                 .posts
                   .headline
-                    h2 #{__('footer').news.header}
+                    h2 #{__('footer.news.header')}
                   dl.dl-horizontal
                     dt
                       a(href='#')
                         img(src='assets/img/sliders/elastislide/6.jpg', alt='')
                     dd
                       p
-                        a(href='#') #{__('footer').news.news1.title}
-                      small #{__('footer').news.news1.date}
+                        a(href='#') #{__('footer.news.news1.title')}
+                      small #{__('footer.news.news1.date')}
                   dl.dl-horizontal
                     dt
                       a(href='#')
                         img(src='assets/img/sliders/elastislide/10.jpg', alt='')
                     dd
                       p
-                        a(href='#') #{__('footer').news.news2.title}
-                      small #{__('footer').news.news2.date}
+                        a(href='#') #{__('footer.news.news2.title')}
+                      small #{__('footer.news.news2.date')}
                   dl.dl-horizontal
                     dt
                       a(href='#')
                         img(src='assets/img/sliders/elastislide/11.jpg', alt='')
                     dd
                       p
-                        a(href='#') #{__('footer').news.news3.title}
-                      small #{__('footer').news.news3.date}
+                        a(href='#') #{__('footer.news.news3.title')}
+                      small #{__('footer.news.news3.date')}
                 // End Recent News
               // /col-md-4
               .col-md-4
                 // Contact Us
                 .headline
-                  h2 #{__('footer').contact.header}
+                  h2 #{__('footer.contact.header')}
                 address.md-margin-bottom-40
-                  | #{__('footer').contact.address}
+                  | #{__('footer.contact.address')}
                   br
-                  | #{__('footer').contact.zipCode}
+                  | #{__('footer.contact.zipCode')}
                   br
-                  | #{__('footer').contact.tel}
+                  | #{__('footer.contact.tel')}
                   br
-                  | #{__('footer').contact.fax}
+                  | #{__('footer.contact.fax')}
                   br
-                  | #{__('footer').contact.email}
+                  | #{__('footer.contact.email')}
                   a(href='mailto:info@shinesoft.co.jp') info@shinesoft.co.jp
                 // End Contact Us
                 // Social Links
                 .headline
-                  h2 #{__('footer').follow.header}
+                  h2 #{__('footer.follow.header')}
                 ul.social-icons
                   li
                     a.social_rss(href='#', data-original-title='Feed')
@@ -185,11 +195,11 @@ head
             .row
               .col-md-6
                 p
-                  | #{__('copyright').statement}
+                  | #{__('copyright.statement')}
                   = ' '
-                  a(href='/privacy') #{__('copyright').privacy}
+                  a(href='/privacy') #{__('copyright.privacy')}
                   = ' | '
-                  a(href='/terms-of-service') #{__('copyright').terms}
+                  a(href='/terms-of-service') #{__('copyright.terms')}
               .col-md-6
                 a(href='index.html')
                   img#logo-footer.pull-right(src='assets/img/themes/logo2-blue.png', alt='')

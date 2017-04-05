@@ -20,6 +20,9 @@ block js
   script(type='text/javascript', src='assets/js/plugins/style-switcher.js')
   script(type='text/javascript', src='assets/js/plugins/parallax-slider.js')
   script(type='text/javascript', src='assets/js/plugins/owl-recent-works.js')
+
+  script(type='text/javascript', src='assets/js/plugins/owl-recent-works.js')
+  script(type='text/javascript', src='i18n/i18n.js')
   // JS Customization
   script(src="/js/common.js")
   script(src="/js/home.js")
@@ -35,45 +38,45 @@ block slider
     #da-slider.da-slider
       .da-slide
         h2
-          i #{__('home').slider.title1[0]}
+          i #{__('home.slider.title1.0')}
           br
-          i #{__('home').slider.title1[1]}
+          i #{__('home.slider.title1.1')}
           br
-          i #{__('home').slider.title1[2]}
+          i #{__('home.slider.title1.2')}
         p
-          i #{__('home').slider.statement1[0]}
+          i #{__('home.slider.statement1.0')}
           br
-          i #{__('home').slider.statement1[1]}
+          i #{__('home.slider.statement1.1')}
           br
-          i #{__('home').slider.statement1[2]}
+          i #{__('home.slider.statement1.2')}
         .da-img
           img.img-responsive(src='assets/plugins/parallax-slider/img/1.png', alt='')
       .da-slide
         h2
-          i #{__('home').slider.title2[0]}
+          i #{__('home.slider.title2.0')}
           br
-          i #{__('home').slider.title2[1]}
+          i #{__('home.slider.title2.1')}
           br
-          i #{__('home').slider.title2[2]}
+          i #{__('home.slider.title2.2')}
         p
-          i #{__('home').slider.statement2[0]}
+          i #{__('home.slider.statement2.0')}
           br
-          i #{__('home').slider.statement2[1]}
+          i #{__('home.slider.statement2.1')}
         .da-img
           iframe(src='http://player.vimeo.com/video/47911018', width='530', height='300', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
       .da-slide
         h2
-          i #{__('home').slider.title3[0]}
+          i #{__('home.slider.title3.0')}
           br
-          i #{__('home').slider.title3[1]}
+          i #{__('home.slider.title3.1')}
           br
-          i #{__('home').slider.title3[2]}
+          i #{__('home.slider.title3.2')}
         p
-          i #{__('home').slider.statement3[0]}
+          i #{__('home.slider.statement3.0')}
           br
-          i #{__('home').slider.statement3[1]}
+          i #{__('home.slider.statement3.1')}
           br
-          i #{__('home').slider.statement3[2]}
+          i #{__('home.slider.statement3.2')}
         .da-img
           img(src='assets/plugins/parallax-slider/img/html5andcss3.png', alt='image01')
       .da-arrows
@@ -88,13 +91,13 @@ block breadcrumbs
     .container
       .row
         .col-md-9.animated.fadeInLeft
-          span #{__('home').breadcrumb.title}
+          span #{__('home.breadcrumb.title')}
           p
-            | #{__('home').breadcrumb.statement}
+            | #{__('home.breadcrumb.statement')}
         .col-md-3.btn-buy.animated.fadeInRight
           a.btn-u.btn-u-lg(href='/contact')
             i.icon-envelope
-            |  #{__('home').breadcrumb.contact}
+            |  #{__('home.breadcrumb.contact')}
   // /row
   // End Purchase Block
 
@@ -104,7 +107,7 @@ block content
     // Recent Works
     .owl-carousel-v1.owl-work-v1.margin-bottom-40
       .headline
-        h2.pull-left #{__('home').content.title}
+        h2.pull-left #{__('home.content.title')}
         .owl-navigation
           .customNavigation
             a.owl-btn.prev-v2
@@ -118,29 +121,29 @@ block content
             em.overflow-hidden
               img.img-responsive(src='assets/img/main/img1.jpg', alt='')
             span
-              strong #{__('home').content.sub1.title}
-              i #{__('home').content.sub1.statement}
+              strong #{__('home.content.sub1.title')}
+              i #{__('home.content.sub1.statement')}
         .item
           a(href='#')
             em.overflow-hidden
               img.img-responsive(src='assets/img/main/img2.jpg', alt='')
             span
-              strong #{__('home').content.sub2.title}
-              i #{__('home').content.sub2.statement}
+              strong #{__('home.content.sub2.title')}
+              i #{__('home.content.sub2.statement')}
         .item
           a(href='#')
             em.overflow-hidden
               img.img-responsive(src='assets/img/main/img3.jpg', alt='')
             span
-              strong #{__('home').content.sub3.title}
-              i #{__('home').content.sub3.statement}
+              strong #{__('home.content.sub3.title')}
+              i #{__('home.content.sub3.statement')}
         .item
           a(href='#')
             em.overflow-hidden
               img.img-responsive(src='assets/img/main/img4.jpg', alt='')
             span
-              strong #{__('home').content.sub4.title}
-              i #{__('home').content.sub4.statement}
+              strong #{__('home.content.sub4.title')}
+              i #{__('home.content.sub4.statement')}
     // End Recent Works
   // /container
   // End Content Part

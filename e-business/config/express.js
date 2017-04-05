@@ -1,5 +1,6 @@
 var path = require('path'),
   express = require('express'),
+  session = require('express-session');
   favicon = require('serve-favicon'),
   compression = require('compression'),
   lessMiddleware = require('less-middleware'),
@@ -9,15 +10,34 @@ var path = require('path'),
   i18n.configure({
       // 対応する言語を設定
       locales: ['en', 'ja', 'zh'],
-      directory: path.join(config.root, '/config/locales')
+      defaultLocale: 'ja',
+      directory: path.join(config.root, '/config/locales'),
+      objectNotation: true
   });
 
 module.exports = function(config) {
 
   var app = express();
 
+  // express-session
+  app.use(session({
+  secret: 'shinesoft-secret',
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    httpOnly: true,
+    maxAge: 30 * 60 * 1000
+  }
+}));
+
   // i18n
   app.use(i18n.init);
+  app.use(function (req, res, next) {
+    if (req.session.langswitch) {
+      i18n.setLocale(req, req.session.langswitch);
+    }
+    next();
+  });
 
   // View directory
   app.set('views', path.join(config.root, '/app/views'));
