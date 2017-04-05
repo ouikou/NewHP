@@ -139,9 +139,10 @@ block content
                           | #{__('recruitment.leftInner.regular.application.download.title')}
                       .pricing-footer
                         br
-                        button.btn-u.btn-u-green.pulse-grow(data-toggle='modal', data-target='#')
-                          i.fa.fa-cloud-download
-                          |  #{__('recruitment.leftInner.regular.application.download.button')}
+                        button.btn-block.btn-u.btn-u-green.pulse-grow.rounded(data-toggle='modal', data-target='#')
+                          i.fa.fa-download
+                          = ' '
+                          | #{__('recruitment.leftInner.regular.application.download.button')}
               #contract_employee.tab-pane.fade.in
                 .service-block-v6
                   i.icon-custom.rounded-2x.icon-lg.icon-bg-orange.fa.fa-bullhorn
@@ -214,12 +215,13 @@ block content
                     .pricing.hover-effect
                       .pricing-head.contract-employee
                         h3
-                          | 契約社員応募
+                          | #{__('recruitment.leftInner.contract.application.download.title')}
                       .pricing-footer
                         br
-                        button.btn-u.btn-u-orange.pulse-grow(data-toggle='modal', data-target='#')
-                          i.fa.fa-cloud-download
-                          |  履歴書ダウンロード
+                        button.btn-block.btn-u.btn-u-orange.pulse-grow.rounded(data-toggle='modal', data-target='#')
+                          i.fa.fa-download
+                          = ' '
+                          | #{__('recruitment.leftInner.contract.application.download.button')}
               #free_employee.tab-pane.fade.in
                 .service-block-v6
                   i.icon-custom.rounded-2x.icon-lg.icon-bg-purple.icon-line.icon-rocket
@@ -289,9 +291,10 @@ block content
                           | #{__('recruitment.leftInner.free.application.download.title')}
                       .pricing-footer
                         br
-                        button.btn-u.btn-u-purple.pulse-grow(data-toggle='modal', data-target='#')
-                          i.fa.fa-cloud-download
-                          |  #{__('recruitment.leftInner.free.application.download.button')}
+                        button.btn-block.btn-u.btn-u-purple.pulse-grow.rounded(data-toggle='modal', data-target='#')
+                          i.fa.fa-download
+                          = ' '
+                          | #{__('recruitment.leftInner.free.application.download.button')}
         // End Left Inner
         // Right Inner
         .col-md-5

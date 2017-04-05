@@ -52,3 +52,30 @@
 .owl-navigation .customNavigation a {
 	margin-right: 2px;
 }
+
+#regular_employee .pricing-head h3 {
+	font-size:30px;
+}
+
+#contract_employee .pricing-head h3 {
+	font-size:30px;
+}
+
+#free_employee .pricing-head h3 {
+	font-size:30px;
+}
+
+#regular_employee .btn-u {
+	font-size: 12px;
+	font-weight: 400
+}
+
+#contract_employee .btn-u {
+	font-size: 12px;
+	font-weight: 400
+}
+
+#free_employee .btn-u {
+	font-size: 12px;
+	font-weight: 400
+}
